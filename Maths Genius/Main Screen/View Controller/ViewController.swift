@@ -42,8 +42,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func viewTutorial(_ sender: Any) {
-        mainFlowController.showTutorial()
-    }
+        mainFlowController.showAdditions()    }
     
 
 }

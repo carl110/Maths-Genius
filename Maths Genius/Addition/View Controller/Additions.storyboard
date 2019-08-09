@@ -17,9 +17,67 @@
                     <view key="view" contentMode="scaleToFill" id="Xao-Ys-NsO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0yp-zC-HlQ">
+                                <rect key="frame" x="127" y="100" width="121" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="firstNumberSelector:" destination="iIh-rD-PNh" eventType="valueChanged" id="0pW-TZ-QEx"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKx-B3-4jm">
+                                <rect key="frame" x="10" y="30" width="355" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="57n-qN-vS4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pc-QU-Kqz">
+                                <rect key="frame" x="10" y="138" width="355" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bfQ-VE-16B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3Aq-E1-zFI">
+                                <rect key="frame" x="127" y="208" width="121" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="secondNumberSelector:" destination="iIh-rD-PNh" eventType="valueChanged" id="IQp-6P-x2H"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3Aq-E1-zFI" firstAttribute="top" secondItem="0pc-QU-Kqz" secondAttribute="bottom" constant="20" id="77h-o4-8ZY"/>
+                            <constraint firstItem="0yp-zC-HlQ" firstAttribute="centerX" secondItem="Xao-Ys-NsO" secondAttribute="centerX" id="HBZ-ge-j9I"/>
+                            <constraint firstItem="OKx-B3-4jm" firstAttribute="leading" secondItem="dOF-kC-LNv" secondAttribute="leading" constant="10" id="HWN-lM-R9l"/>
+                            <constraint firstItem="0pc-QU-Kqz" firstAttribute="top" secondItem="0yp-zC-HlQ" secondAttribute="bottom" constant="10" id="PUC-Ec-umq"/>
+                            <constraint firstItem="3Aq-E1-zFI" firstAttribute="centerX" secondItem="Xao-Ys-NsO" secondAttribute="centerX" id="TQN-QA-PbU"/>
+                            <constraint firstItem="dOF-kC-LNv" firstAttribute="trailing" secondItem="0pc-QU-Kqz" secondAttribute="trailing" constant="10" id="afv-on-Hg9"/>
+                            <constraint firstItem="0yp-zC-HlQ" firstAttribute="top" secondItem="OKx-B3-4jm" secondAttribute="bottom" constant="20" id="hTJ-Jt-CZY"/>
+                            <constraint firstItem="OKx-B3-4jm" firstAttribute="top" secondItem="dOF-kC-LNv" secondAttribute="top" constant="10" id="mSv-wK-dyx"/>
+                            <constraint firstItem="0pc-QU-Kqz" firstAttribute="leading" secondItem="dOF-kC-LNv" secondAttribute="leading" constant="10" id="nOO-ah-8Sh"/>
+                            <constraint firstItem="dOF-kC-LNv" firstAttribute="trailing" secondItem="OKx-B3-4jm" secondAttribute="trailing" constant="10" id="ulZ-AR-Sng"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dOF-kC-LNv"/>
                     </view>
+                    <connections>
+                        <outlet property="firstNumberLabel" destination="OKx-B3-4jm" id="ZBt-2D-8Pc"/>
+                        <outlet property="firstNumberSelector" destination="0yp-zC-HlQ" id="vQ8-fK-QZv"/>
+                        <outlet property="secondNumberLabel" destination="0pc-QU-Kqz" id="ibe-yl-SjV"/>
+                        <outlet property="secondNumberSelector" destination="3Aq-E1-zFI" id="Fel-aL-fJW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eze-yt-PPQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
