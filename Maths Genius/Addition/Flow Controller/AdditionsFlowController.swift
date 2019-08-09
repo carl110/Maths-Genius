@@ -1,5 +1,5 @@
 //
-//  MainFlowController.swift
+//  AdditionsFlowController.swift
 //  Maths Genius
 //
 //  Created by Carl Wainwright on 09/08/2019.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class MainFlowController {
+class AdditionsFlowController {
     
     let navigationController: UINavigationController
     
@@ -17,13 +17,7 @@ class MainFlowController {
         self.navigationController = navigationController
     }
     
-    func showTutorial() {
-        TutorialFactory.PushIn(navigationController: navigationController)
-        
+    func showMain() {
+        MainFactory.PushIn(navigationController: navigationController)
     }
-    
-    func showAdditions() {
-        AdditionsFactory.PushIn(navigationController: navigationController)
-    }
-    
 }

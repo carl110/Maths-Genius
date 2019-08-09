@@ -27,6 +27,11 @@
 		895B548822FE0A0400CFF65E /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B548722FE0A0400CFF65E /* MainModel.swift */; };
 		895B548A22FE191800CFF65E /* UIButton+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B548922FE191800CFF65E /* UIButton+extensions.swift */; };
 		895B548C22FE198200CFF65E /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B548B22FE198200CFF65E /* UIView+extensions.swift */; };
+		895B549022FE222800CFF65E /* Additions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895B548F22FE222800CFF65E /* Additions.storyboard */; };
+		895B549222FE223600CFF65E /* AdditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B549122FE223600CFF65E /* AdditionsViewController.swift */; };
+		895B549422FE22CC00CFF65E /* AdditionsFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B549322FE22CC00CFF65E /* AdditionsFlowController.swift */; };
+		895B549622FE22F000CFF65E /* AdditionsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B549522FE22F000CFF65E /* AdditionsFactory.swift */; };
+		895B549822FE236600CFF65E /* AdditionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B549722FE236600CFF65E /* AdditionsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +57,11 @@
 		895B548722FE0A0400CFF65E /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		895B548922FE191800CFF65E /* UIButton+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+extensions.swift"; sourceTree = "<group>"; };
 		895B548B22FE198200CFF65E /* UIView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extensions.swift"; sourceTree = "<group>"; };
+		895B548F22FE222800CFF65E /* Additions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Additions.storyboard; sourceTree = "<group>"; };
+		895B549122FE223600CFF65E /* AdditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionsViewController.swift; sourceTree = "<group>"; };
+		895B549322FE22CC00CFF65E /* AdditionsFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionsFlowController.swift; sourceTree = "<group>"; };
+		895B549522FE22F000CFF65E /* AdditionsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionsFactory.swift; sourceTree = "<group>"; };
+		895B549722FE236600CFF65E /* AdditionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,11 +201,11 @@
 		895B544922FDF9FB00CFF65E /* Addition */ = {
 			isa = PBXGroup;
 			children = (
-				895B545022FDFB6E00CFF65E /* Factory */,
-				895B545122FDFB6E00CFF65E /* Flow Controller */,
 				895B544F22FDFB6E00CFF65E /* Model */,
-				895B545222FDFB6E00CFF65E /* View Controller */,
 				895B545322FDFB6E00CFF65E /* View Model */,
+				895B545222FDFB6E00CFF65E /* View Controller */,
+				895B545122FDFB6E00CFF65E /* Flow Controller */,
+				895B545022FDFB6E00CFF65E /* Factory */,
 			);
 			path = Addition;
 			sourceTree = "<group>";
@@ -250,6 +260,7 @@
 		895B545022FDFB6E00CFF65E /* Factory */ = {
 			isa = PBXGroup;
 			children = (
+				895B549522FE22F000CFF65E /* AdditionsFactory.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -257,6 +268,7 @@
 		895B545122FDFB6E00CFF65E /* Flow Controller */ = {
 			isa = PBXGroup;
 			children = (
+				895B549322FE22CC00CFF65E /* AdditionsFlowController.swift */,
 			);
 			path = "Flow Controller";
 			sourceTree = "<group>";
@@ -264,6 +276,8 @@
 		895B545222FDFB6E00CFF65E /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				895B548F22FE222800CFF65E /* Additions.storyboard */,
+				895B549122FE223600CFF65E /* AdditionsViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -271,6 +285,7 @@
 		895B545322FDFB6E00CFF65E /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				895B549722FE236600CFF65E /* AdditionsViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -492,6 +507,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				895B549022FE222800CFF65E /* Additions.storyboard in Resources */,
 				895B543A22FDF8E900CFF65E /* LaunchScreen.storyboard in Resources */,
 				895B543722FDF8E900CFF65E /* Assets.xcassets in Resources */,
 				895B548622FE07DB00CFF65E /* IntroductionCell.xib in Resources */,
@@ -510,15 +526,19 @@
 				895B542F22FDF8E700CFF65E /* ViewController.swift in Sources */,
 				895B548822FE0A0400CFF65E /* MainModel.swift in Sources */,
 				895B546F22FDFE9B00CFF65E /* TutorialViewController.swift in Sources */,
+				895B549822FE236600CFF65E /* AdditionsViewModel.swift in Sources */,
 				895B546D22FDFE6A00CFF65E /* MainFactory.swift in Sources */,
 				895B543522FDF8E700CFF65E /* Maths_Genius.xcdatamodeld in Sources */,
 				895B547922FE022500CFF65E /* IntroductionTable.swift in Sources */,
+				895B549222FE223600CFF65E /* AdditionsViewController.swift in Sources */,
 				895B548C22FE198200CFF65E /* UIView+extensions.swift in Sources */,
 				895B542D22FDF8E700CFF65E /* AppDelegate.swift in Sources */,
 				895B548A22FE191800CFF65E /* UIButton+extensions.swift in Sources */,
 				895B547522FDFFBA00CFF65E /* TutorialFactory.swift in Sources */,
+				895B549422FE22CC00CFF65E /* AdditionsFlowController.swift in Sources */,
 				895B548522FE07DB00CFF65E /* IntroductionCell.swift in Sources */,
 				895B547722FE002600CFF65E /* TutorialViewModel.swift in Sources */,
+				895B549622FE22F000CFF65E /* AdditionsFactory.swift in Sources */,
 				895B546B22FDFE5300CFF65E /* MainFlowController.swift in Sources */,
 				895B546922FDFC1400CFF65E /* UIColor+extensions.swift in Sources */,
 				895B547322FDFF9200CFF65E /* TutorialFlowController.swift in Sources */,
