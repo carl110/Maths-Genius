@@ -17,13 +17,17 @@ class MainFlowController {
         self.navigationController = navigationController
     }
     
-    func showTutorial() {
-        TutorialFactory.PushIn(navigationController: navigationController)
-        
-    }
+//    func showTutorial() {
+//        TutorialFactory.PushIn(navigationController: navigationController)
+//        
+//    }
     
     func showAdditions() {
         AdditionsFactory.PushIn(navigationController: navigationController)
+    }
+    
+    func showNumberSelection(with subject: String) {
+        NumberSelectionFactory.PushIn(navigationController: navigationController, subject: subject)
     }
     
 }

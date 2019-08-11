@@ -11,9 +11,18 @@ import UIKit
 class ViewController: UIViewController {
     
     fileprivate var mainFlowController: MainFlowController!
+    
+    var subjectSelected = String()
 
-    @IBOutlet weak var introductionTable: IntroductionTable!
     @IBOutlet weak var viewTutorial: UIButton!
+    
+    @IBOutlet weak var additionButton: UIButton!
+    
+    @IBOutlet weak var subtractionButton: UIButton!
+    
+    @IBOutlet weak var multiplicationButton: UIButton!
+    
+    @IBOutlet weak var divisionButton: UIButton!
     
     func assignDependancies(mainFlowController: MainFlowController) {
         self.mainFlowController = mainFlowController
@@ -26,24 +35,40 @@ class ViewController: UIViewController {
     }
     
     func setUp() {
-        viewTutorial.backgroundColor = UIColor.Yellows.mustardYellow
-        viewTutorial.setTitleColor(UIColor.Shades.standardGrey, for: .normal)
-        viewTutorial.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
-        viewTutorial.centerTextHorizontally(spacing: 8)
-        viewTutorial.roundCorners(for: .allCorners, cornerRadius: 8)
+       
+        //Button setups
+        viewTutorial.subTitleButtonSetup()
+        additionButton.titleButtonSetup()
+        subtractionButton.titleButtonSetup()
+        multiplicationButton.titleButtonSetup()
+        divisionButton.titleButtonSetup()
         
+        //Mainpage setup
         self.title = "Select you subject"
-        
-        DispatchQueue.main.async { [weak self] in
-           self?.introductionTable.roundCorners(for: .allCorners, cornerRadius: 8)
-        }
-        
+        self.view.backgroundColor = UIColor.Shades.standardBlack
     }
     
     
     @IBAction func viewTutorial(_ sender: Any) {
-        mainFlowController.showAdditions()    }
+        
+    }
     
-
+    @IBAction func additionButton(_ sender: Any) {
+        subjectSelected = Subject.Additions.name()
+        mainFlowController.showNumberSelection(with: subjectSelected)
+    }
+    
+    @IBAction func subtractionButton(_ sender: Any) {
+        subjectSelected = Subject.Subtractions.name()
+        mainFlowController.showNumberSelection(with: subjectSelected)
+    }
+    @IBAction func multiplicationButton(_ sender: Any) {
+        subjectSelected = Subject.Multiplications.name()
+        mainFlowController.showNumberSelection(with: subjectSelected)
+    }
+    @IBAction func divisionButton(_ sender: Any) {
+        subjectSelected = Subject.Divisions.name()
+        mainFlowController.showNumberSelection(with: subjectSelected)
+    }
 }
 

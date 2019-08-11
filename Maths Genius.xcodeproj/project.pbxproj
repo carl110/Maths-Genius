@@ -16,22 +16,25 @@
 		895B546922FDFC1400CFF65E /* UIColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B546822FDFC1400CFF65E /* UIColor+extensions.swift */; };
 		895B546B22FDFE5300CFF65E /* MainFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B546A22FDFE5300CFF65E /* MainFlowController.swift */; };
 		895B546D22FDFE6A00CFF65E /* MainFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B546C22FDFE6A00CFF65E /* MainFactory.swift */; };
-		895B546F22FDFE9B00CFF65E /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B546E22FDFE9B00CFF65E /* TutorialViewController.swift */; };
-		895B547122FDFEB300CFF65E /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895B547022FDFEB300CFF65E /* Tutorial.storyboard */; };
-		895B547322FDFF9200CFF65E /* TutorialFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B547222FDFF9200CFF65E /* TutorialFlowController.swift */; };
-		895B547522FDFFBA00CFF65E /* TutorialFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B547422FDFFBA00CFF65E /* TutorialFactory.swift */; };
-		895B547722FE002600CFF65E /* TutorialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B547622FE002600CFF65E /* TutorialViewModel.swift */; };
+		895B547322FDFF9200CFF65E /* NumberSelectionFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B547222FDFF9200CFF65E /* NumberSelectionFlowController.swift */; };
+		895B547522FDFFBA00CFF65E /* NumberSelectionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B547422FDFFBA00CFF65E /* NumberSelectionFactory.swift */; };
 		895B547922FE022500CFF65E /* IntroductionTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B547822FE022500CFF65E /* IntroductionTable.swift */; };
 		895B548522FE07DB00CFF65E /* IntroductionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B548322FE07DB00CFF65E /* IntroductionCell.swift */; };
 		895B548622FE07DB00CFF65E /* IntroductionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 895B548422FE07DB00CFF65E /* IntroductionCell.xib */; };
 		895B548822FE0A0400CFF65E /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B548722FE0A0400CFF65E /* MainModel.swift */; };
 		895B548A22FE191800CFF65E /* UIButton+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B548922FE191800CFF65E /* UIButton+extensions.swift */; };
 		895B548C22FE198200CFF65E /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B548B22FE198200CFF65E /* UIView+extensions.swift */; };
-		895B549022FE222800CFF65E /* Additions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895B548F22FE222800CFF65E /* Additions.storyboard */; };
-		895B549222FE223600CFF65E /* AdditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B549122FE223600CFF65E /* AdditionsViewController.swift */; };
+		895B549022FE222800CFF65E /* NumberSelection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895B548F22FE222800CFF65E /* NumberSelection.storyboard */; };
+		895B549222FE223600CFF65E /* NumberSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B549122FE223600CFF65E /* NumberSelectionViewController.swift */; };
 		895B549422FE22CC00CFF65E /* AdditionsFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B549322FE22CC00CFF65E /* AdditionsFlowController.swift */; };
 		895B549622FE22F000CFF65E /* AdditionsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B549522FE22F000CFF65E /* AdditionsFactory.swift */; };
 		895B549822FE236600CFF65E /* AdditionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B549722FE236600CFF65E /* AdditionsViewModel.swift */; };
+		895B549A2300AAE300CFF65E /* String+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B54992300AAE200CFF65E /* String+extensions.swift */; };
+		895B549C2300B21400CFF65E /* NumberSelectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B549B2300B21400CFF65E /* NumberSelectionModel.swift */; };
+		895B549E2300B22600CFF65E /* NumberSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B549D2300B22600CFF65E /* NumberSelectionViewModel.swift */; };
+		895B54A12300B41C00CFF65E /* AdditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B549F2300B41C00CFF65E /* AdditionsViewController.swift */; };
+		895B54A42300BCB100CFF65E /* UILabels+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B54A32300BCB100CFF65E /* UILabels+extensions.swift */; };
+		895B54A62300C06800CFF65E /* Additions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895B54A52300C06800CFF65E /* Additions.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,22 +49,25 @@
 		895B546822FDFC1400CFF65E /* UIColor+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+extensions.swift"; sourceTree = "<group>"; };
 		895B546A22FDFE5300CFF65E /* MainFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowController.swift; sourceTree = "<group>"; };
 		895B546C22FDFE6A00CFF65E /* MainFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFactory.swift; sourceTree = "<group>"; };
-		895B546E22FDFE9B00CFF65E /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
-		895B547022FDFEB300CFF65E /* Tutorial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
-		895B547222FDFF9200CFF65E /* TutorialFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialFlowController.swift; sourceTree = "<group>"; };
-		895B547422FDFFBA00CFF65E /* TutorialFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialFactory.swift; sourceTree = "<group>"; };
-		895B547622FE002600CFF65E /* TutorialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewModel.swift; sourceTree = "<group>"; };
+		895B547222FDFF9200CFF65E /* NumberSelectionFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberSelectionFlowController.swift; sourceTree = "<group>"; };
+		895B547422FDFFBA00CFF65E /* NumberSelectionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberSelectionFactory.swift; sourceTree = "<group>"; };
 		895B547822FE022500CFF65E /* IntroductionTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionTable.swift; sourceTree = "<group>"; };
 		895B548322FE07DB00CFF65E /* IntroductionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionCell.swift; sourceTree = "<group>"; };
 		895B548422FE07DB00CFF65E /* IntroductionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroductionCell.xib; sourceTree = "<group>"; };
 		895B548722FE0A0400CFF65E /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		895B548922FE191800CFF65E /* UIButton+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+extensions.swift"; sourceTree = "<group>"; };
 		895B548B22FE198200CFF65E /* UIView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extensions.swift"; sourceTree = "<group>"; };
-		895B548F22FE222800CFF65E /* Additions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Additions.storyboard; sourceTree = "<group>"; };
-		895B549122FE223600CFF65E /* AdditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionsViewController.swift; sourceTree = "<group>"; };
+		895B548F22FE222800CFF65E /* NumberSelection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NumberSelection.storyboard; sourceTree = "<group>"; };
+		895B549122FE223600CFF65E /* NumberSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberSelectionViewController.swift; sourceTree = "<group>"; };
 		895B549322FE22CC00CFF65E /* AdditionsFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionsFlowController.swift; sourceTree = "<group>"; };
 		895B549522FE22F000CFF65E /* AdditionsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionsFactory.swift; sourceTree = "<group>"; };
 		895B549722FE236600CFF65E /* AdditionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionsViewModel.swift; sourceTree = "<group>"; };
+		895B54992300AAE200CFF65E /* String+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extensions.swift"; sourceTree = "<group>"; };
+		895B549B2300B21400CFF65E /* NumberSelectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberSelectionModel.swift; sourceTree = "<group>"; };
+		895B549D2300B22600CFF65E /* NumberSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberSelectionViewModel.swift; sourceTree = "<group>"; };
+		895B549F2300B41C00CFF65E /* AdditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionsViewController.swift; sourceTree = "<group>"; };
+		895B54A32300BCB100CFF65E /* UILabels+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabels+extensions.swift"; sourceTree = "<group>"; };
+		895B54A52300C06800CFF65E /* Additions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Additions.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				895B544122FDF98500CFF65E /* Main Screen */,
-				895B544522FDF9C300CFF65E /* Tutorial */,
+				895B544522FDF9C300CFF65E /* Number Selection */,
 				895B544922FDF9FB00CFF65E /* Addition */,
 				895B544822FDF9F200CFF65E /* Subtraction */,
 				895B544722FDF9E700CFF65E /* Multiplication */,
@@ -146,11 +152,13 @@
 				895B548922FE191800CFF65E /* UIButton+extensions.swift */,
 				895B546822FDFC1400CFF65E /* UIColor+extensions.swift */,
 				895B548B22FE198200CFF65E /* UIView+extensions.swift */,
+				895B54992300AAE200CFF65E /* String+extensions.swift */,
+				895B54A32300BCB100CFF65E /* UILabels+extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		895B544522FDF9C300CFF65E /* Tutorial */ = {
+		895B544522FDF9C300CFF65E /* Number Selection */ = {
 			isa = PBXGroup;
 			children = (
 				895B546422FDFBAA00CFF65E /* Model */,
@@ -159,7 +167,7 @@
 				895B546722FDFBAA00CFF65E /* Flow Controller */,
 				895B546322FDFBAA00CFF65E /* Factory */,
 			);
-			path = Tutorial;
+			path = "Number Selection";
 			sourceTree = "<group>";
 		};
 		895B544622FDF9D900CFF65E /* Division */ = {
@@ -276,8 +284,8 @@
 		895B545222FDFB6E00CFF65E /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				895B548F22FE222800CFF65E /* Additions.storyboard */,
-				895B549122FE223600CFF65E /* AdditionsViewController.swift */,
+				895B549F2300B41C00CFF65E /* AdditionsViewController.swift */,
+				895B54A52300C06800CFF65E /* Additions.storyboard */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -403,7 +411,7 @@
 		895B546322FDFBAA00CFF65E /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				895B547422FDFFBA00CFF65E /* TutorialFactory.swift */,
+				895B547422FDFFBA00CFF65E /* NumberSelectionFactory.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -411,6 +419,7 @@
 		895B546422FDFBAA00CFF65E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				895B549B2300B21400CFF65E /* NumberSelectionModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -418,8 +427,8 @@
 		895B546522FDFBAA00CFF65E /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				895B546E22FDFE9B00CFF65E /* TutorialViewController.swift */,
-				895B547022FDFEB300CFF65E /* Tutorial.storyboard */,
+				895B548F22FE222800CFF65E /* NumberSelection.storyboard */,
+				895B549122FE223600CFF65E /* NumberSelectionViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -427,7 +436,7 @@
 		895B546622FDFBAA00CFF65E /* View Model */ = {
 			isa = PBXGroup;
 			children = (
-				895B547622FE002600CFF65E /* TutorialViewModel.swift */,
+				895B549D2300B22600CFF65E /* NumberSelectionViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -435,7 +444,7 @@
 		895B546722FDFBAA00CFF65E /* Flow Controller */ = {
 			isa = PBXGroup;
 			children = (
-				895B547222FDFF9200CFF65E /* TutorialFlowController.swift */,
+				895B547222FDFF9200CFF65E /* NumberSelectionFlowController.swift */,
 			);
 			path = "Flow Controller";
 			sourceTree = "<group>";
@@ -507,11 +516,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				895B549022FE222800CFF65E /* Additions.storyboard in Resources */,
+				895B54A62300C06800CFF65E /* Additions.storyboard in Resources */,
+				895B549022FE222800CFF65E /* NumberSelection.storyboard in Resources */,
 				895B543A22FDF8E900CFF65E /* LaunchScreen.storyboard in Resources */,
 				895B543722FDF8E900CFF65E /* Assets.xcassets in Resources */,
 				895B548622FE07DB00CFF65E /* IntroductionCell.xib in Resources */,
-				895B547122FDFEB300CFF65E /* Tutorial.storyboard in Resources */,
 				895B543222FDF8E700CFF65E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,24 +533,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				895B542F22FDF8E700CFF65E /* ViewController.swift in Sources */,
+				895B54A12300B41C00CFF65E /* AdditionsViewController.swift in Sources */,
 				895B548822FE0A0400CFF65E /* MainModel.swift in Sources */,
-				895B546F22FDFE9B00CFF65E /* TutorialViewController.swift in Sources */,
 				895B549822FE236600CFF65E /* AdditionsViewModel.swift in Sources */,
+				895B549A2300AAE300CFF65E /* String+extensions.swift in Sources */,
 				895B546D22FDFE6A00CFF65E /* MainFactory.swift in Sources */,
 				895B543522FDF8E700CFF65E /* Maths_Genius.xcdatamodeld in Sources */,
 				895B547922FE022500CFF65E /* IntroductionTable.swift in Sources */,
-				895B549222FE223600CFF65E /* AdditionsViewController.swift in Sources */,
+				895B549222FE223600CFF65E /* NumberSelectionViewController.swift in Sources */,
 				895B548C22FE198200CFF65E /* UIView+extensions.swift in Sources */,
+				895B549C2300B21400CFF65E /* NumberSelectionModel.swift in Sources */,
+				895B549E2300B22600CFF65E /* NumberSelectionViewModel.swift in Sources */,
 				895B542D22FDF8E700CFF65E /* AppDelegate.swift in Sources */,
 				895B548A22FE191800CFF65E /* UIButton+extensions.swift in Sources */,
-				895B547522FDFFBA00CFF65E /* TutorialFactory.swift in Sources */,
+				895B547522FDFFBA00CFF65E /* NumberSelectionFactory.swift in Sources */,
 				895B549422FE22CC00CFF65E /* AdditionsFlowController.swift in Sources */,
 				895B548522FE07DB00CFF65E /* IntroductionCell.swift in Sources */,
-				895B547722FE002600CFF65E /* TutorialViewModel.swift in Sources */,
 				895B549622FE22F000CFF65E /* AdditionsFactory.swift in Sources */,
 				895B546B22FDFE5300CFF65E /* MainFlowController.swift in Sources */,
 				895B546922FDFC1400CFF65E /* UIColor+extensions.swift in Sources */,
-				895B547322FDFF9200CFF65E /* TutorialFlowController.swift in Sources */,
+				895B54A42300BCB100CFF65E /* UILabels+extensions.swift in Sources */,
+				895B547322FDFF9200CFF65E /* NumberSelectionFlowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

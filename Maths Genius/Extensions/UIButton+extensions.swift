@@ -27,4 +27,21 @@ extension UIButton {
         alpha = 0.0
         isEnabled = false
     }
+    
+    func titleButtonSetup() {
+        self.backgroundColor = UIColor.Reds.gryffindorRed
+        self.setTitleColor(UIColor.Yellows.gryffindorYellow, for: .normal)
+        self.titleLabel?.font = UIFont.boldSystemFont(ofSize: 30)
+        self.centerTextHorizontally(spacing: 8)
+        self.roundCorners(for: .allCorners, cornerRadius: 8)
+    }
+    
+    func subTitleButtonSetup() {
+        self.backgroundColor = UIColor.Yellows.gryffindorYellow
+        self.setTitleColor(UIColor.Reds.gryffindorRed, for: .normal)
+        self.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        self.centerTextHorizontally(spacing: 8)
+        self.roundCorners(for: .allCorners, cornerRadius: 8)
+        
+    }
 }

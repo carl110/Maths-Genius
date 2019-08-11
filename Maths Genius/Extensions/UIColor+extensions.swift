@@ -11,7 +11,7 @@ import UIKit
 
 extension UIColor {
     
-    // custom color methods converst hex value to rgb value
+    // custom colour methods convert hex value to rgb value
     class private func colourWithHex(rgbValue: UInt32) -> UIColor {
         return UIColor( red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
                         green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
@@ -34,6 +34,7 @@ extension UIColor {
     //Custom colours
     struct Reds {
         static let standardRed = UIColor.colourWithHexString(hexStr: "#FF0000")
+        static let gryffindorRed = UIColor.colourWithHexString(hexStr: "#7F0909")
     }
     struct Blues {
         static let standardBlue = UIColor.colourWithHexString(hexStr: "#0000FF")
@@ -43,6 +44,7 @@ extension UIColor {
     struct Yellows {
         static let standardYellow = UIColor.colourWithHexString(hexStr: "#FFFF00")
         static let mustardYellow = UIColor.colourWithHexString(hexStr: "#FFD165")
+        static let gryffindorYellow = UIColor.colourWithHexString(hexStr: "#FFC500")
     }
     struct Purples {
         static let standardPurple = UIColor.colourWithHexString(hexStr: "#800080")

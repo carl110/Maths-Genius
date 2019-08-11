@@ -27,9 +27,9 @@ class IntroductionCell: UITableViewCell {
     }
     func config(indexPath: Int) {
         courseTitle.setTitle(mainModel.courseTitles[indexPath], for: .normal)
-        cellBackground.backgroundColor = UIColor.Greens.seaGreen
-        courseTitle.backgroundColor = UIColor.Yellows.mustardYellow
-        courseTitle.setTitleColor(UIColor.Shades.standardGrey, for: .normal)
+        cellBackground.backgroundColor = UIColor.Shades.standardBlack
+        courseTitle.backgroundColor = UIColor.Reds.gryffindorRed
+        courseTitle.setTitleColor(UIColor.Yellows.gryffindorYellow, for: .normal)
         DispatchQueue.main.async { [weak self] in
             self?.courseTitle.roundCorners(for: .allCorners, cornerRadius: 8)
         }

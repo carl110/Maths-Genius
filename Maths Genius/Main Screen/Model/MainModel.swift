@@ -14,3 +14,16 @@ class MainModel {
     let courseTitles = ["Addition", "Subtraction", "Multiplication", "Division"]
     
 }
+
+public enum Subject: String {
+    
+    case Additions
+    case Subtractions
+    case Multiplications
+    case Divisions
+    
+    func name() -> String {
+        return self.rawValue.titlecased()
+    }
+    
+}
