@@ -21,8 +21,8 @@ class NumberSelectionFlowController {
         MainFactory.PushIn(navigationController: navigationController)
     }
     
-    func showAdditions() {
-        AdditionsFactory.PushIn(navigationController: navigationController)
+    func showAdditions(firstNumber: Int, secondNumber: Int) {
+        AdditionsFactory.PushIn(navigationController: navigationController, firstNumber: firstNumber, secondNumber: secondNumber)
     }
     
 //    func showSubtractions() {

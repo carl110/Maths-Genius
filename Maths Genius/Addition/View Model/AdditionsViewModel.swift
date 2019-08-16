@@ -11,4 +11,12 @@ import UIKit
 
 class AdditionsViewModel {
     
+    let firstNumber: Int
+    let secondNumber: Int
+    
+    init (firstNumber: Int, secondNumber: Int) {
+        self.firstNumber = firstNumber
+        self.secondNumber = secondNumber
+    }
+    
 }

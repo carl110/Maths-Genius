@@ -22,10 +22,6 @@ class MainFlowController {
 //        
 //    }
     
-    func showAdditions() {
-        AdditionsFactory.PushIn(navigationController: navigationController)
-    }
-    
     func showNumberSelection(with subject: String) {
         NumberSelectionFactory.PushIn(navigationController: navigationController, subject: subject)
     }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		890EC4FB230742EF0069C215 /* NumberPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890EC4FA230742EF0069C215 /* NumberPad.xib */; };
+		890EC4FE230743A60069C215 /* NumberPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890EC4FD230743A60069C215 /* NumberPad.swift */; };
+		890EC500230750600069C215 /* NumberButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890EC4FF230750600069C215 /* NumberButton.xib */; };
+		890EC503230750EC0069C215 /* NumberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890EC502230750EC0069C215 /* NumberButton.swift */; };
 		895B542D22FDF8E700CFF65E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B542C22FDF8E700CFF65E /* AppDelegate.swift */; };
 		895B542F22FDF8E700CFF65E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B542E22FDF8E700CFF65E /* ViewController.swift */; };
 		895B543222FDF8E700CFF65E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895B543022FDF8E700CFF65E /* Main.storyboard */; };
@@ -38,6 +42,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		890EC4FA230742EF0069C215 /* NumberPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberPad.xib; sourceTree = "<group>"; };
+		890EC4FD230743A60069C215 /* NumberPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPad.swift; sourceTree = "<group>"; };
+		890EC4FF230750600069C215 /* NumberButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberButton.xib; sourceTree = "<group>"; };
+		890EC502230750EC0069C215 /* NumberButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberButton.swift; sourceTree = "<group>"; };
 		895B542922FDF8E700CFF65E /* Maths Genius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maths Genius.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		895B542C22FDF8E700CFF65E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		895B542E22FDF8E700CFF65E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +89,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		890EC4FC230743920069C215 /* Number Pad */ = {
+			isa = PBXGroup;
+			children = (
+				890EC4FA230742EF0069C215 /* NumberPad.xib */,
+				890EC4FD230743A60069C215 /* NumberPad.swift */,
+			);
+			path = "Number Pad";
+			sourceTree = "<group>";
+		};
+		890EC501230750C30069C215 /* NumberButton */ = {
+			isa = PBXGroup;
+			children = (
+				890EC4FF230750600069C215 /* NumberButton.xib */,
+				890EC502230750EC0069C215 /* NumberButton.swift */,
+			);
+			path = NumberButton;
+			sourceTree = "<group>";
+		};
 		895B542022FDF8E700CFF65E = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +166,8 @@
 		895B544322FDF9AC00CFF65E /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				890EC501230750C30069C215 /* NumberButton */,
+				890EC4FC230743920069C215 /* Number Pad */,
 				895B547822FE022500CFF65E /* IntroductionTable.swift */,
 				895B547A22FE02BB00CFF65E /* Table View Cell */,
 			);
@@ -520,7 +548,9 @@
 				895B549022FE222800CFF65E /* NumberSelection.storyboard in Resources */,
 				895B543A22FDF8E900CFF65E /* LaunchScreen.storyboard in Resources */,
 				895B543722FDF8E900CFF65E /* Assets.xcassets in Resources */,
+				890EC4FB230742EF0069C215 /* NumberPad.xib in Resources */,
 				895B548622FE07DB00CFF65E /* IntroductionCell.xib in Resources */,
+				890EC500230750600069C215 /* NumberButton.xib in Resources */,
 				895B543222FDF8E700CFF65E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -542,6 +572,7 @@
 				895B547922FE022500CFF65E /* IntroductionTable.swift in Sources */,
 				895B549222FE223600CFF65E /* NumberSelectionViewController.swift in Sources */,
 				895B548C22FE198200CFF65E /* UIView+extensions.swift in Sources */,
+				890EC4FE230743A60069C215 /* NumberPad.swift in Sources */,
 				895B549C2300B21400CFF65E /* NumberSelectionModel.swift in Sources */,
 				895B549E2300B22600CFF65E /* NumberSelectionViewModel.swift in Sources */,
 				895B542D22FDF8E700CFF65E /* AppDelegate.swift in Sources */,
@@ -549,6 +580,7 @@
 				895B547522FDFFBA00CFF65E /* NumberSelectionFactory.swift in Sources */,
 				895B549422FE22CC00CFF65E /* AdditionsFlowController.swift in Sources */,
 				895B548522FE07DB00CFF65E /* IntroductionCell.swift in Sources */,
+				890EC503230750EC0069C215 /* NumberButton.swift in Sources */,
 				895B549622FE22F000CFF65E /* AdditionsFactory.swift in Sources */,
 				895B546B22FDFE5300CFF65E /* MainFlowController.swift in Sources */,
 				895B546922FDFC1400CFF65E /* UIColor+extensions.swift in Sources */,

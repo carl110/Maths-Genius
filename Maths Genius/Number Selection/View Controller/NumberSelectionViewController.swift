@@ -111,7 +111,7 @@ class NumberSelectionViewController: UIViewController {
     }
     
     @IBAction func continueButton(_ sender: Any) {
-//        numberSelectionFlowController.showAdditions()
+        numberSelectionFlowController.showAdditions(firstNumber: firstNumber, secondNumber: secondNumber)
         
         print ("the number is \(firstNumber).....\(secondNumber)")
     }

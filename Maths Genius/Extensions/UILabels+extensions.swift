@@ -24,4 +24,11 @@ extension UILabel {
         self.numberOfLines = 0
         self.font.withSize(10)
     }
+    
+    func numberLabelSetup() {
+        self.backgroundColor = UIColor.Reds.gryffindorRed
+        self.textColor = UIColor.Yellows.gryffindorYellow
+        self.textAlignment = .center
+        self.roundCorners(for: .allCorners, cornerRadius: 8)
+    }
 }
