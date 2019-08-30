@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Av-mH-O6Y">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Help Screen View Controller-->
+        <scene sceneID="8zg-Mw-m48">
+            <objects>
+                <viewController id="4Av-mH-O6Y" customClass="HelpScreenViewController" customModule="Maths_Genius" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NZZ-a8-0Yp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="889-L8-C93" customClass="CascadingTable" customModule="Maths_Genius" customModuleProvider="target">
+                                <rect key="frame" x="5" y="25" width="365" height="637"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" red="0.59005688469999995" green="0.97211796049999999" blue="0.35384048870000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pNU-VZ-Plt" firstAttribute="trailing" secondItem="889-L8-C93" secondAttribute="trailing" constant="5" id="7Fl-WO-5ff"/>
+                            <constraint firstItem="889-L8-C93" firstAttribute="leading" secondItem="pNU-VZ-Plt" secondAttribute="leading" constant="5" id="PKk-5y-Ewy"/>
+                            <constraint firstItem="889-L8-C93" firstAttribute="top" secondItem="pNU-VZ-Plt" secondAttribute="top" constant="5" id="WQG-2T-S8b"/>
+                            <constraint firstItem="pNU-VZ-Plt" firstAttribute="bottom" secondItem="889-L8-C93" secondAttribute="bottom" constant="5" id="skk-kW-DWd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pNU-VZ-Plt"/>
+                    </view>
+                    <connections>
+                        <outlet property="cascadingTable" destination="889-L8-C93" id="KUe-1W-a4H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PjL-7h-Ag2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="147"/>
+        </scene>
+    </scenes>
+</document>

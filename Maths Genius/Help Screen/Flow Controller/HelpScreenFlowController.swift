@@ -1,16 +1,15 @@
 //
-//  AdditionsFlowController.swift
+//  HelpScreenFlowController.swift
 //  Maths Genius
 //
-//  Created by Carl Wainwright on 09/08/2019.
+//  Created by Carl Wainwright on 30/08/2019.
 //  Copyright © 2019 Carl Wainwright. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class AdditionsFlowController {
-    
+class HelpScreenFlowController {
     let navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
@@ -19,9 +18,5 @@ class AdditionsFlowController {
     
     func showMain() {
         MainFactory.PushIn(navigationController: navigationController)
-    }
-    
-    func showHelpScreen(firstNumber: Int, secondNumber: Int) {
-        HelpScreenFactory.PushIn(navigationController: navigationController, firstNumber: firstNumber, secondNumber: secondNumber)
     }
 }

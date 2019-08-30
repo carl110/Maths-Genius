@@ -19,7 +19,9 @@ class AdditionsViewController: UIViewController {
     @IBOutlet weak var firstNumberLabel: UILabel!
     @IBOutlet weak var secondNumberLabel: UILabel!
     @IBOutlet weak var operation: UILabel!
+    @IBOutlet weak var answerInput: UITextField!
     
+    @IBOutlet weak var submitButton: UIButton!
     func assignDependancies(additionsFlowController: AdditionsFlowController, additionsViewModel: AdditionsViewModel){
         self.additionsFlowController = additionsFlowController
         self.additionsViewModel = additionsViewModel
@@ -44,15 +46,18 @@ class AdditionsViewController: UIViewController {
     
     func labelSetup() {
         //set up numbers and operation labels
-//        operation.adjustsFontSizeToFitWidth = true
-//        firstNumberLabel.adjustsFontSizeToFitWidth = true
-//        secondNumberLabel.adjustsFontForContentSizeCategory = true
+
         operation.text = "+"
         operation.numberLabelSetup()
         firstNumberLabel.numberLabelSetup()
+
         firstNumberLabel.text = String(firstNumber)
         secondNumberLabel.numberLabelSetup()
         secondNumberLabel.text = String(secondNumber)
+        
+        answerInput.numberTextSetUp()
+        submitButton.setTitle("Submit my answer", for: .normal)
+        submitButton.titleButtonSetup()
     }
 
 
@@ -65,5 +70,28 @@ class AdditionsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
 
+
+    @IBAction func answerInput(_ sender: Any) {
+    }
+    @IBAction func submitButton(_ sender: Any) {
+        if integer(from: answerInput) == firstNumber + secondNumber {
+            print ("Correct andswer")
+        } else {
+            print ("Wrong answer")
+            alertBoxWithAction(title: "Incorrect Answer",
+                               message: "Unfortunatly the answer is incorrect",
+                               options: "Let me try the answer again", "Help me", "Show me how") { (option) in
+                                switch(option) {
+                                case 1:
+                                    self.additionsFlowController.showHelpScreen(firstNumber: self.firstNumber, secondNumber: self.secondNumber)
+                                case 2:
+                                    print ("Show me")
+                                default:
+                                    break
+                                }
+            }
+        }
+    }
 }

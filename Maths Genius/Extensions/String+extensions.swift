@@ -42,4 +42,5 @@ extension String {
         
         return ([first] + rest).joined(separator: "")
     }
+
 }

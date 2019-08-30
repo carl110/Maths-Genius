@@ -7,10 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		890DAA712319364F005737A5 /* UIViewController+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DAA702319364F005737A5 /* UIViewController+extensions.swift */; };
+		890DAA7A23193A58005737A5 /* HelpScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890DAA7923193A58005737A5 /* HelpScreen.storyboard */; };
+		890DAA7D23193A84005737A5 /* HelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DAA7B23193A84005737A5 /* HelpScreen.swift */; };
+		890DAA8023193CFF005737A5 /* CascadingTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DAA7F23193CFF005737A5 /* CascadingTable.swift */; };
+		890DAA8323193DE7005737A5 /* CascadingTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DAA8223193DE7005737A5 /* CascadingTableHeader.swift */; };
+		890DAA8523193DF2005737A5 /* CascadingTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890DAA8423193DF2005737A5 /* CascadingTableHeader.xib */; };
+		890DAA872319419C005737A5 /* UITableView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DAA862319419C005737A5 /* UITableView+extensions.swift */; };
+		890DAA8923194238005737A5 /* HelpScreenFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DAA8823194238005737A5 /* HelpScreenFlowController.swift */; };
+		890DAA8B231942D3005737A5 /* HelpScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DAA8A231942D3005737A5 /* HelpScreenViewModel.swift */; };
+		890DAA8D2319439B005737A5 /* HelpScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DAA8C2319439B005737A5 /* HelpScreenFactory.swift */; };
 		890EC4FB230742EF0069C215 /* NumberPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890EC4FA230742EF0069C215 /* NumberPad.xib */; };
 		890EC4FE230743A60069C215 /* NumberPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890EC4FD230743A60069C215 /* NumberPad.swift */; };
-		890EC500230750600069C215 /* NumberButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890EC4FF230750600069C215 /* NumberButton.xib */; };
-		890EC503230750EC0069C215 /* NumberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890EC502230750EC0069C215 /* NumberButton.swift */; };
+		890EC509230759470069C215 /* NumberButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890EC508230759470069C215 /* NumberButton.xib */; };
+		890EC50D230759B60069C215 /* NumberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890EC50C230759B60069C215 /* NumberButton.swift */; };
+		890EC50F231816EE0069C215 /* UITextFields+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890EC50E231816EE0069C215 /* UITextFields+extensions.swift */; };
 		895B542D22FDF8E700CFF65E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B542C22FDF8E700CFF65E /* AppDelegate.swift */; };
 		895B542F22FDF8E700CFF65E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B542E22FDF8E700CFF65E /* ViewController.swift */; };
 		895B543222FDF8E700CFF65E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895B543022FDF8E700CFF65E /* Main.storyboard */; };
@@ -42,10 +53,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		890DAA702319364F005737A5 /* UIViewController+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extensions.swift"; sourceTree = "<group>"; };
+		890DAA7923193A58005737A5 /* HelpScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HelpScreen.storyboard; sourceTree = "<group>"; };
+		890DAA7B23193A84005737A5 /* HelpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpScreen.swift; sourceTree = "<group>"; };
+		890DAA7F23193CFF005737A5 /* CascadingTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CascadingTable.swift; sourceTree = "<group>"; };
+		890DAA8223193DE7005737A5 /* CascadingTableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CascadingTableHeader.swift; sourceTree = "<group>"; };
+		890DAA8423193DF2005737A5 /* CascadingTableHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CascadingTableHeader.xib; sourceTree = "<group>"; };
+		890DAA862319419C005737A5 /* UITableView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+extensions.swift"; sourceTree = "<group>"; };
+		890DAA8823194238005737A5 /* HelpScreenFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpScreenFlowController.swift; sourceTree = "<group>"; };
+		890DAA8A231942D3005737A5 /* HelpScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpScreenViewModel.swift; sourceTree = "<group>"; };
+		890DAA8C2319439B005737A5 /* HelpScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpScreenFactory.swift; sourceTree = "<group>"; };
 		890EC4FA230742EF0069C215 /* NumberPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberPad.xib; sourceTree = "<group>"; };
-		890EC4FD230743A60069C215 /* NumberPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPad.swift; sourceTree = "<group>"; };
-		890EC4FF230750600069C215 /* NumberButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberButton.xib; sourceTree = "<group>"; };
-		890EC502230750EC0069C215 /* NumberButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberButton.swift; sourceTree = "<group>"; };
+		890EC4FD230743A60069C215 /* NumberPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NumberPad.swift; path = ../NumberPad.swift; sourceTree = "<group>"; };
+		890EC508230759470069C215 /* NumberButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberButton.xib; sourceTree = "<group>"; };
+		890EC50C230759B60069C215 /* NumberButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberButton.swift; sourceTree = "<group>"; };
+		890EC50E231816EE0069C215 /* UITextFields+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextFields+extensions.swift"; sourceTree = "<group>"; };
 		895B542922FDF8E700CFF65E /* Maths Genius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maths Genius.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		895B542C22FDF8E700CFF65E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		895B542E22FDF8E700CFF65E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,11 +111,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		890DAA72231939D5005737A5 /* Help Screen */ = {
+			isa = PBXGroup;
+			children = (
+				890DAA73231939F4005737A5 /* Model */,
+				890DAA7723193A2C005737A5 /* View Model */,
+				890DAA7623193A23005737A5 /* View Controller */,
+				890DAA7523193A17005737A5 /* Flow Controller */,
+				890DAA7423193A05005737A5 /* Factory */,
+			);
+			path = "Help Screen";
+			sourceTree = "<group>";
+		};
+		890DAA73231939F4005737A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		890DAA7423193A05005737A5 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				890DAA8C2319439B005737A5 /* HelpScreenFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		890DAA7523193A17005737A5 /* Flow Controller */ = {
+			isa = PBXGroup;
+			children = (
+				890DAA8823194238005737A5 /* HelpScreenFlowController.swift */,
+			);
+			path = "Flow Controller";
+			sourceTree = "<group>";
+		};
+		890DAA7623193A23005737A5 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				890DAA7B23193A84005737A5 /* HelpScreen.swift */,
+				890DAA7923193A58005737A5 /* HelpScreen.storyboard */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		890DAA7723193A2C005737A5 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				890DAA8A231942D3005737A5 /* HelpScreenViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		890DAA8123193D61005737A5 /* CascadingTableHeader */ = {
+			isa = PBXGroup;
+			children = (
+				890DAA8223193DE7005737A5 /* CascadingTableHeader.swift */,
+				890DAA8423193DF2005737A5 /* CascadingTableHeader.xib */,
+			);
+			path = CascadingTableHeader;
+			sourceTree = "<group>";
+		};
 		890EC4FC230743920069C215 /* Number Pad */ = {
 			isa = PBXGroup;
 			children = (
-				890EC4FA230742EF0069C215 /* NumberPad.xib */,
 				890EC4FD230743A60069C215 /* NumberPad.swift */,
+				890EC4FA230742EF0069C215 /* NumberPad.xib */,
 			);
 			path = "Number Pad";
 			sourceTree = "<group>";
@@ -101,8 +184,8 @@
 		890EC501230750C30069C215 /* NumberButton */ = {
 			isa = PBXGroup;
 			children = (
-				890EC4FF230750600069C215 /* NumberButton.xib */,
-				890EC502230750EC0069C215 /* NumberButton.swift */,
+				890EC508230759470069C215 /* NumberButton.xib */,
+				890EC50C230759B60069C215 /* NumberButton.swift */,
 			);
 			path = NumberButton;
 			sourceTree = "<group>";
@@ -132,6 +215,7 @@
 				895B544822FDF9F200CFF65E /* Subtraction */,
 				895B544722FDF9E700CFF65E /* Multiplication */,
 				895B544622FDF9D900CFF65E /* Division */,
+				890DAA72231939D5005737A5 /* Help Screen */,
 				895B544422FDF9B700CFF65E /* Extensions */,
 				895B544322FDF9AC00CFF65E /* Custom Views */,
 				895B544222FDF99F00CFF65E /* Core Data */,
@@ -166,10 +250,12 @@
 		895B544322FDF9AC00CFF65E /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				890DAA8123193D61005737A5 /* CascadingTableHeader */,
 				890EC501230750C30069C215 /* NumberButton */,
 				890EC4FC230743920069C215 /* Number Pad */,
 				895B547822FE022500CFF65E /* IntroductionTable.swift */,
 				895B547A22FE02BB00CFF65E /* Table View Cell */,
+				890DAA7F23193CFF005737A5 /* CascadingTable.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -182,6 +268,9 @@
 				895B548B22FE198200CFF65E /* UIView+extensions.swift */,
 				895B54992300AAE200CFF65E /* String+extensions.swift */,
 				895B54A32300BCB100CFF65E /* UILabels+extensions.swift */,
+				890EC50E231816EE0069C215 /* UITextFields+extensions.swift */,
+				890DAA702319364F005737A5 /* UIViewController+extensions.swift */,
+				890DAA862319419C005737A5 /* UITableView+extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -548,10 +637,12 @@
 				895B549022FE222800CFF65E /* NumberSelection.storyboard in Resources */,
 				895B543A22FDF8E900CFF65E /* LaunchScreen.storyboard in Resources */,
 				895B543722FDF8E900CFF65E /* Assets.xcassets in Resources */,
+				890DAA7A23193A58005737A5 /* HelpScreen.storyboard in Resources */,
 				890EC4FB230742EF0069C215 /* NumberPad.xib in Resources */,
 				895B548622FE07DB00CFF65E /* IntroductionCell.xib in Resources */,
-				890EC500230750600069C215 /* NumberButton.xib in Resources */,
+				890EC509230759470069C215 /* NumberButton.xib in Resources */,
 				895B543222FDF8E700CFF65E /* Main.storyboard in Resources */,
+				890DAA8523193DF2005737A5 /* CascadingTableHeader.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,24 +659,33 @@
 				895B549822FE236600CFF65E /* AdditionsViewModel.swift in Sources */,
 				895B549A2300AAE300CFF65E /* String+extensions.swift in Sources */,
 				895B546D22FDFE6A00CFF65E /* MainFactory.swift in Sources */,
+				890DAA712319364F005737A5 /* UIViewController+extensions.swift in Sources */,
 				895B543522FDF8E700CFF65E /* Maths_Genius.xcdatamodeld in Sources */,
 				895B547922FE022500CFF65E /* IntroductionTable.swift in Sources */,
+				890DAA8B231942D3005737A5 /* HelpScreenViewModel.swift in Sources */,
 				895B549222FE223600CFF65E /* NumberSelectionViewController.swift in Sources */,
 				895B548C22FE198200CFF65E /* UIView+extensions.swift in Sources */,
+				890DAA8D2319439B005737A5 /* HelpScreenFactory.swift in Sources */,
+				890DAA8323193DE7005737A5 /* CascadingTableHeader.swift in Sources */,
 				890EC4FE230743A60069C215 /* NumberPad.swift in Sources */,
 				895B549C2300B21400CFF65E /* NumberSelectionModel.swift in Sources */,
 				895B549E2300B22600CFF65E /* NumberSelectionViewModel.swift in Sources */,
+				890EC50F231816EE0069C215 /* UITextFields+extensions.swift in Sources */,
 				895B542D22FDF8E700CFF65E /* AppDelegate.swift in Sources */,
 				895B548A22FE191800CFF65E /* UIButton+extensions.swift in Sources */,
 				895B547522FDFFBA00CFF65E /* NumberSelectionFactory.swift in Sources */,
 				895B549422FE22CC00CFF65E /* AdditionsFlowController.swift in Sources */,
 				895B548522FE07DB00CFF65E /* IntroductionCell.swift in Sources */,
-				890EC503230750EC0069C215 /* NumberButton.swift in Sources */,
+				890DAA8023193CFF005737A5 /* CascadingTable.swift in Sources */,
+				890EC50D230759B60069C215 /* NumberButton.swift in Sources */,
 				895B549622FE22F000CFF65E /* AdditionsFactory.swift in Sources */,
 				895B546B22FDFE5300CFF65E /* MainFlowController.swift in Sources */,
+				890DAA872319419C005737A5 /* UITableView+extensions.swift in Sources */,
 				895B546922FDFC1400CFF65E /* UIColor+extensions.swift in Sources */,
+				890DAA8923194238005737A5 /* HelpScreenFlowController.swift in Sources */,
 				895B54A42300BCB100CFF65E /* UILabels+extensions.swift in Sources */,
 				895B547322FDFF9200CFF65E /* NumberSelectionFlowController.swift in Sources */,
+				890DAA7D23193A84005737A5 /* HelpScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

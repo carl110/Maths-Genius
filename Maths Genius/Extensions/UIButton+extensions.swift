@@ -31,7 +31,8 @@ extension UIButton {
     func titleButtonSetup() {
         self.backgroundColor = UIColor.Reds.gryffindorRed
         self.setTitleColor(UIColor.Yellows.gryffindorYellow, for: .normal)
-        self.titleLabel?.font = UIFont.boldSystemFont(ofSize: 30)
+        self.titleLabel?.font = UIFont.boldSystemFont(ofSize: self.frame.height)
+        self.titleLabel?.adjustsFontSizeToFitWidth = true
         self.centerTextHorizontally(spacing: 8)
         self.roundCorners(for: .allCorners, cornerRadius: 8)
     }

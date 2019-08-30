@@ -28,7 +28,16 @@ extension UILabel {
     func numberLabelSetup() {
         self.backgroundColor = UIColor.Reds.gryffindorRed
         self.textColor = UIColor.Yellows.gryffindorYellow
-        self.textAlignment = .center
-        self.roundCorners(for: .allCorners, cornerRadius: 8)
+        self.layer.cornerRadius = 8
+        self.layer.masksToBounds = true
+        self.setSizeFont(sizeFont: self.frame.height)
+//        self.textAlignment = .center
+//        self.roundCorners(for: .allCorners, cornerRadius: 8)
+//        self.roundCorners(for:[.topLeft, .topRight], cornerRadius: 8)
+    }
+    
+    func setSizeFont (sizeFont: CGFloat) {
+        self.font =  UIFont(name: self.font.fontName, size: sizeFont)!
+        self.sizeToFit()
     }
 }
