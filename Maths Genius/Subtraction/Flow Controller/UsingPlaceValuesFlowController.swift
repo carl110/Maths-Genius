@@ -1,15 +1,15 @@
 //
-//  HelpScreenFlowController.swift
+//  UsingPlaceValuesFlowController.swift
 //  Maths Genius
 //
-//  Created by Carl Wainwright on 30/08/2019.
+//  Created by Carl Wainwright on 05/09/2019.
 //  Copyright © 2019 Carl Wainwright. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class HelpScreenFlowController {
+class UsingPlaceValuesFlowController {
     let navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
@@ -20,7 +20,4 @@ class HelpScreenFlowController {
         MainFactory.PushIn(navigationController: navigationController)
     }
     
-    func showUsingPlaceValues(firstNumber: Int, secondNumber: Int) {
-        UsingPlaceValuesFactory.PushIn(navigationController: navigationController, firstNumber: firstNumber, secondNumber: secondNumber)
-    }
 }

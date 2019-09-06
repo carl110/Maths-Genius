@@ -8,15 +8,18 @@
 
 import UIKit
 
-class HelpScreenViewController: UIViewController {
+class HelpScreenViewController: UIViewController, HelpSectionSelectedDelegate {
     
     fileprivate var helpScreenFlowController: HelpScreenFlowController!
     fileprivate var helpScreenViewModel: HelpScreenViewModel!
+    fileprivate var helpScreenModel = HelpScreenModel()
     
     var firstNumber = Int()
     var secondNumber = Int ()
+
+    @IBOutlet weak var customTable: CustomTable!
     
-    @IBOutlet weak var cascadingTable: CascadingTable!
+
     func assignDependancies(helpScreenFlowController: HelpScreenFlowController, helpScreenViewModel: HelpScreenViewModel) {
     self.helpScreenViewModel = helpScreenViewModel
     self.helpScreenFlowController = helpScreenFlowController
@@ -24,17 +27,31 @@ class HelpScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableSetUp()
+        customTable.cellDelegate = self
 
         firstNumber = helpScreenViewModel.firstNumber
         secondNumber = helpScreenViewModel.secondNumber
+        
     }
     
     func tableSetUp() {
-        cascadingTable.tableSectionName.append("Table 1")
-        cascadingTable.tableCellData.append([1,2,3,4,5])
-        
+        customTable.customCellsData = ["cell1", "cell2", "qsfeewqf"]
     }
 
+    func cellWasSelected(id: Int) {
+        
+        //switch using cell idex to goto next screen
+        switch id {
+        case 0:
+            helpScreenFlowController.showUsingPlaceValues(firstNumber: firstNumber, secondNumber: secondNumber)
+        case 1:
+            helpScreenFlowController.showMain()
+        default:
+            break
+        }
+
+    }
 
     /*
     // MARK: - Navigation

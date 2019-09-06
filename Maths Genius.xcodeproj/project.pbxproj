@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8905824223213ECC004E26BA /* HelpScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905824123213ECC004E26BA /* HelpScreenModel.swift */; };
+		8905824B232147FE004E26BA /* UsingPlaceValuesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905824A232147FE004E26BA /* UsingPlaceValuesFactory.swift */; };
+		8905824E23214866004E26BA /* UsingPlaceValuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905824C23214866004E26BA /* UsingPlaceValuesViewController.swift */; };
+		890582512321488E004E26BA /* UsingPlaceValues.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890582502321488E004E26BA /* UsingPlaceValues.storyboard */; };
+		890582532321493C004E26BA /* UsingPlaceValuesFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890582522321493C004E26BA /* UsingPlaceValuesFlowController.swift */; };
+		89058255232149B3004E26BA /* UsingPlaceValuesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89058254232149B3004E26BA /* UsingPlaceValuesViewModel.swift */; };
+		8905825923225A3B004E26BA /* CustomTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905825823225A3B004E26BA /* CustomTable.swift */; };
+		8905825D23225B42004E26BA /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905825B23225B42004E26BA /* CustomTableCell.swift */; };
+		8905825E23225B42004E26BA /* CustomTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8905825C23225B42004E26BA /* CustomTableCell.xib */; };
 		890DAA712319364F005737A5 /* UIViewController+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DAA702319364F005737A5 /* UIViewController+extensions.swift */; };
 		890DAA7A23193A58005737A5 /* HelpScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890DAA7923193A58005737A5 /* HelpScreen.storyboard */; };
 		890DAA7D23193A84005737A5 /* HelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DAA7B23193A84005737A5 /* HelpScreen.swift */; };
@@ -53,6 +62,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8905824123213ECC004E26BA /* HelpScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpScreenModel.swift; sourceTree = "<group>"; };
+		8905824A232147FE004E26BA /* UsingPlaceValuesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingPlaceValuesFactory.swift; sourceTree = "<group>"; };
+		8905824C23214866004E26BA /* UsingPlaceValuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingPlaceValuesViewController.swift; sourceTree = "<group>"; };
+		890582502321488E004E26BA /* UsingPlaceValues.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UsingPlaceValues.storyboard; sourceTree = "<group>"; };
+		890582522321493C004E26BA /* UsingPlaceValuesFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingPlaceValuesFlowController.swift; sourceTree = "<group>"; };
+		89058254232149B3004E26BA /* UsingPlaceValuesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingPlaceValuesViewModel.swift; sourceTree = "<group>"; };
+		8905825823225A3B004E26BA /* CustomTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTable.swift; sourceTree = "<group>"; };
+		8905825B23225B42004E26BA /* CustomTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableCell.swift; sourceTree = "<group>"; };
+		8905825C23225B42004E26BA /* CustomTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableCell.xib; sourceTree = "<group>"; };
 		890DAA702319364F005737A5 /* UIViewController+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extensions.swift"; sourceTree = "<group>"; };
 		890DAA7923193A58005737A5 /* HelpScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HelpScreen.storyboard; sourceTree = "<group>"; };
 		890DAA7B23193A84005737A5 /* HelpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpScreen.swift; sourceTree = "<group>"; };
@@ -111,6 +129,91 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8905824323214707004E26BA /* Additions Help */ = {
+			isa = PBXGroup;
+			children = (
+				890582442321471F004E26BA /* Using Place Values */,
+			);
+			path = "Additions Help";
+			sourceTree = "<group>";
+		};
+		890582442321471F004E26BA /* Using Place Values */ = {
+			isa = PBXGroup;
+			children = (
+				89058246232147A8004E26BA /* Factory */,
+				89058248232147A8004E26BA /* Flow Controller */,
+				89058245232147A8004E26BA /* Model */,
+				89058249232147A8004E26BA /* View Controller */,
+				89058247232147A8004E26BA /* View Model */,
+			);
+			path = "Using Place Values";
+			sourceTree = "<group>";
+		};
+		89058245232147A8004E26BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = "Maths Genius/Subtraction/Model";
+			sourceTree = SOURCE_ROOT;
+		};
+		89058246232147A8004E26BA /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				8905824A232147FE004E26BA /* UsingPlaceValuesFactory.swift */,
+			);
+			name = Factory;
+			path = "Maths Genius/Subtraction/Factory";
+			sourceTree = SOURCE_ROOT;
+		};
+		89058247232147A8004E26BA /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				89058254232149B3004E26BA /* UsingPlaceValuesViewModel.swift */,
+			);
+			name = "View Model";
+			path = "Maths Genius/Subtraction/View Model";
+			sourceTree = SOURCE_ROOT;
+		};
+		89058248232147A8004E26BA /* Flow Controller */ = {
+			isa = PBXGroup;
+			children = (
+				890582522321493C004E26BA /* UsingPlaceValuesFlowController.swift */,
+			);
+			name = "Flow Controller";
+			path = "Maths Genius/Subtraction/Flow Controller";
+			sourceTree = SOURCE_ROOT;
+		};
+		89058249232147A8004E26BA /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8905824C23214866004E26BA /* UsingPlaceValuesViewController.swift */,
+				890582502321488E004E26BA /* UsingPlaceValues.storyboard */,
+			);
+			name = "View Controller";
+			path = "Maths Genius/Subtraction/View Controller";
+			sourceTree = SOURCE_ROOT;
+		};
+		8905825A23225B18004E26BA /* Custom Table Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8905825B23225B42004E26BA /* CustomTableCell.swift */,
+				8905825C23225B42004E26BA /* CustomTableCell.xib */,
+			);
+			path = "Custom Table Cell";
+			sourceTree = "<group>";
+		};
+		8905825F23227C9E004E26BA /* Unused */ = {
+			isa = PBXGroup;
+			children = (
+				890DAA7F23193CFF005737A5 /* CascadingTable.swift */,
+				890EC501230750C30069C215 /* NumberButton */,
+				890EC4FC230743920069C215 /* Number Pad */,
+				890DAA8123193D61005737A5 /* CascadingTableHeader */,
+			);
+			path = Unused;
+			sourceTree = "<group>";
+		};
 		890DAA72231939D5005737A5 /* Help Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +229,7 @@
 		890DAA73231939F4005737A5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8905824123213ECC004E26BA /* HelpScreenModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -216,9 +320,11 @@
 				895B544722FDF9E700CFF65E /* Multiplication */,
 				895B544622FDF9D900CFF65E /* Division */,
 				890DAA72231939D5005737A5 /* Help Screen */,
+				8905824323214707004E26BA /* Additions Help */,
 				895B544422FDF9B700CFF65E /* Extensions */,
 				895B544322FDF9AC00CFF65E /* Custom Views */,
 				895B544222FDF99F00CFF65E /* Core Data */,
+				8905825F23227C9E004E26BA /* Unused */,
 				895B542C22FDF8E700CFF65E /* AppDelegate.swift */,
 				895B543622FDF8E900CFF65E /* Assets.xcassets */,
 				895B543822FDF8E900CFF65E /* LaunchScreen.storyboard */,
@@ -250,12 +356,10 @@
 		895B544322FDF9AC00CFF65E /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
-				890DAA8123193D61005737A5 /* CascadingTableHeader */,
-				890EC501230750C30069C215 /* NumberButton */,
-				890EC4FC230743920069C215 /* Number Pad */,
+				8905825A23225B18004E26BA /* Custom Table Cell */,
 				895B547822FE022500CFF65E /* IntroductionTable.swift */,
 				895B547A22FE02BB00CFF65E /* Table View Cell */,
-				890DAA7F23193CFF005737A5 /* CascadingTable.swift */,
+				8905825823225A3B004E26BA /* CustomTable.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -636,8 +740,10 @@
 				895B54A62300C06800CFF65E /* Additions.storyboard in Resources */,
 				895B549022FE222800CFF65E /* NumberSelection.storyboard in Resources */,
 				895B543A22FDF8E900CFF65E /* LaunchScreen.storyboard in Resources */,
+				8905825E23225B42004E26BA /* CustomTableCell.xib in Resources */,
 				895B543722FDF8E900CFF65E /* Assets.xcassets in Resources */,
 				890DAA7A23193A58005737A5 /* HelpScreen.storyboard in Resources */,
+				890582512321488E004E26BA /* UsingPlaceValues.storyboard in Resources */,
 				890EC4FB230742EF0069C215 /* NumberPad.xib in Resources */,
 				895B548622FE07DB00CFF65E /* IntroductionCell.xib in Resources */,
 				890EC509230759470069C215 /* NumberButton.xib in Resources */,
@@ -655,12 +761,17 @@
 			files = (
 				895B542F22FDF8E700CFF65E /* ViewController.swift in Sources */,
 				895B54A12300B41C00CFF65E /* AdditionsViewController.swift in Sources */,
+				890582532321493C004E26BA /* UsingPlaceValuesFlowController.swift in Sources */,
 				895B548822FE0A0400CFF65E /* MainModel.swift in Sources */,
 				895B549822FE236600CFF65E /* AdditionsViewModel.swift in Sources */,
+				8905825923225A3B004E26BA /* CustomTable.swift in Sources */,
 				895B549A2300AAE300CFF65E /* String+extensions.swift in Sources */,
 				895B546D22FDFE6A00CFF65E /* MainFactory.swift in Sources */,
 				890DAA712319364F005737A5 /* UIViewController+extensions.swift in Sources */,
+				8905824B232147FE004E26BA /* UsingPlaceValuesFactory.swift in Sources */,
 				895B543522FDF8E700CFF65E /* Maths_Genius.xcdatamodeld in Sources */,
+				8905825D23225B42004E26BA /* CustomTableCell.swift in Sources */,
+				8905824E23214866004E26BA /* UsingPlaceValuesViewController.swift in Sources */,
 				895B547922FE022500CFF65E /* IntroductionTable.swift in Sources */,
 				890DAA8B231942D3005737A5 /* HelpScreenViewModel.swift in Sources */,
 				895B549222FE223600CFF65E /* NumberSelectionViewController.swift in Sources */,
@@ -669,6 +780,7 @@
 				890DAA8323193DE7005737A5 /* CascadingTableHeader.swift in Sources */,
 				890EC4FE230743A60069C215 /* NumberPad.swift in Sources */,
 				895B549C2300B21400CFF65E /* NumberSelectionModel.swift in Sources */,
+				8905824223213ECC004E26BA /* HelpScreenModel.swift in Sources */,
 				895B549E2300B22600CFF65E /* NumberSelectionViewModel.swift in Sources */,
 				890EC50F231816EE0069C215 /* UITextFields+extensions.swift in Sources */,
 				895B542D22FDF8E700CFF65E /* AppDelegate.swift in Sources */,
@@ -680,6 +792,7 @@
 				890EC50D230759B60069C215 /* NumberButton.swift in Sources */,
 				895B549622FE22F000CFF65E /* AdditionsFactory.swift in Sources */,
 				895B546B22FDFE5300CFF65E /* MainFlowController.swift in Sources */,
+				89058255232149B3004E26BA /* UsingPlaceValuesViewModel.swift in Sources */,
 				890DAA872319419C005737A5 /* UITableView+extensions.swift in Sources */,
 				895B546922FDFC1400CFF65E /* UIColor+extensions.swift in Sources */,
 				890DAA8923194238005737A5 /* HelpScreenFlowController.swift in Sources */,

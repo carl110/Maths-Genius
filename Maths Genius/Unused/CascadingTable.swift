@@ -29,12 +29,12 @@ class CascadingTable: UITableView, UITableViewDelegate, UITableViewDataSource {
         
     }
     
-    var taskCompletetion: [Any] = []
     var tableCellData: [Any] = []
     var tableSectionName: [Any] = []
     
     private var sectionTouched: Int?
-    //Sets section -1 so all table is colapsed
+    
+    //Sets which section to show open on first view (set -1 for all closed)
     private var expandedSectionHeaderNumber: Int = -1
     
     let headerSectionTag: Int = 1
@@ -73,21 +73,23 @@ class CascadingTable: UITableView, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HelpCell", for: indexPath) as UITableViewCell
         let section = self.tableCellData[indexPath.section] as! NSArray
-        let completeTask = self.taskCompletetion[indexPath.section] as! NSArray
+        
+        
         cell.textLabel?.textColor = UIColor.black
         cell.textLabel?.text = section[indexPath.row] as? String
         cell.backgroundColor = UIColor.Greens.standardGreen
-        if completeTask[indexPath.row] as! Bool == false {
-            cell.backgroundColor = UIColor.Reds.standardRed
-        }
         
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print ("clicked cell \(indexPath)")
+    }
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+
     }
     
     @objc func sectionHeaderWasTouched(_ sender: UITapGestureRecognizer) {
