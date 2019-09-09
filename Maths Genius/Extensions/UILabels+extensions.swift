@@ -15,13 +15,14 @@ extension UILabel {
         self.textColor = UIColor.Shades.standardWhite
         self.textAlignment = .center
         self.numberOfLines = 0
-        self.font.withSize(16)
+        self.font.withSize(40)
     }
     
     func subTitleLabelSetUp() {
         self.textColor = UIColor.Shades.standardWhite
         self.textAlignment = .left
         self.numberOfLines = 0
+        self.lineBreakMode = .byWordWrapping
         self.font.withSize(10)
     }
     

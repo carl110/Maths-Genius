@@ -16,6 +16,7 @@
 		8905825923225A3B004E26BA /* CustomTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905825823225A3B004E26BA /* CustomTable.swift */; };
 		8905825D23225B42004E26BA /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905825B23225B42004E26BA /* CustomTableCell.swift */; };
 		8905825E23225B42004E26BA /* CustomTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8905825C23225B42004E26BA /* CustomTableCell.xib */; };
+		89058261232285EF004E26BA /* UsingPlaceValuesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89058260232285EF004E26BA /* UsingPlaceValuesModel.swift */; };
 		890DAA712319364F005737A5 /* UIViewController+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DAA702319364F005737A5 /* UIViewController+extensions.swift */; };
 		890DAA7A23193A58005737A5 /* HelpScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890DAA7923193A58005737A5 /* HelpScreen.storyboard */; };
 		890DAA7D23193A84005737A5 /* HelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DAA7B23193A84005737A5 /* HelpScreen.swift */; };
@@ -27,7 +28,6 @@
 		890DAA8B231942D3005737A5 /* HelpScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DAA8A231942D3005737A5 /* HelpScreenViewModel.swift */; };
 		890DAA8D2319439B005737A5 /* HelpScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DAA8C2319439B005737A5 /* HelpScreenFactory.swift */; };
 		890EC4FB230742EF0069C215 /* NumberPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890EC4FA230742EF0069C215 /* NumberPad.xib */; };
-		890EC4FE230743A60069C215 /* NumberPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890EC4FD230743A60069C215 /* NumberPad.swift */; };
 		890EC509230759470069C215 /* NumberButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890EC508230759470069C215 /* NumberButton.xib */; };
 		890EC50D230759B60069C215 /* NumberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890EC50C230759B60069C215 /* NumberButton.swift */; };
 		890EC50F231816EE0069C215 /* UITextFields+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890EC50E231816EE0069C215 /* UITextFields+extensions.swift */; };
@@ -71,6 +71,7 @@
 		8905825823225A3B004E26BA /* CustomTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTable.swift; sourceTree = "<group>"; };
 		8905825B23225B42004E26BA /* CustomTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableCell.swift; sourceTree = "<group>"; };
 		8905825C23225B42004E26BA /* CustomTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableCell.xib; sourceTree = "<group>"; };
+		89058260232285EF004E26BA /* UsingPlaceValuesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingPlaceValuesModel.swift; sourceTree = "<group>"; };
 		890DAA702319364F005737A5 /* UIViewController+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extensions.swift"; sourceTree = "<group>"; };
 		890DAA7923193A58005737A5 /* HelpScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HelpScreen.storyboard; sourceTree = "<group>"; };
 		890DAA7B23193A84005737A5 /* HelpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpScreen.swift; sourceTree = "<group>"; };
@@ -82,7 +83,6 @@
 		890DAA8A231942D3005737A5 /* HelpScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpScreenViewModel.swift; sourceTree = "<group>"; };
 		890DAA8C2319439B005737A5 /* HelpScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpScreenFactory.swift; sourceTree = "<group>"; };
 		890EC4FA230742EF0069C215 /* NumberPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberPad.xib; sourceTree = "<group>"; };
-		890EC4FD230743A60069C215 /* NumberPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NumberPad.swift; path = ../NumberPad.swift; sourceTree = "<group>"; };
 		890EC508230759470069C215 /* NumberButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberButton.xib; sourceTree = "<group>"; };
 		890EC50C230759B60069C215 /* NumberButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberButton.swift; sourceTree = "<group>"; };
 		890EC50E231816EE0069C215 /* UITextFields+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextFields+extensions.swift"; sourceTree = "<group>"; };
@@ -152,6 +152,7 @@
 		89058245232147A8004E26BA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				89058260232285EF004E26BA /* UsingPlaceValuesModel.swift */,
 			);
 			name = Model;
 			path = "Maths Genius/Subtraction/Model";
@@ -279,7 +280,6 @@
 		890EC4FC230743920069C215 /* Number Pad */ = {
 			isa = PBXGroup;
 			children = (
-				890EC4FD230743A60069C215 /* NumberPad.swift */,
 				890EC4FA230742EF0069C215 /* NumberPad.xib */,
 			);
 			path = "Number Pad";
@@ -769,6 +769,7 @@
 				895B546D22FDFE6A00CFF65E /* MainFactory.swift in Sources */,
 				890DAA712319364F005737A5 /* UIViewController+extensions.swift in Sources */,
 				8905824B232147FE004E26BA /* UsingPlaceValuesFactory.swift in Sources */,
+				89058261232285EF004E26BA /* UsingPlaceValuesModel.swift in Sources */,
 				895B543522FDF8E700CFF65E /* Maths_Genius.xcdatamodeld in Sources */,
 				8905825D23225B42004E26BA /* CustomTableCell.swift in Sources */,
 				8905824E23214866004E26BA /* UsingPlaceValuesViewController.swift in Sources */,
@@ -778,7 +779,6 @@
 				895B548C22FE198200CFF65E /* UIView+extensions.swift in Sources */,
 				890DAA8D2319439B005737A5 /* HelpScreenFactory.swift in Sources */,
 				890DAA8323193DE7005737A5 /* CascadingTableHeader.swift in Sources */,
-				890EC4FE230743A60069C215 /* NumberPad.swift in Sources */,
 				895B549C2300B21400CFF65E /* NumberSelectionModel.swift in Sources */,
 				8905824223213ECC004E26BA /* HelpScreenModel.swift in Sources */,
 				895B549E2300B22600CFF65E /* NumberSelectionViewModel.swift in Sources */,

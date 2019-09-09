@@ -27,12 +27,20 @@ class HelpScreenViewController: UIViewController, HelpSectionSelectedDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableSetUp()
+        setUp()
         customTable.cellDelegate = self
 
         firstNumber = helpScreenViewModel.firstNumber
         secondNumber = helpScreenViewModel.secondNumber
         
+    }
+    
+    func setUp() {
+        
+        self.title = "How to..."
+        self.view.backgroundColor = UIColor.Shades.standardBlack
+        
+        tableSetUp()
     }
     
     func tableSetUp() {
@@ -50,6 +58,7 @@ class HelpScreenViewController: UIViewController, HelpSectionSelectedDelegate {
         default:
             break
         }
+        
 
     }
 

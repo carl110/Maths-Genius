@@ -12,10 +12,22 @@ class UsingPlaceValuesViewController: UIViewController {
     
     fileprivate var usingPlaceValuesFlowController: UsingPlaceValuesFlowController!
     fileprivate var usingPlaceValuesViewModel: UsingPlaceValuesViewModel!
+    fileprivate var usingPlaceValuesModel = UsingPlaceValuesModel()
     
     @IBOutlet weak var pageTitle: UILabel!
     
-    @IBOutlet weak var helpContents: UILabel!
+    @IBOutlet weak var step1Label: UILabel!
+    @IBOutlet weak var step2Label: UILabel!
+    @IBOutlet weak var step3Label: UILabel!
+    @IBOutlet weak var step4Label: UILabel!
+    @IBOutlet weak var step5Label: UILabel!
+    @IBOutlet weak var step6Label: UILabel!
+
+    @IBOutlet weak var step1Image: UIImageView!
+    @IBOutlet weak var step2Image: UIImageView!
+    @IBOutlet weak var step4Image: UIImageView!
+    @IBOutlet weak var step5Image: UIImageView!
+    @IBOutlet weak var step6Image: UIImageView!
     
     
     func assignDependancies(usingPlaceValuesFlowController: UsingPlaceValuesFlowController, usingPlaceValuesViewModel: UsingPlaceValuesViewModel) {
@@ -31,8 +43,30 @@ class UsingPlaceValuesViewController: UIViewController {
     
     func setUp() {
         pageTitle.text = "Using Place Values"
+        pageTitle.titleLabelSetUp()
+        self.view.backgroundColor = UIColor.Shades.standardBlack
         
-        helpContents.text = "If the number is small enough, you may use your fingers, or pencils, or any other item you have handy. /n Count the number of pencils for the first number and then count the number of pencils for the second number /n Now count all of the pencils together. This is your answer."
+        step1Label.text = usingPlaceValuesModel.step1
+        step2Label.text = usingPlaceValuesModel.step2
+        step3Label.text = usingPlaceValuesModel.step3
+        step4Label.text = usingPlaceValuesModel.step4
+        step5Label.text = usingPlaceValuesModel.step5
+        step6Label.text = usingPlaceValuesModel.step6
+        
+        step1Label.subTitleLabelSetUp()
+        step2Label.subTitleLabelSetUp()
+        step3Label.subTitleLabelSetUp()
+        step4Label.subTitleLabelSetUp()
+        step5Label.subTitleLabelSetUp()
+        step6Label.subTitleLabelSetUp()
+        
+        
+        step1Image.image = UIImage(named: "step1")
+        step2Image.image = UIImage(named: "step1")
+        step4Image.image = UIImage(named: "step1")
+        step5Image.image = UIImage(named: "step1")
+        step6Image.image = UIImage(named: "step1")
+        
     }
 
 
