@@ -44,7 +44,7 @@ class HelpScreenViewController: UIViewController, HelpSectionSelectedDelegate {
     }
     
     func tableSetUp() {
-        customTable.customCellsData = ["cell1", "cell2", "qsfeewqf"]
+        customTable.customCellsData = ["Using Place Values", "Rounding Numbers", "qsfeewqf"]
     }
 
     func cellWasSelected(id: Int) {
@@ -54,7 +54,7 @@ class HelpScreenViewController: UIViewController, HelpSectionSelectedDelegate {
         case 0:
             helpScreenFlowController.showUsingPlaceValues(firstNumber: firstNumber, secondNumber: secondNumber)
         case 1:
-            helpScreenFlowController.showMain()
+            helpScreenFlowController.showRoundingNumbers(firsyNumber: firstNumber, secondNumber: secondNumber)
         default:
             break
         }

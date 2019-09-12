@@ -23,4 +23,8 @@ class HelpScreenFlowController {
     func showUsingPlaceValues(firstNumber: Int, secondNumber: Int) {
         UsingPlaceValuesFactory.PushIn(navigationController: navigationController, firstNumber: firstNumber, secondNumber: secondNumber)
     }
+    
+    func showRoundingNumbers(firsyNumber: Int, secondNumber: Int) {
+        RoundNumbersFactory.PushIn(navigationController: navigationController, firstNumber: firsyNumber, secondNumber: secondNumber)
+    }
 }

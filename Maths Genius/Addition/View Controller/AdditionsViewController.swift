@@ -20,8 +20,8 @@ class AdditionsViewController: UIViewController {
     @IBOutlet weak var secondNumberLabel: UILabel!
     @IBOutlet weak var operation: UILabel!
     @IBOutlet weak var answerInput: UITextField!
-    
     @IBOutlet weak var submitButton: UIButton!
+    
     func assignDependancies(additionsFlowController: AdditionsFlowController, additionsViewModel: AdditionsViewModel){
         self.additionsFlowController = additionsFlowController
         self.additionsViewModel = additionsViewModel
@@ -29,49 +29,40 @@ class AdditionsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        firstNumber = additionsViewModel.firstNumber
-        secondNumber = additionsViewModel.secondNumber
-        
         setup()
-        // Do any additional setup after loading the view.
     }
     
     func setup() {
+        
+        //Set the values from previouse screen
+        firstNumber = additionsViewModel.firstNumber
+        secondNumber = additionsViewModel.secondNumber
+        
+        //set mainscreen details
         self.view.backgroundColor = UIColor.Shades.standardBlack
         self.title = "Additions"
         labelSetup()
     }
     
     func labelSetup() {
+        
         //set up numbers and operation labels
-
         operation.text = "+"
         operation.numberLabelSetup()
+        
         firstNumberLabel.numberLabelSetup()
-
         firstNumberLabel.text = String(firstNumber)
+        
         secondNumberLabel.numberLabelSetup()
         secondNumberLabel.text = String(secondNumber)
         
         answerInput.numberTextSetUp()
-        submitButton.setTitle("Submit my answer", for: .normal)
-        submitButton.titleButtonSetup()
+        
+        submitButton.setTitle("Submit", for: .normal)
+        DispatchQueue.main.async {
+           self.submitButton.titleButtonSetup()
+        }
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
-
 
     @IBAction func answerInput(_ sender: Any) {
     }

@@ -106,7 +106,7 @@ class UsingPlaceValuesViewController: UIViewController {
         let snHund = secondNumberArray[1] * 100
         let snThou = secondNumberArray[0] * 1000
         
-        exampleLabel.subTitleLabelSetUp()
+        exampleLabel.exampleLabelSetUp()
         
         exampleLabel.text = "Using the equation \(firstNumber) + \(secondNumber) we can do the following : \n\n \(String(format: "%04d", firstNumber))\n+\(String(format: "%04d", secondNumber))\n------\n  \(String(format: "%04d", (fnUnit + snUnit).digits.last))"
 

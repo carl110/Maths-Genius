@@ -26,6 +26,18 @@ extension UILabel {
         self.font.withSize(10)
     }
     
+    func exampleLabelSetUp() {
+            self.backgroundColor = UIColor.Yellows.gryffindorYellow
+            self.textColor = UIColor.Reds.gryffindorRed
+            self.layer.cornerRadius = 8
+        self.textAlignment = .left
+        self.numberOfLines = 0
+        self.lineBreakMode = .byWordWrapping
+        self.font.withSize(10)
+
+    }
+    
+    
     func numberLabelSetup() {
         self.backgroundColor = UIColor.Reds.gryffindorRed
         self.textColor = UIColor.Yellows.gryffindorYellow
