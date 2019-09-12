@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8904087223268EA50030FDC6 /* BianaryInteger+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8904087123268EA50030FDC6 /* BianaryInteger+extensions.swift */; };
+		89040874232692D20030FDC6 /* String+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89040873232692D20030FDC6 /* String+extensions.swift */; };
+		8904087623291C880030FDC6 /* Array+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8904087523291C880030FDC6 /* Array+extensions.swift */; };
 		8905824223213ECC004E26BA /* HelpScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905824123213ECC004E26BA /* HelpScreenModel.swift */; };
 		8905824B232147FE004E26BA /* UsingPlaceValuesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905824A232147FE004E26BA /* UsingPlaceValuesFactory.swift */; };
 		8905824E23214866004E26BA /* UsingPlaceValuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905824C23214866004E26BA /* UsingPlaceValuesViewController.swift */; };
@@ -53,7 +56,6 @@
 		895B549422FE22CC00CFF65E /* AdditionsFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B549322FE22CC00CFF65E /* AdditionsFlowController.swift */; };
 		895B549622FE22F000CFF65E /* AdditionsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B549522FE22F000CFF65E /* AdditionsFactory.swift */; };
 		895B549822FE236600CFF65E /* AdditionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B549722FE236600CFF65E /* AdditionsViewModel.swift */; };
-		895B549A2300AAE300CFF65E /* String+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B54992300AAE200CFF65E /* String+extensions.swift */; };
 		895B549C2300B21400CFF65E /* NumberSelectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B549B2300B21400CFF65E /* NumberSelectionModel.swift */; };
 		895B549E2300B22600CFF65E /* NumberSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B549D2300B22600CFF65E /* NumberSelectionViewModel.swift */; };
 		895B54A12300B41C00CFF65E /* AdditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B549F2300B41C00CFF65E /* AdditionsViewController.swift */; };
@@ -62,6 +64,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8904087123268EA50030FDC6 /* BianaryInteger+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BianaryInteger+extensions.swift"; sourceTree = "<group>"; };
+		89040873232692D20030FDC6 /* String+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extensions.swift"; sourceTree = "<group>"; };
+		8904087523291C880030FDC6 /* Array+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+extensions.swift"; sourceTree = "<group>"; };
 		8905824123213ECC004E26BA /* HelpScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpScreenModel.swift; sourceTree = "<group>"; };
 		8905824A232147FE004E26BA /* UsingPlaceValuesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingPlaceValuesFactory.swift; sourceTree = "<group>"; };
 		8905824C23214866004E26BA /* UsingPlaceValuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingPlaceValuesViewController.swift; sourceTree = "<group>"; };
@@ -110,7 +115,6 @@
 		895B549322FE22CC00CFF65E /* AdditionsFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionsFlowController.swift; sourceTree = "<group>"; };
 		895B549522FE22F000CFF65E /* AdditionsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionsFactory.swift; sourceTree = "<group>"; };
 		895B549722FE236600CFF65E /* AdditionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionsViewModel.swift; sourceTree = "<group>"; };
-		895B54992300AAE200CFF65E /* String+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extensions.swift"; sourceTree = "<group>"; };
 		895B549B2300B21400CFF65E /* NumberSelectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberSelectionModel.swift; sourceTree = "<group>"; };
 		895B549D2300B22600CFF65E /* NumberSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberSelectionViewModel.swift; sourceTree = "<group>"; };
 		895B549F2300B41C00CFF65E /* AdditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionsViewController.swift; sourceTree = "<group>"; };
@@ -370,11 +374,13 @@
 				895B548922FE191800CFF65E /* UIButton+extensions.swift */,
 				895B546822FDFC1400CFF65E /* UIColor+extensions.swift */,
 				895B548B22FE198200CFF65E /* UIView+extensions.swift */,
-				895B54992300AAE200CFF65E /* String+extensions.swift */,
 				895B54A32300BCB100CFF65E /* UILabels+extensions.swift */,
 				890EC50E231816EE0069C215 /* UITextFields+extensions.swift */,
 				890DAA702319364F005737A5 /* UIViewController+extensions.swift */,
 				890DAA862319419C005737A5 /* UITableView+extensions.swift */,
+				8904087123268EA50030FDC6 /* BianaryInteger+extensions.swift */,
+				89040873232692D20030FDC6 /* String+extensions.swift */,
+				8904087523291C880030FDC6 /* Array+extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -764,8 +770,8 @@
 				890582532321493C004E26BA /* UsingPlaceValuesFlowController.swift in Sources */,
 				895B548822FE0A0400CFF65E /* MainModel.swift in Sources */,
 				895B549822FE236600CFF65E /* AdditionsViewModel.swift in Sources */,
+				8904087623291C880030FDC6 /* Array+extensions.swift in Sources */,
 				8905825923225A3B004E26BA /* CustomTable.swift in Sources */,
-				895B549A2300AAE300CFF65E /* String+extensions.swift in Sources */,
 				895B546D22FDFE6A00CFF65E /* MainFactory.swift in Sources */,
 				890DAA712319364F005737A5 /* UIViewController+extensions.swift in Sources */,
 				8905824B232147FE004E26BA /* UsingPlaceValuesFactory.swift in Sources */,
@@ -773,6 +779,7 @@
 				895B543522FDF8E700CFF65E /* Maths_Genius.xcdatamodeld in Sources */,
 				8905825D23225B42004E26BA /* CustomTableCell.swift in Sources */,
 				8905824E23214866004E26BA /* UsingPlaceValuesViewController.swift in Sources */,
+				89040874232692D20030FDC6 /* String+extensions.swift in Sources */,
 				895B547922FE022500CFF65E /* IntroductionTable.swift in Sources */,
 				890DAA8B231942D3005737A5 /* HelpScreenViewModel.swift in Sources */,
 				895B549222FE223600CFF65E /* NumberSelectionViewController.swift in Sources */,
@@ -780,6 +787,7 @@
 				890DAA8D2319439B005737A5 /* HelpScreenFactory.swift in Sources */,
 				890DAA8323193DE7005737A5 /* CascadingTableHeader.swift in Sources */,
 				895B549C2300B21400CFF65E /* NumberSelectionModel.swift in Sources */,
+				8904087223268EA50030FDC6 /* BianaryInteger+extensions.swift in Sources */,
 				8905824223213ECC004E26BA /* HelpScreenModel.swift in Sources */,
 				895B549E2300B22600CFF65E /* NumberSelectionViewModel.swift in Sources */,
 				890EC50F231816EE0069C215 /* UITextFields+extensions.swift in Sources */,

@@ -14,6 +14,10 @@ class UsingPlaceValuesViewController: UIViewController {
     fileprivate var usingPlaceValuesViewModel: UsingPlaceValuesViewModel!
     fileprivate var usingPlaceValuesModel = UsingPlaceValuesModel()
     
+    var firstNumber = Int()
+    var secondNumber = Int ()
+    
+    
     @IBOutlet weak var pageTitle: UILabel!
     
     @IBOutlet weak var step1Label: UILabel!
@@ -22,7 +26,8 @@ class UsingPlaceValuesViewController: UIViewController {
     @IBOutlet weak var step4Label: UILabel!
     @IBOutlet weak var step5Label: UILabel!
     @IBOutlet weak var step6Label: UILabel!
-
+    @IBOutlet weak var exampleLabel: UILabel!
+    
     @IBOutlet weak var step1Image: UIImageView!
     @IBOutlet weak var step2Image: UIImageView!
     @IBOutlet weak var step4Image: UIImageView!
@@ -38,10 +43,15 @@ class UsingPlaceValuesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
+        example()
         // Do any additional setup after loading the view.
     }
     
     func setUp() {
+        
+        firstNumber = usingPlaceValuesViewModel.firstNumber
+        secondNumber = usingPlaceValuesViewModel.secondNumber
+        
         pageTitle.text = "Using Place Values"
         pageTitle.titleLabelSetUp()
         self.view.backgroundColor = UIColor.Shades.standardBlack
@@ -68,16 +78,67 @@ class UsingPlaceValuesViewController: UIViewController {
         step6Image.image = UIImage(named: "step1")
         
     }
+    
+    
+    
+    func example() {
+        
+        
+        //create an array of the numbers
+        var firstNumberArray = firstNumber.digits
+        var secondNumberArray = secondNumber.digits
 
+        //using the arays, if the numbers are less that 1000 add preceeding 0's for readability
+        while 4 - firstNumberArray.count > 0 {
+            firstNumberArray.insert(0, at: 0)
+        }
+        while 4 - secondNumberArray.count > 0 {
+            secondNumberArray.insert(0, at: 0)
+        }
+        
+        //Split numbers into their place values
+        let fnUnit = firstNumberArray[3]
+        let fnTen = firstNumberArray[2] * 10
+        let fnHund = firstNumberArray[1] * 100
+        let fnThou = firstNumberArray[0] * 1000
+        let snUnit = secondNumberArray[3]
+        let snTen = secondNumberArray[2] * 10
+        let snHund = secondNumberArray[1] * 100
+        let snThou = secondNumberArray[0] * 1000
+        
+        exampleLabel.subTitleLabelSetUp()
+        
+        exampleLabel.text = "Using the equation \(firstNumber) + \(secondNumber) we can do the following : \n\n \(String(format: "%04d", firstNumber))\n+\(String(format: "%04d", secondNumber))\n------\n  \(String(format: "%04d", (fnUnit + snUnit).digits.last))"
 
-    /*
-    // MARK: - Navigation
+        if fnUnit + snUnit > 9 {
+            exampleLabel.text = exampleLabel.text! + "   - Add the 10 to the next row\n  \(String(format: "%04d", ((fnTen + snTen) + (((fnUnit + snUnit).digits[0]) * 10)).digits.secondToLast * 10))"
+        } else if firstNumber.digits.count > 1 || secondNumber.digits.count > 1 || (fnUnit + snUnit).digits.count  > 1 {
+                exampleLabel.text = exampleLabel.text! + "\n  \(String(format: "%04d", (fnTen + snTen).digits.secondToLast * 10))"
+        }
+        if fnTen + snTen > 90 {
+            exampleLabel.text = exampleLabel.text! + "   - Add the 100 to the next row\n  \(String(format: "%04d", ((fnHund + snHund) + (((fnTen + snTen).digits[0]) * 100)).digits.thirdToLast * 100))"
+            
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+            
+        } else if (firstNumber + secondNumber).digits.count > 2 {
+            exampleLabel.text = exampleLabel.text! + "\n  \(String(format: "%04d", (fnHund + snHund).digits.thirdToLast * 100))"
+        }
+        
+        print ("HUNDREDS done")
+        
+        if fnHund + snHund > 900 {
+            exampleLabel.text = exampleLabel.text! + "   - Add the 1000 to the next row\n  \(String(format: "%04d", ((fnThou + snThou) + ((fnHund + snHund).digits[0]).digits.fourthToLast * 1000)))"
+
+        } else if (firstNumber + secondNumber).digits.count > 3 {
+            exampleLabel.text = exampleLabel.text! + "\n  \(String(format: "%04d", (fnThou + snThou).digits.fourthToLast * 1000))"
+        }
+        
+        if fnThou + snThou > 9000 {
+            exampleLabel.text = exampleLabel.text! + "   - Add the 10000 to the next row\n \(String(format: "%04d", ((fnThou + snThou) + (((fnHund + snHund).digits[0]))*1000).digits.fithToLast * 10000)) - This is Ten Thousands"
+        }
+        
+        exampleLabel.text = exampleLabel.text! + "\n\nNow add the numbers from the first to last row. And your answer should be : \n\n\(firstNumber + secondNumber)"
+        
     }
-    */
 
 }
