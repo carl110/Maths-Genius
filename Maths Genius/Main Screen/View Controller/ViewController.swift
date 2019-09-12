@@ -38,10 +38,15 @@ class ViewController: UIViewController {
        
         //Button setups
         viewTutorial.subTitleButtonSetup()
+        viewTutorial.setTitle("View Tutorial", for: .normal)
         additionButton.titleButtonSetup()
+        additionButton.setTitle("Add", for: .normal)
         subtractionButton.titleButtonSetup()
+        subtractionButton.setTitle("Subtract", for: .normal)
         multiplicationButton.titleButtonSetup()
+        multiplicationButton.setTitle("Multiply", for: .normal)
         divisionButton.titleButtonSetup()
+        divisionButton.setTitle("Divide", for: .normal)
         
         //Mainpage setup
         self.title = "Select you subject"
