@@ -52,24 +52,11 @@ class HelpScreenViewController: UIViewController, HelpSectionSelectedDelegate {
         //switch using cell idex to goto next screen
         switch id {
         case 0:
-            helpScreenFlowController.showUsingPlaceValues(firstNumber: firstNumber, secondNumber: secondNumber)
+            helpScreenFlowController.showUsingPlaceValues(firstNumber: 9999, secondNumber: 9999)
         case 1:
             helpScreenFlowController.showRoundingNumbers(firsyNumber: firstNumber, secondNumber: secondNumber)
         default:
             break
         }
-        
-
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
