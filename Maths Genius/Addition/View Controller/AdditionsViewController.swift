@@ -69,6 +69,18 @@ class AdditionsViewController: UIViewController {
     @IBAction func submitButton(_ sender: Any) {
         if integer(from: answerInput) == firstNumber + secondNumber {
             print ("Correct andswer")
+            alertBoxWithAction(title: "WELL DONE",
+                               message: "You gave the correct andswer",
+                               options: "Let me try another addition", "Let me try a different type of equation") { (option) in
+                                switch(option) {
+                                case 0:
+                                    print ("new addition")
+                                case 1:
+                                    self.additionsFlowController.showMain()
+                                default:
+                                    break
+                                }
+            }
         } else {
             print ("Wrong answer")
             alertBoxWithAction(title: "Incorrect Answer",
@@ -76,9 +88,9 @@ class AdditionsViewController: UIViewController {
                                options: "Let me try the answer again", "Help me", "Show me how") { (option) in
                                 switch(option) {
                                 case 1:
-                                    self.additionsFlowController.showHelpScreen(firstNumber: self.firstNumber, secondNumber: self.secondNumber)
+                                    self.additionsFlowController.showHelpScreen(firstNumber: 1234, secondNumber: 567)
                                 case 2:
-                                    print ("Show me")
+                                    self.additionsFlowController.showHelpScreen(firstNumber: self.firstNumber, secondNumber: self.secondNumber)
                                 default:
                                     break
                                 }

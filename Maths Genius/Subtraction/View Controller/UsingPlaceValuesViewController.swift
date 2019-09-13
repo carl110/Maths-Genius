@@ -73,11 +73,11 @@ class UsingPlaceValuesViewController: UIViewController {
         step6Label.subTitleLabelSetUp()
         
         //image setup
-        step1Image.image = UIImage(named: "step1")
-        step2Image.image = UIImage(named: "step1")
-        step4Image.image = UIImage(named: "step1")
-        step5Image.image = UIImage(named: "step1")
-        step6Image.image = UIImage(named: "step1")
+        step1Image.image = UIImage(named: "additionsUPVStep1")
+        step2Image.image = UIImage(named: "additionsUPVStep2")
+        step4Image.image = UIImage(named: "additionsUPVStep3")
+        step5Image.image = UIImage(named: "additionsUPVStep4")
+        step6Image.image = UIImage(named: "additionsUPVStep5")
     }
 
     func example() {

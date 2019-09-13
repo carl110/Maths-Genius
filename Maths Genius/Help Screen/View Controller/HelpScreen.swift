@@ -52,7 +52,7 @@ class HelpScreenViewController: UIViewController, HelpSectionSelectedDelegate {
         //switch using cell idex to goto next screen
         switch id {
         case 0:
-            helpScreenFlowController.showUsingPlaceValues(firstNumber: 9999, secondNumber: 9999)
+            helpScreenFlowController.showUsingPlaceValues(firstNumber: firstNumber, secondNumber: secondNumber)
         case 1:
             helpScreenFlowController.showRoundingNumbers(firsyNumber: firstNumber, secondNumber: secondNumber)
         default:
