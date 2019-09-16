@@ -20,8 +20,12 @@ class RoundNumbersViewController: UIViewController {
     
     @IBOutlet weak var pageTitle: UILabel!
     @IBOutlet weak var step1Label: UILabel!
+    @IBOutlet weak var step2Label: UILabel!
+    @IBOutlet weak var step3Label: UILabel!
     
     @IBOutlet weak var step1Image: UIImageView!
+    @IBOutlet weak var step2Image: UIImageView!
+    @IBOutlet weak var step3Image: UIImageView!
     
     @IBOutlet weak var exampleLabel: UILabel!
     
@@ -46,8 +50,17 @@ class RoundNumbersViewController: UIViewController {
         self.view.backgroundColor = UIColor.Shades.standardBlack
         
         step1Label.subTitleLabelSetUp()
-        step1Label.text = "THIS IS SOME SAMPLE TEXT"
-        step1Image.image = UIImage(named: "wand")
+        step2Label.subTitleLabelSetUp()
+        step3Label.subTitleLabelSetUp()
+        
+        step1Label.text = roundNumbersModel.step1
+        step2Label.text = roundNumbersModel.step2
+        step3Label.text = roundNumbersModel.step3
+
+        step1Image.image = UIImage(named: "roundingNumberStep1")
+        step2Image.image = UIImage(named: "roundingNumberStep2")
+        step3Image.image = UIImage(named: "roundingNumberStep3")
+        
     }
     
     func example() {
