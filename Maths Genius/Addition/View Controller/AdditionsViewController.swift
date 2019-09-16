@@ -42,6 +42,7 @@ class AdditionsViewController: UIViewController {
         self.view.backgroundColor = UIColor.Shades.standardBlack
         self.title = "Additions"
         labelSetup()
+        updateNumbers()
     }
     
     func labelSetup() {
@@ -51,17 +52,21 @@ class AdditionsViewController: UIViewController {
         operation.numberLabelSetup()
         
         firstNumberLabel.numberLabelSetup()
-        firstNumberLabel.text = String(firstNumber)
-        
+
         secondNumberLabel.numberLabelSetup()
-        secondNumberLabel.text = String(secondNumber)
-        
+
         answerInput.numberTextSetUp()
         
         submitButton.setTitle("Submit", for: .normal)
         DispatchQueue.main.async {
            self.submitButton.titleButtonSetup()
         }
+    }
+    
+    func updateNumbers() {
+        firstNumberLabel.text = String(firstNumber)
+        secondNumberLabel.text = String(secondNumber)
+        
     }
 
     @IBAction func answerInput(_ sender: Any) {
@@ -74,8 +79,36 @@ class AdditionsViewController: UIViewController {
                                options: "Let me try another addition", "Let me try a different type of equation") { (option) in
                                 switch(option) {
                                 case 0:
-                                    print ("new addition")
+ 
+                                    //Update numbers with new random numbers set to the same digit counts
+                                    if self.firstNumber.digits.count == 4 {
+                                        self.firstNumber = Int.random(in: 1000...9999)
+                                    } else if self.firstNumber.digits.count == 3 {
+                                        self.firstNumber = Int.random(in: 100...999)
+                                    } else if self.firstNumber.digits.count == 2 {
+                                        self.firstNumber = Int.random(in: 10...99)
+                                    } else {
+                                        self.firstNumber = Int.random(in: 0...9)
+                                    }
+                                    
+                                    if self.secondNumber.digits.count == 4 {
+                                        self.secondNumber = Int.random(in: 1000...9999)
+                                    } else if self.secondNumber.digits.count == 3 {
+                                        self.secondNumber = Int.random(in: 100...999)
+                                    } else if self.secondNumber.digits.count == 2 {
+                                        self.secondNumber = Int.random(in: 10...99)
+                                    } else {
+                                        self.secondNumber = Int.random(in: 0...9)
+                                    }
+                                    
+                                    //reset text field to empty and update numbers on screen
+                                    self.answerInput.text = ""
+                                    self.updateNumbers()
                                 case 1:
+                                    
+                                    //Remove all viewcontrollers from the navigation stack
+                                    self.navigationController!.viewControllers.removeAll()
+                                    
                                     self.additionsFlowController.showMain()
                                 default:
                                     break
