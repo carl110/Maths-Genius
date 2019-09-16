@@ -67,7 +67,10 @@ class RoundNumbersViewController: UIViewController {
         
         exampleLabel.exampleLabelSetUp()
         
-        exampleLabel.text = "Using the equation \(firstNumber) + \(secondNumber) we can do the following : \n\n"
+        let firstNumberRound = 10 - firstNumber.digits.last
+        let secondNumberRound = 10 - secondNumber.digits.last
+        
+        exampleLabel.text = "Using the equation \(firstNumber) + \(secondNumber) we can do the following : \n\nAdd \(firstNumberRound) the \(firstNumber)\nAdd \(secondNumberRound) to \(secondNumber)\n\nYour new equation is \(firstNumberRound + firstNumber) + \(secondNumberRound + secondNumber)\n\n\(firstNumberRound + firstNumber) + \(secondNumberRound + secondNumber) = \(firstNumberRound + firstNumber + secondNumberRound + secondNumber)\nThe numbers added to make the round equation are \(firstNumberRound) + \(secondNumberRound) = \(firstNumberRound + secondNumberRound)\n\nNow take the equated round number and minus the added numbers\n\n\(firstNumberRound + firstNumber + secondNumberRound + secondNumber) - \(firstNumberRound + secondNumberRound) = \(firstNumber + secondNumber)"
         
     }
     
