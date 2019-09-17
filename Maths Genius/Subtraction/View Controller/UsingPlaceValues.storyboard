@@ -34,7 +34,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chV-7W-vrL">
-                                <rect key="frame" x="5" y="86.5" width="365" height="575.5"/>
+                                <rect key="frame" x="5" y="143" width="365" height="519"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKk-HC-JGt">
                                         <rect key="frame" x="5" y="5" width="355" height="21"/>
@@ -151,22 +151,45 @@
                                     <constraint firstItem="O35-kc-MiO" firstAttribute="height" secondItem="s6s-fK-fjq" secondAttribute="height" id="wSD-Pa-3Ze"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alT-so-Tb7">
+                                <rect key="frame" x="5" y="86.5" width="180" height="51.5"/>
+                                <connections>
+                                    <action selector="returnToEquation:" destination="ZFC-eB-AhU" eventType="touchUpInside" id="3Nl-Ui-Rvm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smT-DU-eD4">
+                                <rect key="frame" x="190" y="86.5" width="180" height="51.5"/>
+                                <connections>
+                                    <action selector="newEquation:" destination="ZFC-eB-AhU" eventType="touchUpInside" id="VvW-8J-ife"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="alT-so-Tb7" firstAttribute="height" secondItem="b4B-eS-De4" secondAttribute="height" id="5Kv-QU-mqG"/>
+                            <constraint firstItem="khO-4S-aqQ" firstAttribute="trailing" secondItem="smT-DU-eD4" secondAttribute="trailing" constant="5" id="DZB-5k-qYx"/>
+                            <constraint firstItem="alT-so-Tb7" firstAttribute="top" secondItem="b4B-eS-De4" secondAttribute="bottom" constant="5" id="FP5-kt-iP7"/>
                             <constraint firstItem="chV-7W-vrL" firstAttribute="centerX" secondItem="zep-si-ssV" secondAttribute="centerX" id="G2m-bL-FaE"/>
                             <constraint firstItem="b4B-eS-De4" firstAttribute="leading" secondItem="chV-7W-vrL" secondAttribute="leading" id="JZR-Ru-2xi"/>
+                            <constraint firstItem="smT-DU-eD4" firstAttribute="width" secondItem="alT-so-Tb7" secondAttribute="width" id="JfU-bP-r4t"/>
+                            <constraint firstItem="alT-so-Tb7" firstAttribute="leading" secondItem="khO-4S-aqQ" secondAttribute="leading" constant="5" id="LL6-BK-Wtw"/>
                             <constraint firstItem="b4B-eS-De4" firstAttribute="top" secondItem="khO-4S-aqQ" secondAttribute="top" constant="10" id="Mv0-q5-Lwh"/>
+                            <constraint firstItem="chV-7W-vrL" firstAttribute="top" secondItem="alT-so-Tb7" secondAttribute="bottom" constant="5" id="NUF-Fz-GZh"/>
                             <constraint firstItem="khO-4S-aqQ" firstAttribute="bottom" secondItem="chV-7W-vrL" secondAttribute="bottom" constant="5" id="UQ5-pa-hVK"/>
                             <constraint firstItem="b4B-eS-De4" firstAttribute="trailing" secondItem="chV-7W-vrL" secondAttribute="trailing" id="UzS-Yg-0CH"/>
                             <constraint firstItem="chV-7W-vrL" firstAttribute="leading" secondItem="khO-4S-aqQ" secondAttribute="leading" constant="5" id="ZxO-mo-LvJ"/>
-                            <constraint firstItem="chV-7W-vrL" firstAttribute="top" secondItem="b4B-eS-De4" secondAttribute="bottom" constant="5" id="yMV-fw-RBS"/>
+                            <constraint firstItem="chV-7W-vrL" firstAttribute="top" secondItem="smT-DU-eD4" secondAttribute="bottom" constant="5" id="cBs-zS-97j"/>
+                            <constraint firstItem="smT-DU-eD4" firstAttribute="top" secondItem="b4B-eS-De4" secondAttribute="bottom" constant="5" id="f01-4q-yig"/>
+                            <constraint firstItem="smT-DU-eD4" firstAttribute="height" secondItem="b4B-eS-De4" secondAttribute="height" id="iWJ-40-UaF"/>
+                            <constraint firstItem="smT-DU-eD4" firstAttribute="leading" secondItem="alT-so-Tb7" secondAttribute="trailing" constant="5" id="mOA-eY-lpS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="khO-4S-aqQ"/>
                     </view>
                     <connections>
                         <outlet property="exampleLabel" destination="4mf-XO-8Df" id="bSH-50-h6y"/>
+                        <outlet property="newEquation" destination="smT-DU-eD4" id="qaf-um-1Vh"/>
                         <outlet property="pageTitle" destination="b4B-eS-De4" id="zGv-2b-sKZ"/>
+                        <outlet property="returnToEquation" destination="alT-so-Tb7" id="jHT-Cf-ZJ8"/>
                         <outlet property="step1Image" destination="s6s-fK-fjq" id="tc8-KJ-rF5"/>
                         <outlet property="step1Label" destination="eKk-HC-JGt" id="x9h-uA-iW0"/>
                         <outlet property="step2Image" destination="j0D-Zj-s7t" id="Ymt-xF-qjh"/>

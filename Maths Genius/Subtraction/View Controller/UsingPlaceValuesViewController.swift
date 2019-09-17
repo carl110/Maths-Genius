@@ -17,6 +17,9 @@ class UsingPlaceValuesViewController: UIViewController {
     var firstNumber = Int()
     var secondNumber = Int ()
     
+    @IBOutlet weak var returnToEquation: UIButton!
+    
+    @IBOutlet weak var newEquation: UIButton!
     
     @IBOutlet weak var pageTitle: UILabel!
     
@@ -43,6 +46,7 @@ class UsingPlaceValuesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
+        buttonSetup()
         example()
     }
     
@@ -78,6 +82,14 @@ class UsingPlaceValuesViewController: UIViewController {
         step4Image.image = UIImage(named: "additionsUPVStep3")
         step5Image.image = UIImage(named: "additionsUPVStep4")
         step6Image.image = UIImage(named: "additionsUPVStep5")
+    }
+    
+    func buttonSetup() {
+        returnToEquation.subTitleButtonSetup()
+        newEquation.subTitleButtonSetup()
+        
+        returnToEquation.setTitle("Return to the equation", for: .normal)
+        newEquation.setTitle("Let me try a new equation", for: .normal)
     }
 
     func example() {
@@ -139,5 +151,17 @@ class UsingPlaceValuesViewController: UIViewController {
         
         //Sum of equation
         exampleLabel.text = exampleLabel.text! + "\n\nNow add the numbers from the first to last row. And your answer should be : \n\n\(firstNumber + secondNumber)"
+    }
+    
+    @IBAction func returnToEquation(_ sender: Any) {
+        
+        self.popBack(3)
+    }
+    
+    @IBAction func newEquation(_ sender: Any) {
+        //Remove all viewcontrollers from the navigation stack
+        self.navigationController!.viewControllers.removeAll()
+        
+        usingPlaceValuesFlowController.showMain()
     }
 }
