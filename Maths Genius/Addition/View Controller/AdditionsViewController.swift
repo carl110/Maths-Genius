@@ -50,13 +50,13 @@ class AdditionsViewController: UIViewController {
     func labelSetup() {
         
         //set up numbers and operation labels
-        if subject == "Additions" {
+        if subject == Subject.Additions.name() {
            operation.text = "+"
-        } else if subject == "Subtractions" {
+        } else if subject == Subject.Subtractions.name() {
            operation.text = "-"
-        } else if subject == "Multiplications" {
+        } else if subject == Subject.Multiplications.name() {
            operation.text = "×"
-        } else if subject == "Divisions" {
+        } else if subject == Subject.Divisions.name() {
            operation.text = "÷"
         }
 
@@ -201,7 +201,17 @@ class AdditionsViewController: UIViewController {
     @IBAction func answerInput(_ sender: Any) {
     }
     @IBAction func submitButton(_ sender: Any) {
-        additionSubmitButton()
+        
+        if subject == Subject.Additions.name() {
+            additionSubmitButton()
+        } else if subject == Subject.Subtractions.name() {
+            subtractionSubmitButton()
+        } else if subject == Subject.Multiplications.name() {
+            print ("multiply")
+        } else if subject == Subject.Divisions.name() {
+            print ("Divide")
+        }
+
  
     }
 }

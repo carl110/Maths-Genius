@@ -92,7 +92,7 @@ class NumberSelectionViewController: UIViewController {
             break
         }
         
-        if subject == "Subtractions" && firstNumberSelector.selectedSegmentIndex > 0 {
+        if subject == Subject.Subtractions.name() && firstNumberSelector.selectedSegmentIndex > 0 {
             for i in 1...self.firstNumberSelector.selectedSegmentIndex {
                 //unselect segments in seconNumberSelector
                 secondNumberSelector.selectedSegmentIndex = UISegmentedControl.noSegment
