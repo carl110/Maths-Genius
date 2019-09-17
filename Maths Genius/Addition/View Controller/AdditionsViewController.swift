@@ -121,7 +121,7 @@ class AdditionsViewController: UIViewController {
                                 case 1:
                                     self.additionsFlowController.showHelpScreen(firstNumber: 1234, secondNumber: 567)
                                 case 2:
-                                    self.additionsFlowController.showHelpScreen(firstNumber: 1234, secondNumber: 567)
+                                    self.additionsFlowController.showHelpScreen(firstNumber: self.firstNumber, secondNumber: self.secondNumber)
                                 default:
                                     break
                                 }

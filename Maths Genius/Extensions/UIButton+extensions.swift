@@ -41,9 +41,11 @@ extension UIButton {
     func subTitleButtonSetup() {
         self.backgroundColor = UIColor.Yellows.gryffindorYellow
         self.setTitleColor(UIColor.Reds.gryffindorRed, for: .normal)
-        self.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        self.titleLabel?.font = UIFont.boldSystemFont(ofSize: self.frame.height / 2.5)
         self.centerTextHorizontally(spacing: 8)
         self.roundCorners(for: .allCorners, cornerRadius: 8)
+        self.titleLabel?.numberOfLines = 0
+        self.contentVerticalAlignment = .center
         
     }
 }

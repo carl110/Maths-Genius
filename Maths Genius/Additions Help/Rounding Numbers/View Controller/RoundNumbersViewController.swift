@@ -18,6 +18,10 @@ class RoundNumbersViewController: UIViewController {
     var firstNumber = Int()
     var secondNumber = Int ()
     
+    @IBOutlet weak var returnToEquation: UIButton!
+    
+    @IBOutlet weak var newEquation: UIButton!
+    
     @IBOutlet weak var pageTitle: UILabel!
     @IBOutlet weak var step1Label: UILabel!
     @IBOutlet weak var step2Label: UILabel!
@@ -39,6 +43,7 @@ class RoundNumbersViewController: UIViewController {
         super.viewDidLoad()
         setUpLabels()
         example()
+        buttonSetup()
     }
     
     func setUpLabels() {
@@ -63,6 +68,14 @@ class RoundNumbersViewController: UIViewController {
         
     }
     
+    func buttonSetup() {
+        returnToEquation.subTitleButtonSetup()
+        newEquation.subTitleButtonSetup()
+        
+        returnToEquation.setTitle("Return to the equation", for: .normal)
+        newEquation.setTitle("Let me try a new equation", for: .normal)
+    }
+    
     func example() {
         
         exampleLabel.exampleLabelSetUp()
@@ -74,6 +87,16 @@ class RoundNumbersViewController: UIViewController {
         
     }
     
-
+    @IBAction func returnToEquation(_ sender: Any) {
+        
+        self.popBack(3)
+    }
+    
+    @IBAction func newEquation(_ sender: Any) {
+        //Remove all viewcontrollers from the navigation stack
+        self.navigationController!.viewControllers.removeAll()
+        
+        roundNumbersFlowController.showMain()
+    }
     
 }

@@ -33,7 +33,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="S1Q-Pd-pG3"/>
                                 </constraints>
-                                <state key="normal" title="Additions"/>
+                                <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="additionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3LE-v3-mJS"/>
                                 </connections>
@@ -43,7 +43,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="PcG-hD-Brm"/>
                                 </constraints>
-                                <state key="normal" title="Division"/>
+                                <state key="normal" title="Divide"/>
                                 <connections>
                                     <action selector="divisionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y6B-FB-KRO"/>
                                 </connections>
@@ -53,7 +53,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="uce-yB-cOO"/>
                                 </constraints>
-                                <state key="normal" title="Subtractions"/>
+                                <state key="normal" title="Subtract"/>
                                 <connections>
                                     <action selector="subtractionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hfZ-Hw-NOn"/>
                                 </connections>
@@ -63,7 +63,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ODD-Ll-ih8"/>
                                 </constraints>
-                                <state key="normal" title="Multiplications"/>
+                                <state key="normal" title="Multiply"/>
                                 <connections>
                                     <action selector="multiplicationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="atk-b8-OrK"/>
                                 </connections>
