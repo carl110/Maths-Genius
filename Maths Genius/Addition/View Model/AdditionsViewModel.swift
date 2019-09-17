@@ -13,10 +13,12 @@ class AdditionsViewModel {
     
     let firstNumber: Int
     let secondNumber: Int
+    let subject: String
     
-    init (firstNumber: Int, secondNumber: Int) {
+    init (firstNumber: Int, secondNumber: Int, subject: String) {
         self.firstNumber = firstNumber
         self.secondNumber = secondNumber
+        self.subject = subject
     }
     
 }

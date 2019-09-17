@@ -17,6 +17,9 @@ class HelpScreenViewController: UIViewController, HelpSectionSelectedDelegate {
     var firstNumber = Int()
     var secondNumber = Int ()
 
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    
     @IBOutlet weak var customTable: CustomTable!
     
 
@@ -40,11 +43,15 @@ class HelpScreenViewController: UIViewController, HelpSectionSelectedDelegate {
         self.title = "How to..."
         self.view.backgroundColor = UIColor.Shades.standardBlack
         
+        titleLabel.text = "Select the help item below..."
+        titleLabel.titleLabelSetUp()
+        
         tableSetUp()
     }
     
     func tableSetUp() {
-        customTable.customCellsData = ["Using Place Values", "Rounding Numbers", "qsfeewqf"]
+        customTable.customCellsData = ["Using Place Values", "Rounding Numbers"]
+        customTable.backgroundColor = UIColor.Shades.standardBlack
     }
 
     func cellWasSelected(id: Int) {

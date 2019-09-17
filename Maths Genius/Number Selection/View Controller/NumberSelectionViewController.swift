@@ -47,7 +47,7 @@ class NumberSelectionViewController: UIViewController {
         secondNumberLabel.titleLabelSetUp()
         firstNumberLabel.text = "Select how large you would like the first number in the equasion"
         secondNumberLabel.text = "Select how large you would like the first number in the equasion"
-
+        
         firstNumberOutcome.subTitleLabelSetUp()
         secondNumberOutcome.subTitleLabelSetUp()
         
@@ -59,11 +59,21 @@ class NumberSelectionViewController: UIViewController {
         
         //disable selector and button to force pick order
         secondNumberSelector.isEnabled = false
+        
         continueButton.disableButton()
     }
     
     @IBAction func firstNumberSelector(_ sender: Any) {
         
+
+        
+        //enable all segments in secondnumberselector
+        for i in 0...3 {
+            secondNumberSelector.setEnabled(true, forSegmentAt: i)
+        }
+        secondNumberSelector.isEnabled = true
+        
+        //random number for selection
         switch firstNumberSelector.selectedSegmentIndex
         {
         case 0:
@@ -82,11 +92,19 @@ class NumberSelectionViewController: UIViewController {
             break
         }
         
-        //enable selection of second number
-        secondNumberSelector.isEnabled = true
-
+        if subject == "Subtractions" && firstNumberSelector.selectedSegmentIndex > 0 {
+            for i in 1...self.firstNumberSelector.selectedSegmentIndex {
+                //unselect segments in seconNumberSelector
+                secondNumberSelector.selectedSegmentIndex = UISegmentedControl.noSegment
+                secondNumberOutcome.text = ""
+                
+                self.secondNumberSelector.setEnabled(false, forSegmentAt: i - 1)
+            }
+        }
     }
     @IBAction func secondNumberSelector(_ sender: Any) {
+        
+        print ("segment selected \(secondNumberSelector.selectedSegmentIndex)")
         
         switch secondNumberSelector.selectedSegmentIndex
         {
@@ -111,9 +129,9 @@ class NumberSelectionViewController: UIViewController {
     }
     
     @IBAction func continueButton(_ sender: Any) {
-        numberSelectionFlowController.showAdditions(firstNumber: firstNumber, secondNumber: secondNumber)
         
-        print ("the number is \(firstNumber).....\(secondNumber)")
+        numberSelectionFlowController.showAdditions(firstNumber: firstNumber, secondNumber: secondNumber, subject: subject)
+        
     }
     
 }

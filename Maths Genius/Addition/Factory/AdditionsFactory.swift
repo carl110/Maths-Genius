@@ -11,11 +11,11 @@ import UIKit
 
 class AdditionsFactory {
     
-    static func PushIn(navigationController: UINavigationController, firstNumber: Int, secondNumber: Int) {
+    static func PushIn(navigationController: UINavigationController, firstNumber: Int, secondNumber: Int, subject: String) {
         
         let additions = UIStoryboard(name: "Additions", bundle: nil).instantiateInitialViewController() as! AdditionsViewController
         let additionsFlowController = AdditionsFlowController(navigationController: navigationController)
-        let additionsViewModel = AdditionsViewModel(firstNumber: firstNumber, secondNumber: secondNumber)
+        let additionsViewModel = AdditionsViewModel(firstNumber: firstNumber, secondNumber: secondNumber, subject: subject)
         
         additions.assignDependancies(additionsFlowController: additionsFlowController, additionsViewModel: additionsViewModel)
         

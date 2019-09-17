@@ -68,6 +68,11 @@
 		895B54A12300B41C00CFF65E /* AdditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B549F2300B41C00CFF65E /* AdditionsViewController.swift */; };
 		895B54A42300BCB100CFF65E /* UILabels+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B54A32300BCB100CFF65E /* UILabels+extensions.swift */; };
 		895B54A62300C06800CFF65E /* Additions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895B54A52300C06800CFF65E /* Additions.storyboard */; };
+		89C868092331052B00325FAD /* SubtractionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C868082331052B00325FAD /* SubtractionFactory.swift */; };
+		89C8680B2331057000325FAD /* SubtractionFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C8680A2331057000325FAD /* SubtractionFlowController.swift */; };
+		89C8680D233105A500325FAD /*  SubtractionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C8680C233105A500325FAD /*  SubtractionViewModel.swift */; };
+		89C8680F233105DF00325FAD /* SubtractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C8680E233105DF00325FAD /* SubtractionViewController.swift */; };
+		89C868132331060B00325FAD /* Subtraction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C868122331060B00325FAD /* Subtraction.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,6 +139,11 @@
 		895B549F2300B41C00CFF65E /* AdditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionsViewController.swift; sourceTree = "<group>"; };
 		895B54A32300BCB100CFF65E /* UILabels+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabels+extensions.swift"; sourceTree = "<group>"; };
 		895B54A52300C06800CFF65E /* Additions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Additions.storyboard; sourceTree = "<group>"; };
+		89C868082331052B00325FAD /* SubtractionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionFactory.swift; sourceTree = "<group>"; };
+		89C8680A2331057000325FAD /* SubtractionFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionFlowController.swift; sourceTree = "<group>"; };
+		89C8680C233105A500325FAD /*  SubtractionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " SubtractionViewModel.swift"; sourceTree = "<group>"; };
+		89C8680E233105DF00325FAD /* SubtractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionViewController.swift; sourceTree = "<group>"; };
+		89C868122331060B00325FAD /* Subtraction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Subtraction.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -493,11 +503,11 @@
 		895B544822FDF9F200CFF65E /* Subtraction */ = {
 			isa = PBXGroup;
 			children = (
+				895B545722FDFB8900CFF65E /* Model */,
+				895B545522FDFB8900CFF65E /* View Model */,
+				895B545422FDFB8900CFF65E /* View Controller */,
 				895B545622FDFB8900CFF65E /* Factory */,
 				895B545822FDFB8900CFF65E /* Flow Controller */,
-				895B545722FDFB8900CFF65E /* Model */,
-				895B545422FDFB8900CFF65E /* View Controller */,
-				895B545522FDFB8900CFF65E /* View Model */,
 			);
 			path = Subtraction;
 			sourceTree = "<group>";
@@ -597,6 +607,8 @@
 		895B545422FDFB8900CFF65E /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				89C8680E233105DF00325FAD /* SubtractionViewController.swift */,
+				89C868122331060B00325FAD /* Subtraction.storyboard */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -604,6 +616,7 @@
 		895B545522FDFB8900CFF65E /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				89C8680C233105A500325FAD /*  SubtractionViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -611,6 +624,7 @@
 		895B545622FDFB8900CFF65E /* Factory */ = {
 			isa = PBXGroup;
 			children = (
+				89C868082331052B00325FAD /* SubtractionFactory.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -625,6 +639,7 @@
 		895B545822FDFB8900CFF65E /* Flow Controller */ = {
 			isa = PBXGroup;
 			children = (
+				89C8680A2331057000325FAD /* SubtractionFlowController.swift */,
 			);
 			path = "Flow Controller";
 			sourceTree = "<group>";
@@ -825,6 +840,7 @@
 				890EC509230759470069C215 /* NumberButton.xib in Resources */,
 				895B543222FDF8E700CFF65E /* Main.storyboard in Resources */,
 				890DAA8523193DF2005737A5 /* CascadingTableHeader.xib in Resources */,
+				89C868132331060B00325FAD /* Subtraction.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -845,6 +861,7 @@
 				895B546D22FDFE6A00CFF65E /* MainFactory.swift in Sources */,
 				890DAA712319364F005737A5 /* UIViewController+extensions.swift in Sources */,
 				8905824B232147FE004E26BA /* UsingPlaceValuesFactory.swift in Sources */,
+				89C8680B2331057000325FAD /* SubtractionFlowController.swift in Sources */,
 				89058261232285EF004E26BA /* UsingPlaceValuesModel.swift in Sources */,
 				89123E03232A7C11003E3ED0 /* RoundingNumbersViewModel.swift in Sources */,
 				89123E09232A7D10003E3ED0 /* RoundNumbersFlowController.swift in Sources */,
@@ -861,6 +878,7 @@
 				890DAA8323193DE7005737A5 /* CascadingTableHeader.swift in Sources */,
 				895B549C2300B21400CFF65E /* NumberSelectionModel.swift in Sources */,
 				8904087223268EA50030FDC6 /* BianaryInteger+extensions.swift in Sources */,
+				89C8680F233105DF00325FAD /* SubtractionViewController.swift in Sources */,
 				89123E0D232A8240003E3ED0 /* RoundingNumbersModel.swift in Sources */,
 				89123E0F232A8661003E3ED0 /* AdditionsHelpViewModel.swift in Sources */,
 				8905824223213ECC004E26BA /* HelpScreenModel.swift in Sources */,
@@ -868,6 +886,7 @@
 				890EC50F231816EE0069C215 /* UITextFields+extensions.swift in Sources */,
 				895B542D22FDF8E700CFF65E /* AppDelegate.swift in Sources */,
 				895B548A22FE191800CFF65E /* UIButton+extensions.swift in Sources */,
+				89C8680D233105A500325FAD /*  SubtractionViewModel.swift in Sources */,
 				895B547522FDFFBA00CFF65E /* NumberSelectionFactory.swift in Sources */,
 				895B549422FE22CC00CFF65E /* AdditionsFlowController.swift in Sources */,
 				895B548522FE07DB00CFF65E /* IntroductionCell.swift in Sources */,
@@ -883,6 +902,7 @@
 				895B54A42300BCB100CFF65E /* UILabels+extensions.swift in Sources */,
 				895B547322FDFF9200CFF65E /* NumberSelectionFlowController.swift in Sources */,
 				890DAA7D23193A84005737A5 /* HelpScreen.swift in Sources */,
+				89C868092331052B00325FAD /* SubtractionFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
