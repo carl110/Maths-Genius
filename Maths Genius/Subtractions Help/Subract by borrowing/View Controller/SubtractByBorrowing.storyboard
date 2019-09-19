@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q6e-fA-7ul">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Subtract By Borrowing View Controller-->
+        <scene sceneID="3aW-hQ-Qbk">
+            <objects>
+                <viewController id="Q6e-fA-7ul" customClass="SubtractByBorrowingViewController" customModule="Maths_Genius" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aBm-ye-7GO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wxf-Z2-iMm">
+                                <rect key="frame" x="5" y="25" width="365" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="4TA-af-KEN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAU-d0-p2z">
+                                <rect key="frame" x="5" y="80" width="180" height="50"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="returnToEquation:" destination="Q6e-fA-7ul" eventType="touchUpInside" id="piE-qK-8n8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lZ-62-rpA">
+                                <rect key="frame" x="190" y="80" width="180" height="50"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="newEquation:" destination="Q6e-fA-7ul" eventType="touchUpInside" id="wQ3-fZ-TsI"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="W3E-aS-ZXy" customClass="CustomCollectionView" customModule="Maths_Genius" customModuleProvider="target">
+                                <rect key="frame" x="5" y="135" width="365" height="527"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1m2-mk-wxh">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Wxf-Z2-iMm" firstAttribute="leading" secondItem="9VV-Kz-EyS" secondAttribute="leading" constant="5" id="FM8-dn-Bye"/>
+                            <constraint firstItem="Wxf-Z2-iMm" firstAttribute="top" secondItem="9VV-Kz-EyS" secondAttribute="top" constant="5" id="HhN-u3-ypo"/>
+                            <constraint firstItem="W3E-aS-ZXy" firstAttribute="top" secondItem="NAU-d0-p2z" secondAttribute="bottom" constant="5" id="Q1w-A1-XA3"/>
+                            <constraint firstItem="NAU-d0-p2z" firstAttribute="top" secondItem="Wxf-Z2-iMm" secondAttribute="bottom" constant="5" id="R1M-KM-QRG"/>
+                            <constraint firstItem="9VV-Kz-EyS" firstAttribute="bottom" secondItem="W3E-aS-ZXy" secondAttribute="bottom" constant="5" id="VJw-Pe-oqp"/>
+                            <constraint firstItem="W3E-aS-ZXy" firstAttribute="leading" secondItem="9VV-Kz-EyS" secondAttribute="leading" constant="5" id="bwd-nN-sSj"/>
+                            <constraint firstItem="9VV-Kz-EyS" firstAttribute="trailing" secondItem="W3E-aS-ZXy" secondAttribute="trailing" constant="5" id="fUD-GF-Ij3"/>
+                            <constraint firstItem="9VV-Kz-EyS" firstAttribute="trailing" secondItem="Wxf-Z2-iMm" secondAttribute="trailing" constant="5" id="hhg-Yo-rrI"/>
+                            <constraint firstItem="9lZ-62-rpA" firstAttribute="width" secondItem="NAU-d0-p2z" secondAttribute="width" id="jAX-ws-DgK"/>
+                            <constraint firstItem="NAU-d0-p2z" firstAttribute="height" secondItem="Wxf-Z2-iMm" secondAttribute="height" id="jxw-Fs-J7c"/>
+                            <constraint firstItem="9lZ-62-rpA" firstAttribute="height" secondItem="Wxf-Z2-iMm" secondAttribute="height" id="lqG-Df-aO0"/>
+                            <constraint firstItem="9lZ-62-rpA" firstAttribute="top" secondItem="Wxf-Z2-iMm" secondAttribute="bottom" constant="5" id="lrh-Wn-7pg"/>
+                            <constraint firstItem="9lZ-62-rpA" firstAttribute="leading" secondItem="NAU-d0-p2z" secondAttribute="trailing" constant="5" id="lvj-b7-KtR"/>
+                            <constraint firstItem="9VV-Kz-EyS" firstAttribute="trailing" secondItem="9lZ-62-rpA" secondAttribute="trailing" constant="5" id="o6M-oE-h4C"/>
+                            <constraint firstItem="NAU-d0-p2z" firstAttribute="leading" secondItem="9VV-Kz-EyS" secondAttribute="leading" constant="5" id="pLu-px-e0g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9VV-Kz-EyS"/>
+                    </view>
+                    <connections>
+                        <outlet property="customCollectionView" destination="W3E-aS-ZXy" id="Ebr-LS-NhX"/>
+                        <outlet property="newEquation" destination="9lZ-62-rpA" id="vV1-Wm-aoF"/>
+                        <outlet property="pageTitle" destination="Wxf-Z2-iMm" id="xkX-0v-XI8"/>
+                        <outlet property="returnToEquation" destination="NAU-d0-p2z" id="D17-Kc-aFS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Olo-ff-oe6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="68"/>
+        </scene>
+    </scenes>
+</document>

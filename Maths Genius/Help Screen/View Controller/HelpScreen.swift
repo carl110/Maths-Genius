@@ -16,6 +16,7 @@ class HelpScreenViewController: UIViewController, HelpSectionSelectedDelegate {
     
     var firstNumber = Int()
     var secondNumber = Int ()
+    var subject = String()
 
     
     @IBOutlet weak var titleLabel: UILabel!
@@ -32,13 +33,13 @@ class HelpScreenViewController: UIViewController, HelpSectionSelectedDelegate {
         super.viewDidLoad()
         setUp()
         customTable.cellDelegate = self
-
-        firstNumber = helpScreenViewModel.firstNumber
-        secondNumber = helpScreenViewModel.secondNumber
-        
     }
     
     func setUp() {
+        
+        firstNumber = helpScreenViewModel.firstNumber
+        secondNumber = helpScreenViewModel.secondNumber
+        subject = helpScreenViewModel.subject
         
         self.title = "How to..."
         self.view.backgroundColor = UIColor.Shades.standardBlack
@@ -50,20 +51,38 @@ class HelpScreenViewController: UIViewController, HelpSectionSelectedDelegate {
     }
     
     func tableSetUp() {
-        customTable.customCellsData = ["Using Place Values", "Rounding Numbers"]
         customTable.backgroundColor = UIColor.Shades.standardBlack
+        
+        if subject == Subject.Additions.name() {
+            print ("Additions chosen")
+            customTable.customCellsData = ["Using Place Values", "Rounding Numbers"]
+        } else if subject == Subject.Subtractions.name() {
+            print ("Subtractions chosen")
+            customTable.customCellsData = ["Subtract By Borrowing"]
+        }
+        
     }
 
     func cellWasSelected(id: Int) {
         
         //switch using cell idex to goto next screen
-        switch id {
-        case 0:
-            helpScreenFlowController.showUsingPlaceValues(firstNumber: firstNumber, secondNumber: secondNumber)
-        case 1:
-            helpScreenFlowController.showRoundingNumbers(firsyNumber: firstNumber, secondNumber: secondNumber)
-        default:
-            break
+        if subject == Subject.Additions.name() {
+            switch id {
+            case 0:
+                helpScreenFlowController.showUsingPlaceValues(firstNumber: firstNumber, secondNumber: secondNumber)
+            case 1:
+                helpScreenFlowController.showRoundingNumbers(firsyNumber: firstNumber, secondNumber: secondNumber)
+            default:
+                break
+            }
+        } else if subject == Subject.Subtractions.name() {
+            switch id {
+            case 0:
+                helpScreenFlowController.showSubtractByBorrowing(firstNumber: firstNumber, secondNumber: secondNumber)
+            default:
+                break
+            }
         }
+
     }
 }

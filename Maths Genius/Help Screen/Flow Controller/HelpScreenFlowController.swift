@@ -27,4 +27,8 @@ class HelpScreenFlowController {
     func showRoundingNumbers(firsyNumber: Int, secondNumber: Int) {
         RoundNumbersFactory.PushIn(navigationController: navigationController, firstNumber: firsyNumber, secondNumber: secondNumber)
     }
+    
+    func showSubtractByBorrowing(firstNumber: Int, secondNumber: Int) {
+        SubtractByBorrowingFactory.PushIn(navigationController: navigationController, firstNumber: firstNumber, secondNumber: secondNumber)
+    }
 }

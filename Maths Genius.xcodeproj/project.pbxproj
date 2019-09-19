@@ -41,6 +41,16 @@
 		89123E0B232A7D3E003E3ED0 /* RoundNumbersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89123E0A232A7D3E003E3ED0 /* RoundNumbersFactory.swift */; };
 		89123E0D232A8240003E3ED0 /* RoundingNumbersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89123E0C232A8240003E3ED0 /* RoundingNumbersModel.swift */; };
 		89123E0F232A8661003E3ED0 /* AdditionsHelpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89123E0E232A8661003E3ED0 /* AdditionsHelpViewModel.swift */; };
+		893607CA23315DB8003CA353 /* SubtractByBorrowingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607C923315DB8003CA353 /* SubtractByBorrowingView.swift */; };
+		893607CC23315DD0003CA353 /* SubtractByBorrowingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607CB23315DD0003CA353 /* SubtractByBorrowingViewModel.swift */; };
+		893607CE23315EB0003CA353 /* SubtractByBorrowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607CD23315EB0003CA353 /* SubtractByBorrowingViewController.swift */; };
+		893607D023315ECD003CA353 /* SubtractByBorrowing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893607CF23315ECD003CA353 /* SubtractByBorrowing.storyboard */; };
+		893607D223315F81003CA353 /* SubtractByBorrowingFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607D123315F81003CA353 /* SubtractByBorrowingFlowController.swift */; };
+		893607D423315FC0003CA353 /* SubtractByBorrowingFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607D323315FC0003CA353 /* SubtractByBorrowingFactory.swift */; };
+		893607D6233161A0003CA353 /* SubtractionsHelpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607D5233161A0003CA353 /* SubtractionsHelpViewModel.swift */; };
+		893607D82331628A003CA353 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607D72331628A003CA353 /* CustomCollectionView.swift */; };
+		893607DC233229D4003CA353 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607DA233229D4003CA353 /* CustomCollectionViewCell.swift */; };
+		893607DD233229D4003CA353 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 893607DB233229D4003CA353 /* CustomCollectionViewCell.xib */; };
 		895B542D22FDF8E700CFF65E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B542C22FDF8E700CFF65E /* AppDelegate.swift */; };
 		895B542F22FDF8E700CFF65E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B542E22FDF8E700CFF65E /* ViewController.swift */; };
 		895B543222FDF8E700CFF65E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895B543022FDF8E700CFF65E /* Main.storyboard */; };
@@ -110,6 +120,16 @@
 		89123E0A232A7D3E003E3ED0 /* RoundNumbersFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundNumbersFactory.swift; sourceTree = "<group>"; };
 		89123E0C232A8240003E3ED0 /* RoundingNumbersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundingNumbersModel.swift; sourceTree = "<group>"; };
 		89123E0E232A8661003E3ED0 /* AdditionsHelpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionsHelpViewModel.swift; sourceTree = "<group>"; };
+		893607C923315DB8003CA353 /* SubtractByBorrowingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractByBorrowingView.swift; sourceTree = "<group>"; };
+		893607CB23315DD0003CA353 /* SubtractByBorrowingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractByBorrowingViewModel.swift; sourceTree = "<group>"; };
+		893607CD23315EB0003CA353 /* SubtractByBorrowingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractByBorrowingViewController.swift; sourceTree = "<group>"; };
+		893607CF23315ECD003CA353 /* SubtractByBorrowing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubtractByBorrowing.storyboard; sourceTree = "<group>"; };
+		893607D123315F81003CA353 /* SubtractByBorrowingFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractByBorrowingFlowController.swift; sourceTree = "<group>"; };
+		893607D323315FC0003CA353 /* SubtractByBorrowingFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractByBorrowingFactory.swift; sourceTree = "<group>"; };
+		893607D5233161A0003CA353 /* SubtractionsHelpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionsHelpViewModel.swift; sourceTree = "<group>"; };
+		893607D72331628A003CA353 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
+		893607DA233229D4003CA353 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		893607DB233229D4003CA353 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		895B542922FDF8E700CFF65E /* Maths Genius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maths Genius.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		895B542C22FDF8E700CFF65E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		895B542E22FDF8E700CFF65E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -377,6 +397,92 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		893607C023315C0A003CA353 /* Subtractions Help */ = {
+			isa = PBXGroup;
+			children = (
+				893607C323315C92003CA353 /* Subract by borrowing */,
+				893607D5233161A0003CA353 /* SubtractionsHelpViewModel.swift */,
+			);
+			path = "Subtractions Help";
+			sourceTree = "<group>";
+		};
+		893607C123315C39003CA353 /* Multiplications Help */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Multiplications Help";
+			sourceTree = "<group>";
+		};
+		893607C223315C47003CA353 /* Divisions Help */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Divisions Help";
+			sourceTree = "<group>";
+		};
+		893607C323315C92003CA353 /* Subract by borrowing */ = {
+			isa = PBXGroup;
+			children = (
+				893607C823315D58003CA353 /* View */,
+				893607C723315D4D003CA353 /* View Model */,
+				893607C623315D41003CA353 /* View Controller */,
+				893607C523315D36003CA353 /* Flow Controller */,
+				893607C423315D2C003CA353 /* Factory */,
+			);
+			path = "Subract by borrowing";
+			sourceTree = "<group>";
+		};
+		893607C423315D2C003CA353 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				893607D323315FC0003CA353 /* SubtractByBorrowingFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		893607C523315D36003CA353 /* Flow Controller */ = {
+			isa = PBXGroup;
+			children = (
+				893607D123315F81003CA353 /* SubtractByBorrowingFlowController.swift */,
+			);
+			path = "Flow Controller";
+			sourceTree = "<group>";
+		};
+		893607C623315D41003CA353 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				893607CD23315EB0003CA353 /* SubtractByBorrowingViewController.swift */,
+				893607CF23315ECD003CA353 /* SubtractByBorrowing.storyboard */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		893607C723315D4D003CA353 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				893607CB23315DD0003CA353 /* SubtractByBorrowingViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		893607C823315D58003CA353 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				893607C923315DB8003CA353 /* SubtractByBorrowingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		893607D9233164F5003CA353 /* Custom CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				893607D72331628A003CA353 /* CustomCollectionView.swift */,
+				893607DA233229D4003CA353 /* CustomCollectionViewCell.swift */,
+				893607DB233229D4003CA353 /* CustomCollectionViewCell.xib */,
+			);
+			path = "Custom CollectionView";
+			sourceTree = "<group>";
+		};
 		895B542022FDF8E700CFF65E = {
 			isa = PBXGroup;
 			children = (
@@ -404,6 +510,9 @@
 				895B544622FDF9D900CFF65E /* Division */,
 				890DAA72231939D5005737A5 /* Help Screen */,
 				8905824323214707004E26BA /* Additions Help */,
+				893607C023315C0A003CA353 /* Subtractions Help */,
+				893607C123315C39003CA353 /* Multiplications Help */,
+				893607C223315C47003CA353 /* Divisions Help */,
 				895B544422FDF9B700CFF65E /* Extensions */,
 				895B544322FDF9AC00CFF65E /* Custom Views */,
 				895B544222FDF99F00CFF65E /* Core Data */,
@@ -439,6 +548,7 @@
 		895B544322FDF9AC00CFF65E /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				893607D9233164F5003CA353 /* Custom CollectionView */,
 				8905825A23225B18004E26BA /* Custom Table Cell */,
 				895B547822FE022500CFF65E /* IntroductionTable.swift */,
 				895B547A22FE02BB00CFF65E /* Table View Cell */,
@@ -832,6 +942,7 @@
 				895B543A22FDF8E900CFF65E /* LaunchScreen.storyboard in Resources */,
 				8905825E23225B42004E26BA /* CustomTableCell.xib in Resources */,
 				895B543722FDF8E900CFF65E /* Assets.xcassets in Resources */,
+				893607D023315ECD003CA353 /* SubtractByBorrowing.storyboard in Resources */,
 				89123E05232A7C40003E3ED0 /* RoundNumbers.storyboard in Resources */,
 				890DAA7A23193A58005737A5 /* HelpScreen.storyboard in Resources */,
 				890582512321488E004E26BA /* UsingPlaceValues.storyboard in Resources */,
@@ -841,6 +952,7 @@
 				895B543222FDF8E700CFF65E /* Main.storyboard in Resources */,
 				890DAA8523193DF2005737A5 /* CascadingTableHeader.xib in Resources */,
 				89C868132331060B00325FAD /* Subtraction.storyboard in Resources */,
+				893607DD233229D4003CA353 /* CustomCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -853,8 +965,12 @@
 			files = (
 				895B542F22FDF8E700CFF65E /* ViewController.swift in Sources */,
 				895B54A12300B41C00CFF65E /* AdditionsViewController.swift in Sources */,
+				893607D6233161A0003CA353 /* SubtractionsHelpViewModel.swift in Sources */,
+				893607D223315F81003CA353 /* SubtractByBorrowingFlowController.swift in Sources */,
 				890582532321493C004E26BA /* UsingPlaceValuesFlowController.swift in Sources */,
+				893607CA23315DB8003CA353 /* SubtractByBorrowingView.swift in Sources */,
 				895B548822FE0A0400CFF65E /* MainModel.swift in Sources */,
+				893607D82331628A003CA353 /* CustomCollectionView.swift in Sources */,
 				895B549822FE236600CFF65E /* AdditionsViewModel.swift in Sources */,
 				8904087623291C880030FDC6 /* Array+extensions.swift in Sources */,
 				8905825923225A3B004E26BA /* CustomTable.swift in Sources */,
@@ -863,6 +979,7 @@
 				8905824B232147FE004E26BA /* UsingPlaceValuesFactory.swift in Sources */,
 				89C8680B2331057000325FAD /* SubtractionFlowController.swift in Sources */,
 				89058261232285EF004E26BA /* UsingPlaceValuesModel.swift in Sources */,
+				893607D423315FC0003CA353 /* SubtractByBorrowingFactory.swift in Sources */,
 				89123E03232A7C11003E3ED0 /* RoundingNumbersViewModel.swift in Sources */,
 				89123E09232A7D10003E3ED0 /* RoundNumbersFlowController.swift in Sources */,
 				895B543522FDF8E700CFF65E /* Maths_Genius.xcdatamodeld in Sources */,
@@ -877,9 +994,11 @@
 				890DAA8D2319439B005737A5 /* HelpScreenFactory.swift in Sources */,
 				890DAA8323193DE7005737A5 /* CascadingTableHeader.swift in Sources */,
 				895B549C2300B21400CFF65E /* NumberSelectionModel.swift in Sources */,
+				893607DC233229D4003CA353 /* CustomCollectionViewCell.swift in Sources */,
 				8904087223268EA50030FDC6 /* BianaryInteger+extensions.swift in Sources */,
 				89C8680F233105DF00325FAD /* SubtractionViewController.swift in Sources */,
 				89123E0D232A8240003E3ED0 /* RoundingNumbersModel.swift in Sources */,
+				893607CE23315EB0003CA353 /* SubtractByBorrowingViewController.swift in Sources */,
 				89123E0F232A8661003E3ED0 /* AdditionsHelpViewModel.swift in Sources */,
 				8905824223213ECC004E26BA /* HelpScreenModel.swift in Sources */,
 				895B549E2300B22600CFF65E /* NumberSelectionViewModel.swift in Sources */,
@@ -893,6 +1012,7 @@
 				89123E0B232A7D3E003E3ED0 /* RoundNumbersFactory.swift in Sources */,
 				890DAA8023193CFF005737A5 /* CascadingTable.swift in Sources */,
 				890EC50D230759B60069C215 /* NumberButton.swift in Sources */,
+				893607CC23315DD0003CA353 /* SubtractByBorrowingViewModel.swift in Sources */,
 				895B549622FE22F000CFF65E /* AdditionsFactory.swift in Sources */,
 				895B546B22FDFE5300CFF65E /* MainFlowController.swift in Sources */,
 				89058255232149B3004E26BA /* UsingPlaceValuesViewModel.swift in Sources */,

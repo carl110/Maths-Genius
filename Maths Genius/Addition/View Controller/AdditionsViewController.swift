@@ -128,9 +128,9 @@ class AdditionsViewController: UIViewController {
                                options: "Let me try the answer again", "Help me, with an example", "Show me how with this equation") { (option) in
                                 switch(option) {
                                 case 1:
-                                    self.additionsFlowController.showHelpScreen(firstNumber: 1234, secondNumber: 567)
+                                    self.additionsFlowController.showHelpScreen(firstNumber: 1234, secondNumber: 567, subject: self.subject)
                                 case 2:
-                                    self.additionsFlowController.showHelpScreen(firstNumber: self.firstNumber, secondNumber: self.secondNumber)
+                                    self.additionsFlowController.showHelpScreen(firstNumber: self.firstNumber, secondNumber: self.secondNumber, subject: self.subject)
                                 default:
                                     break
                                 }
@@ -186,11 +186,9 @@ class AdditionsViewController: UIViewController {
                                options: "Let me try the answer again", "Help me, with an example", "Show me how with this equation") { (option) in
                                 switch(option) {
                                 case 1:
-                                    print ("example")
-//                                    self.additionsFlowController.showHelpScreen(firstNumber: 1234, secondNumber: 567)
+                                    self.additionsFlowController.showHelpScreen(firstNumber: 1234, secondNumber: 567, subject: self.subject)
                                 case 2:
-                                    print ("show me")
-//                                    self.additionsFlowController.showHelpScreen(firstNumber: self.firstNumber, secondNumber: self.secondNumber)
+                                    self.additionsFlowController.showHelpScreen(firstNumber: self.firstNumber, secondNumber: self.secondNumber, subject: self.subject)
                                 default:
                                     break
                                 }
