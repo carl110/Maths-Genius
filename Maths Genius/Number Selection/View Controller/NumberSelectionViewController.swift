@@ -154,7 +154,9 @@ class NumberSelectionViewController: UIViewController {
     
     @IBAction func continueButton(_ sender: Any) {
         
-        numberSelectionFlowController.showAdditions(firstNumber: firstNumber, secondNumber: secondNumber, subject: subject)
+        numberSelectionFlowController.showEquation(firstNumber: firstNumber, secondNumber: secondNumber, subject: subject)
+        
+
         
     }
     

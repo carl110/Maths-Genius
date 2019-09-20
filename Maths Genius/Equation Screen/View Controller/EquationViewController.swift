@@ -1,17 +1,17 @@
 //
-//  AdditionsViewController.swift
+//  EquationViewController.swift
 //  Maths Genius
 //
-//  Created by Carl Wainwright on 11/08/2019.
+//  Created by Carl Wainwright on 20/09/2019.
 //  Copyright © 2019 Carl Wainwright. All rights reserved.
 //
 
 import UIKit
 
-class AdditionsViewController: UIViewController {
+class EquationViewController: UIViewController {
     
-    fileprivate var additionsViewModel: AdditionsViewModel!
-    fileprivate var additionsFlowController: AdditionsFlowController!
+    fileprivate var equationFlowController: EquationFlowController!
+    fileprivate var equationViewModel: EquationViewModel!
     
     var firstNumber = Int()
     var secondNumber = Int ()
@@ -23,10 +23,11 @@ class AdditionsViewController: UIViewController {
     @IBOutlet weak var answerInput: UITextField!
     @IBOutlet weak var submitButton: UIButton!
     
-    func assignDependancies(additionsFlowController: AdditionsFlowController, additionsViewModel: AdditionsViewModel){
-        self.additionsFlowController = additionsFlowController
-        self.additionsViewModel = additionsViewModel
+    func assignDependancies(equationFlowController: EquationFlowController, equationViewModel: EquationViewModel) {
+        self.equationViewModel = equationViewModel
+        self.equationFlowController = equationFlowController
     }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,9 +37,9 @@ class AdditionsViewController: UIViewController {
     func setup() {
         
         //Set the values from previouse screen
-        firstNumber = additionsViewModel.firstNumber
-        secondNumber = additionsViewModel.secondNumber
-        subject = additionsViewModel.subject
+        firstNumber = equationViewModel.firstNumber
+        secondNumber = equationViewModel.secondNumber
+        subject = equationViewModel.subject
         
         //set mainscreen details
         self.view.backgroundColor = UIColor.Shades.standardBlack
@@ -51,26 +52,27 @@ class AdditionsViewController: UIViewController {
         
         //set up numbers and operation labels
         if subject == Subject.Additions.name() {
-           operation.text = "+"
+            operation.text = "+"
         } else if subject == Subject.Subtractions.name() {
-           operation.text = "-"
+            operation.text = "-"
         } else if subject == Subject.Multiplications.name() {
-           operation.text = "×"
+            operation.text = "×"
         } else if subject == Subject.Divisions.name() {
-           operation.text = "÷"
+            operation.text = "÷"
         }
-
+        
         operation.numberLabelSetup()
+        operation.textAlignment = .center
         
         firstNumberLabel.numberLabelSetup()
-
+        firstNumberLabel.textAlignment = .center
         secondNumberLabel.numberLabelSetup()
-
+        secondNumberLabel.textAlignment = .center
         answerInput.numberTextSetUp()
         
         submitButton.setTitle("Submit", for: .normal)
         DispatchQueue.main.async { [weak self] in
-           self?.submitButton.titleButtonSetup()
+            self?.submitButton.titleButtonSetup()
         }
     }
     
@@ -117,7 +119,7 @@ class AdditionsViewController: UIViewController {
                                     //Remove all viewcontrollers from the navigation stack
                                     self.navigationController!.viewControllers.removeAll()
                                     
-                                    self.additionsFlowController.showMain()
+                                    self.equationFlowController.showMain()
                                 default:
                                     break
                                 }
@@ -128,9 +130,9 @@ class AdditionsViewController: UIViewController {
                                options: "Let me try the answer again", "Help me, with an example", "Show me how with this equation") { (option) in
                                 switch(option) {
                                 case 1:
-                                    self.additionsFlowController.showHelpScreen(firstNumber: 1234, secondNumber: 567, subject: self.subject)
+                                    self.equationFlowController.showHelpScreen(firstNumber: 1234, secondNumber: 567, subject: self.subject)
                                 case 2:
-                                    self.additionsFlowController.showHelpScreen(firstNumber: self.firstNumber, secondNumber: self.secondNumber, subject: self.subject)
+                                    self.equationFlowController.showHelpScreen(firstNumber: self.firstNumber, secondNumber: self.secondNumber, subject: self.subject)
                                 default:
                                     break
                                 }
@@ -175,7 +177,7 @@ class AdditionsViewController: UIViewController {
                                     //Remove all viewcontrollers from the navigation stack
                                     self.navigationController!.viewControllers.removeAll()
                                     
-                                    self.additionsFlowController.showMain()
+                                    self.equationFlowController.showMain()
                                 default:
                                     break
                                 }
@@ -186,16 +188,16 @@ class AdditionsViewController: UIViewController {
                                options: "Let me try the answer again", "Help me, with an example", "Show me how with this equation") { (option) in
                                 switch(option) {
                                 case 1:
-                                    self.additionsFlowController.showHelpScreen(firstNumber: 1234, secondNumber: 567, subject: self.subject)
+                                    self.equationFlowController.showHelpScreen(firstNumber: 1234, secondNumber: 567, subject: self.subject)
                                 case 2:
-                                    self.additionsFlowController.showHelpScreen(firstNumber: self.firstNumber, secondNumber: self.secondNumber, subject: self.subject)
+                                    self.equationFlowController.showHelpScreen(firstNumber: self.firstNumber, secondNumber: self.secondNumber, subject: self.subject)
                                 default:
                                     break
                                 }
             }
         }
     }
-
+    
     @IBAction func answerInput(_ sender: Any) {
     }
     @IBAction func submitButton(_ sender: Any) {
@@ -209,7 +211,7 @@ class AdditionsViewController: UIViewController {
         } else if subject == Subject.Divisions.name() {
             print ("Divide")
         }
-
- 
+        
+        
     }
 }
