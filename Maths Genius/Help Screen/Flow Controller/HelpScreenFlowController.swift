@@ -19,19 +19,7 @@ class HelpScreenFlowController {
     func showMain() {
         MainFactory.PushIn(navigationController: navigationController)
     }
-    
-    func showUsingPlaceValues(firstNumber: Int, secondNumber: Int) {
-        UsingPlaceValuesFactory.PushIn(navigationController: navigationController, firstNumber: firstNumber, secondNumber: secondNumber)
-    }
-    
-    func showRoundingNumbers(firsyNumber: Int, secondNumber: Int) {
-        RoundNumbersFactory.PushIn(navigationController: navigationController, firstNumber: firsyNumber, secondNumber: secondNumber)
-    }
-    
-    func showSubtractByBorrowing(firstNumber: Int, secondNumber: Int) {
-        SubtractByBorrowingFactory.PushIn(navigationController: navigationController, firstNumber: firstNumber, secondNumber: secondNumber)
-    }
-    
+
     func equationHelp(firstNumber: Int, secondNumber: Int, helpTitle: String) {
         EquationHelpFactory.PushIn(navigationController: navigationController, firstNumber: firstNumber, secondNumber: secondNumber, helpTitle: helpTitle)
     }

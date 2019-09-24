@@ -11,15 +11,9 @@
 		89040874232692D20030FDC6 /* String+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89040873232692D20030FDC6 /* String+extensions.swift */; };
 		8904087623291C880030FDC6 /* Array+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8904087523291C880030FDC6 /* Array+extensions.swift */; };
 		8905824223213ECC004E26BA /* HelpScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905824123213ECC004E26BA /* HelpScreenModel.swift */; };
-		8905824B232147FE004E26BA /* UsingPlaceValuesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905824A232147FE004E26BA /* UsingPlaceValuesFactory.swift */; };
-		8905824E23214866004E26BA /* UsingPlaceValuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905824C23214866004E26BA /* UsingPlaceValuesViewController.swift */; };
-		890582512321488E004E26BA /* UsingPlaceValues.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890582502321488E004E26BA /* UsingPlaceValues.storyboard */; };
-		890582532321493C004E26BA /* UsingPlaceValuesFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890582522321493C004E26BA /* UsingPlaceValuesFlowController.swift */; };
-		89058255232149B3004E26BA /* UsingPlaceValuesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89058254232149B3004E26BA /* UsingPlaceValuesViewModel.swift */; };
 		8905825923225A3B004E26BA /* CustomTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905825823225A3B004E26BA /* CustomTable.swift */; };
 		8905825D23225B42004E26BA /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905825B23225B42004E26BA /* CustomTableCell.swift */; };
 		8905825E23225B42004E26BA /* CustomTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8905825C23225B42004E26BA /* CustomTableCell.xib */; };
-		89058261232285EF004E26BA /* UsingPlaceValuesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89058260232285EF004E26BA /* UsingPlaceValuesModel.swift */; };
 		890DAA712319364F005737A5 /* UIViewController+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DAA702319364F005737A5 /* UIViewController+extensions.swift */; };
 		890DAA7A23193A58005737A5 /* HelpScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890DAA7923193A58005737A5 /* HelpScreen.storyboard */; };
 		890DAA7D23193A84005737A5 /* HelpScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DAA7B23193A84005737A5 /* HelpScreenViewController.swift */; };
@@ -34,22 +28,9 @@
 		890EC509230759470069C215 /* NumberButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890EC508230759470069C215 /* NumberButton.xib */; };
 		890EC50D230759B60069C215 /* NumberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890EC50C230759B60069C215 /* NumberButton.swift */; };
 		890EC50F231816EE0069C215 /* UITextFields+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890EC50E231816EE0069C215 /* UITextFields+extensions.swift */; };
-		89123E03232A7C11003E3ED0 /* RoundingNumbersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89123E02232A7C11003E3ED0 /* RoundingNumbersViewModel.swift */; };
-		89123E05232A7C40003E3ED0 /* RoundNumbers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89123E04232A7C40003E3ED0 /* RoundNumbers.storyboard */; };
-		89123E07232A7C73003E3ED0 /* RoundNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89123E06232A7C73003E3ED0 /* RoundNumbersViewController.swift */; };
-		89123E09232A7D10003E3ED0 /* RoundNumbersFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89123E08232A7D10003E3ED0 /* RoundNumbersFlowController.swift */; };
-		89123E0B232A7D3E003E3ED0 /* RoundNumbersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89123E0A232A7D3E003E3ED0 /* RoundNumbersFactory.swift */; };
-		89123E0D232A8240003E3ED0 /* RoundingNumbersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89123E0C232A8240003E3ED0 /* RoundingNumbersModel.swift */; };
-		89123E0F232A8661003E3ED0 /* AdditionsHelpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89123E0E232A8661003E3ED0 /* AdditionsHelpViewModel.swift */; };
 		892E7C6F233A2967005321F8 /* SubtractionsHelp+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C6E233A2967005321F8 /* SubtractionsHelp+extensions.swift */; };
 		892E7C71233A455D005321F8 /* AdditionsHelpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C70233A455D005321F8 /* AdditionsHelpModel.swift */; };
 		892E7C73233A466B005321F8 /* AdditionsHelp+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C72233A466B005321F8 /* AdditionsHelp+extensions.swift */; };
-		893607CA23315DB8003CA353 /* SubtractByBorrowingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607C923315DB8003CA353 /* SubtractByBorrowingView.swift */; };
-		893607CC23315DD0003CA353 /* SubtractByBorrowingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607CB23315DD0003CA353 /* SubtractByBorrowingViewModel.swift */; };
-		893607CE23315EB0003CA353 /* SubtractByBorrowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607CD23315EB0003CA353 /* SubtractByBorrowingViewController.swift */; };
-		893607D023315ECD003CA353 /* SubtractByBorrowing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893607CF23315ECD003CA353 /* SubtractByBorrowing.storyboard */; };
-		893607D423315FC0003CA353 /* SubtractByBorrowingFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607D323315FC0003CA353 /* SubtractByBorrowingFactory.swift */; };
-		893607D6233161A0003CA353 /* SubtractionsHelpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607D5233161A0003CA353 /* SubtractionsHelpViewModel.swift */; };
 		893607D82331628A003CA353 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607D72331628A003CA353 /* CustomCollectionView.swift */; };
 		893607DC233229D4003CA353 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607DA233229D4003CA353 /* CustomCollectionViewCell.swift */; };
 		893607DD233229D4003CA353 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 893607DB233229D4003CA353 /* CustomCollectionViewCell.xib */; };
@@ -75,7 +56,6 @@
 		895B549C2300B21400CFF65E /* NumberSelectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B549B2300B21400CFF65E /* NumberSelectionModel.swift */; };
 		895B549E2300B22600CFF65E /* NumberSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B549D2300B22600CFF65E /* NumberSelectionViewModel.swift */; };
 		895B54A42300BCB100CFF65E /* UILabels+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B54A32300BCB100CFF65E /* UILabels+extensions.swift */; };
-		896B167523350B39002DF739 /* SubtractByBorrowingFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B167423350B39002DF739 /* SubtractByBorrowingFlowController.swift */; };
 		896B167C23350F38002DF739 /* EquationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B167B23350F38002DF739 /* EquationViewModel.swift */; };
 		896B167E23350F55002DF739 /* Equation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896B167D23350F55002DF739 /* Equation.storyboard */; };
 		896B168023350F6D002DF739 /* EquationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B167F23350F6D002DF739 /* EquationViewController.swift */; };
@@ -94,15 +74,9 @@
 		89040873232692D20030FDC6 /* String+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extensions.swift"; sourceTree = "<group>"; };
 		8904087523291C880030FDC6 /* Array+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+extensions.swift"; sourceTree = "<group>"; };
 		8905824123213ECC004E26BA /* HelpScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpScreenModel.swift; sourceTree = "<group>"; };
-		8905824A232147FE004E26BA /* UsingPlaceValuesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingPlaceValuesFactory.swift; sourceTree = "<group>"; };
-		8905824C23214866004E26BA /* UsingPlaceValuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingPlaceValuesViewController.swift; sourceTree = "<group>"; };
-		890582502321488E004E26BA /* UsingPlaceValues.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UsingPlaceValues.storyboard; sourceTree = "<group>"; };
-		890582522321493C004E26BA /* UsingPlaceValuesFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingPlaceValuesFlowController.swift; sourceTree = "<group>"; };
-		89058254232149B3004E26BA /* UsingPlaceValuesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingPlaceValuesViewModel.swift; sourceTree = "<group>"; };
 		8905825823225A3B004E26BA /* CustomTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTable.swift; sourceTree = "<group>"; };
 		8905825B23225B42004E26BA /* CustomTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableCell.swift; sourceTree = "<group>"; };
 		8905825C23225B42004E26BA /* CustomTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableCell.xib; sourceTree = "<group>"; };
-		89058260232285EF004E26BA /* UsingPlaceValuesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingPlaceValuesModel.swift; sourceTree = "<group>"; };
 		890DAA702319364F005737A5 /* UIViewController+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extensions.swift"; sourceTree = "<group>"; };
 		890DAA7923193A58005737A5 /* HelpScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HelpScreen.storyboard; sourceTree = "<group>"; };
 		890DAA7B23193A84005737A5 /* HelpScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpScreenViewController.swift; sourceTree = "<group>"; };
@@ -117,22 +91,9 @@
 		890EC508230759470069C215 /* NumberButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberButton.xib; sourceTree = "<group>"; };
 		890EC50C230759B60069C215 /* NumberButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberButton.swift; sourceTree = "<group>"; };
 		890EC50E231816EE0069C215 /* UITextFields+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextFields+extensions.swift"; sourceTree = "<group>"; };
-		89123E02232A7C11003E3ED0 /* RoundingNumbersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundingNumbersViewModel.swift; sourceTree = "<group>"; };
-		89123E04232A7C40003E3ED0 /* RoundNumbers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RoundNumbers.storyboard; sourceTree = "<group>"; };
-		89123E06232A7C73003E3ED0 /* RoundNumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundNumbersViewController.swift; sourceTree = "<group>"; };
-		89123E08232A7D10003E3ED0 /* RoundNumbersFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundNumbersFlowController.swift; sourceTree = "<group>"; };
-		89123E0A232A7D3E003E3ED0 /* RoundNumbersFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundNumbersFactory.swift; sourceTree = "<group>"; };
-		89123E0C232A8240003E3ED0 /* RoundingNumbersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundingNumbersModel.swift; sourceTree = "<group>"; };
-		89123E0E232A8661003E3ED0 /* AdditionsHelpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionsHelpViewModel.swift; sourceTree = "<group>"; };
 		892E7C6E233A2967005321F8 /* SubtractionsHelp+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SubtractionsHelp+extensions.swift"; sourceTree = "<group>"; };
 		892E7C70233A455D005321F8 /* AdditionsHelpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionsHelpModel.swift; sourceTree = "<group>"; };
 		892E7C72233A466B005321F8 /* AdditionsHelp+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AdditionsHelp+extensions.swift"; sourceTree = "<group>"; };
-		893607C923315DB8003CA353 /* SubtractByBorrowingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractByBorrowingView.swift; sourceTree = "<group>"; };
-		893607CB23315DD0003CA353 /* SubtractByBorrowingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractByBorrowingViewModel.swift; sourceTree = "<group>"; };
-		893607CD23315EB0003CA353 /* SubtractByBorrowingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractByBorrowingViewController.swift; sourceTree = "<group>"; };
-		893607CF23315ECD003CA353 /* SubtractByBorrowing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubtractByBorrowing.storyboard; sourceTree = "<group>"; };
-		893607D323315FC0003CA353 /* SubtractByBorrowingFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractByBorrowingFactory.swift; sourceTree = "<group>"; };
-		893607D5233161A0003CA353 /* SubtractionsHelpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionsHelpViewModel.swift; sourceTree = "<group>"; };
 		893607D72331628A003CA353 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
 		893607DA233229D4003CA353 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		893607DB233229D4003CA353 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -160,7 +121,6 @@
 		895B549B2300B21400CFF65E /* NumberSelectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberSelectionModel.swift; sourceTree = "<group>"; };
 		895B549D2300B22600CFF65E /* NumberSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberSelectionViewModel.swift; sourceTree = "<group>"; };
 		895B54A32300BCB100CFF65E /* UILabels+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabels+extensions.swift"; sourceTree = "<group>"; };
-		896B167423350B39002DF739 /* SubtractByBorrowingFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractByBorrowingFlowController.swift; sourceTree = "<group>"; };
 		896B167B23350F38002DF739 /* EquationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationViewModel.swift; sourceTree = "<group>"; };
 		896B167D23350F55002DF739 /* Equation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Equation.storyboard; sourceTree = "<group>"; };
 		896B167F23350F6D002DF739 /* EquationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationViewController.swift; sourceTree = "<group>"; };
@@ -185,74 +145,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8905824323214707004E26BA /* Additions Help */ = {
-			isa = PBXGroup;
-			children = (
-				89123DFC232A7652003E3ED0 /* Rounding Numbers */,
-				890582442321471F004E26BA /* Using Place Values */,
-				89123E0E232A8661003E3ED0 /* AdditionsHelpViewModel.swift */,
-			);
-			path = "Additions Help";
-			sourceTree = "<group>";
-		};
-		890582442321471F004E26BA /* Using Place Values */ = {
-			isa = PBXGroup;
-			children = (
-				89058245232147A8004E26BA /* Model */,
-				89058247232147A8004E26BA /* View Model */,
-				89058249232147A8004E26BA /* View Controller */,
-				89058248232147A8004E26BA /* Flow Controller */,
-				89058246232147A8004E26BA /* Factory */,
-			);
-			path = "Using Place Values";
-			sourceTree = "<group>";
-		};
-		89058245232147A8004E26BA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				89058260232285EF004E26BA /* UsingPlaceValuesModel.swift */,
-			);
-			name = Model;
-			path = "Maths Genius/Subtraction/Model";
-			sourceTree = SOURCE_ROOT;
-		};
-		89058246232147A8004E26BA /* Factory */ = {
-			isa = PBXGroup;
-			children = (
-				8905824A232147FE004E26BA /* UsingPlaceValuesFactory.swift */,
-			);
-			name = Factory;
-			path = "Maths Genius/Subtraction/Factory";
-			sourceTree = SOURCE_ROOT;
-		};
-		89058247232147A8004E26BA /* View Model */ = {
-			isa = PBXGroup;
-			children = (
-				89058254232149B3004E26BA /* UsingPlaceValuesViewModel.swift */,
-			);
-			name = "View Model";
-			path = "Maths Genius/Subtraction/View Model";
-			sourceTree = SOURCE_ROOT;
-		};
-		89058248232147A8004E26BA /* Flow Controller */ = {
-			isa = PBXGroup;
-			children = (
-				890582522321493C004E26BA /* UsingPlaceValuesFlowController.swift */,
-			);
-			name = "Flow Controller";
-			path = "Maths Genius/Subtraction/Flow Controller";
-			sourceTree = SOURCE_ROOT;
-		};
-		89058249232147A8004E26BA /* View Controller */ = {
-			isa = PBXGroup;
-			children = (
-				8905824C23214866004E26BA /* UsingPlaceValuesViewController.swift */,
-				890582502321488E004E26BA /* UsingPlaceValues.storyboard */,
-			);
-			name = "View Controller";
-			path = "Maths Genius/Subtraction/View Controller";
-			sourceTree = SOURCE_ROOT;
-		};
 		8905825A23225B18004E26BA /* Custom Table Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,59 +244,6 @@
 			path = NumberButton;
 			sourceTree = "<group>";
 		};
-		89123DFC232A7652003E3ED0 /* Rounding Numbers */ = {
-			isa = PBXGroup;
-			children = (
-				89123E01232A777A003E3ED0 /* Model */,
-				89123E00232A7774003E3ED0 /* View Model */,
-				89123DFF232A776A003E3ED0 /* View Controller */,
-				89123DFE232A775C003E3ED0 /* Flow Controller */,
-				89123DFD232A7754003E3ED0 /* Factory */,
-			);
-			path = "Rounding Numbers";
-			sourceTree = "<group>";
-		};
-		89123DFD232A7754003E3ED0 /* Factory */ = {
-			isa = PBXGroup;
-			children = (
-				89123E0A232A7D3E003E3ED0 /* RoundNumbersFactory.swift */,
-			);
-			path = Factory;
-			sourceTree = "<group>";
-		};
-		89123DFE232A775C003E3ED0 /* Flow Controller */ = {
-			isa = PBXGroup;
-			children = (
-				89123E08232A7D10003E3ED0 /* RoundNumbersFlowController.swift */,
-			);
-			path = "Flow Controller";
-			sourceTree = "<group>";
-		};
-		89123DFF232A776A003E3ED0 /* View Controller */ = {
-			isa = PBXGroup;
-			children = (
-				89123E04232A7C40003E3ED0 /* RoundNumbers.storyboard */,
-				89123E06232A7C73003E3ED0 /* RoundNumbersViewController.swift */,
-			);
-			path = "View Controller";
-			sourceTree = "<group>";
-		};
-		89123E00232A7774003E3ED0 /* View Model */ = {
-			isa = PBXGroup;
-			children = (
-				89123E02232A7C11003E3ED0 /* RoundingNumbersViewModel.swift */,
-			);
-			path = "View Model";
-			sourceTree = "<group>";
-		};
-		89123E01232A777A003E3ED0 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				89123E0C232A8240003E3ED0 /* RoundingNumbersModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		892E7C6C233A292F005321F8 /* Additions Help */ = {
 			isa = PBXGroup;
 			children = (
@@ -419,74 +258,6 @@
 				892E7C6E233A2967005321F8 /* SubtractionsHelp+extensions.swift */,
 			);
 			path = "Subtractions Help";
-			sourceTree = "<group>";
-		};
-		893607C023315C0A003CA353 /* Subtractions Help */ = {
-			isa = PBXGroup;
-			children = (
-				893607C323315C92003CA353 /* Subract by borrowing */,
-				893607D5233161A0003CA353 /* SubtractionsHelpViewModel.swift */,
-			);
-			path = "Subtractions Help";
-			sourceTree = "<group>";
-		};
-		893607C123315C39003CA353 /* Multiplications Help */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Multiplications Help";
-			sourceTree = "<group>";
-		};
-		893607C223315C47003CA353 /* Divisions Help */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Divisions Help";
-			sourceTree = "<group>";
-		};
-		893607C323315C92003CA353 /* Subract by borrowing */ = {
-			isa = PBXGroup;
-			children = (
-				893607C823315D58003CA353 /* View */,
-				893607C723315D4D003CA353 /* View Model */,
-				893607CB23315DD0003CA353 /* SubtractByBorrowingViewModel.swift */,
-				893607C623315D41003CA353 /* View Controller */,
-				896B167323350B1F002DF739 /* Flow Controller */,
-				893607C423315D2C003CA353 /* Factory */,
-			);
-			path = "Subract by borrowing";
-			sourceTree = "<group>";
-		};
-		893607C423315D2C003CA353 /* Factory */ = {
-			isa = PBXGroup;
-			children = (
-				893607D323315FC0003CA353 /* SubtractByBorrowingFactory.swift */,
-			);
-			path = Factory;
-			sourceTree = "<group>";
-		};
-		893607C623315D41003CA353 /* View Controller */ = {
-			isa = PBXGroup;
-			children = (
-				893607CD23315EB0003CA353 /* SubtractByBorrowingViewController.swift */,
-				893607CF23315ECD003CA353 /* SubtractByBorrowing.storyboard */,
-			);
-			path = "View Controller";
-			sourceTree = "<group>";
-		};
-		893607C723315D4D003CA353 /* View Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Model";
-			sourceTree = "<group>";
-		};
-		893607C823315D58003CA353 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				893607C923315DB8003CA353 /* SubtractByBorrowingView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		893607D9233164F5003CA353 /* Custom CollectionView */ = {
@@ -523,10 +294,6 @@
 				896B167623350EDD002DF739 /* Equation Screen */,
 				890DAA72231939D5005737A5 /* Help Screen */,
 				896B168523351663002DF739 /* Equation Help */,
-				8905824323214707004E26BA /* Additions Help */,
-				893607C023315C0A003CA353 /* Subtractions Help */,
-				893607C123315C39003CA353 /* Multiplications Help */,
-				893607C223315C47003CA353 /* Divisions Help */,
 				895B544422FDF9B700CFF65E /* Extensions */,
 				895B544322FDF9AC00CFF65E /* Custom Views */,
 				895B544222FDF99F00CFF65E /* Core Data */,
@@ -692,14 +459,6 @@
 			path = "Table View Cell";
 			sourceTree = "<group>";
 		};
-		896B167323350B1F002DF739 /* Flow Controller */ = {
-			isa = PBXGroup;
-			children = (
-				896B167423350B39002DF739 /* SubtractByBorrowingFlowController.swift */,
-			);
-			path = "Flow Controller";
-			sourceTree = "<group>";
-		};
 		896B167623350EDD002DF739 /* Equation Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -861,10 +620,7 @@
 				895B543A22FDF8E900CFF65E /* LaunchScreen.storyboard in Resources */,
 				8905825E23225B42004E26BA /* CustomTableCell.xib in Resources */,
 				895B543722FDF8E900CFF65E /* Assets.xcassets in Resources */,
-				893607D023315ECD003CA353 /* SubtractByBorrowing.storyboard in Resources */,
-				89123E05232A7C40003E3ED0 /* RoundNumbers.storyboard in Resources */,
 				890DAA7A23193A58005737A5 /* HelpScreen.storyboard in Resources */,
-				890582512321488E004E26BA /* UsingPlaceValues.storyboard in Resources */,
 				890EC4FB230742EF0069C215 /* NumberPad.xib in Resources */,
 				895B548622FE07DB00CFF65E /* IntroductionCell.xib in Resources */,
 				890EC509230759470069C215 /* NumberButton.xib in Resources */,
@@ -883,9 +639,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				895B542F22FDF8E700CFF65E /* ViewController.swift in Sources */,
-				893607D6233161A0003CA353 /* SubtractionsHelpViewModel.swift in Sources */,
-				890582532321493C004E26BA /* UsingPlaceValuesFlowController.swift in Sources */,
-				893607CA23315DB8003CA353 /* SubtractByBorrowingView.swift in Sources */,
 				895B548822FE0A0400CFF65E /* MainModel.swift in Sources */,
 				896B168C233516CD002DF739 /* EquationHelpModel.swift in Sources */,
 				893607D82331628A003CA353 /* CustomCollectionView.swift in Sources */,
@@ -894,18 +647,11 @@
 				896B169223351728002DF739 /* EquationHelpViewController.swift in Sources */,
 				895B546D22FDFE6A00CFF65E /* MainFactory.swift in Sources */,
 				890DAA712319364F005737A5 /* UIViewController+extensions.swift in Sources */,
-				8905824B232147FE004E26BA /* UsingPlaceValuesFactory.swift in Sources */,
 				896B168423350F89002DF739 /* EquationFactory.swift in Sources */,
-				89058261232285EF004E26BA /* UsingPlaceValuesModel.swift in Sources */,
-				893607D423315FC0003CA353 /* SubtractByBorrowingFactory.swift in Sources */,
 				892E7C71233A455D005321F8 /* AdditionsHelpModel.swift in Sources */,
-				89123E03232A7C11003E3ED0 /* RoundingNumbersViewModel.swift in Sources */,
-				89123E09232A7D10003E3ED0 /* RoundNumbersFlowController.swift in Sources */,
 				895B543522FDF8E700CFF65E /* Maths_Genius.xcdatamodeld in Sources */,
 				8905825D23225B42004E26BA /* CustomTableCell.swift in Sources */,
-				8905824E23214866004E26BA /* UsingPlaceValuesViewController.swift in Sources */,
 				89040874232692D20030FDC6 /* String+extensions.swift in Sources */,
-				89123E07232A7C73003E3ED0 /* RoundNumbersViewController.swift in Sources */,
 				895B547922FE022500CFF65E /* IntroductionTable.swift in Sources */,
 				896B169423351743002DF739 /* EquationHelpFlowController.swift in Sources */,
 				890DAA8B231942D3005737A5 /* HelpScreenViewModel.swift in Sources */,
@@ -918,12 +664,9 @@
 				896B168E233516E5002DF739 /* EquationHelpViewModel.swift in Sources */,
 				893607DC233229D4003CA353 /* CustomCollectionViewCell.swift in Sources */,
 				8904087223268EA50030FDC6 /* BianaryInteger+extensions.swift in Sources */,
-				89123E0D232A8240003E3ED0 /* RoundingNumbersModel.swift in Sources */,
 				896B168023350F6D002DF739 /* EquationViewController.swift in Sources */,
 				896B167C23350F38002DF739 /* EquationViewModel.swift in Sources */,
-				893607CE23315EB0003CA353 /* SubtractByBorrowingViewController.swift in Sources */,
 				896B16962335175F002DF739 /* EquationHelpFactory.swift in Sources */,
-				89123E0F232A8661003E3ED0 /* AdditionsHelpViewModel.swift in Sources */,
 				8905824223213ECC004E26BA /* HelpScreenModel.swift in Sources */,
 				895B549E2300B22600CFF65E /* NumberSelectionViewModel.swift in Sources */,
 				890EC50F231816EE0069C215 /* UITextFields+extensions.swift in Sources */,
@@ -931,14 +674,10 @@
 				895B548A22FE191800CFF65E /* UIButton+extensions.swift in Sources */,
 				895B547522FDFFBA00CFF65E /* NumberSelectionFactory.swift in Sources */,
 				895B548522FE07DB00CFF65E /* IntroductionCell.swift in Sources */,
-				89123E0B232A7D3E003E3ED0 /* RoundNumbersFactory.swift in Sources */,
-				896B167523350B39002DF739 /* SubtractByBorrowingFlowController.swift in Sources */,
 				890DAA8023193CFF005737A5 /* CascadingTable.swift in Sources */,
 				890EC50D230759B60069C215 /* NumberButton.swift in Sources */,
 				892E7C6F233A2967005321F8 /* SubtractionsHelp+extensions.swift in Sources */,
-				893607CC23315DD0003CA353 /* SubtractByBorrowingViewModel.swift in Sources */,
 				895B546B22FDFE5300CFF65E /* MainFlowController.swift in Sources */,
-				89058255232149B3004E26BA /* UsingPlaceValuesViewModel.swift in Sources */,
 				896B168223350F7D002DF739 /* EquationFlowController.swift in Sources */,
 				890DAA872319419C005737A5 /* UITableView+extensions.swift in Sources */,
 				895B546922FDFC1400CFF65E /* UIColor+extensions.swift in Sources */,
