@@ -41,6 +41,7 @@
 		89123E0B232A7D3E003E3ED0 /* RoundNumbersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89123E0A232A7D3E003E3ED0 /* RoundNumbersFactory.swift */; };
 		89123E0D232A8240003E3ED0 /* RoundingNumbersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89123E0C232A8240003E3ED0 /* RoundingNumbersModel.swift */; };
 		89123E0F232A8661003E3ED0 /* AdditionsHelpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89123E0E232A8661003E3ED0 /* AdditionsHelpViewModel.swift */; };
+		892E7C6F233A2967005321F8 /* SubtractionsHelp+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C6E233A2967005321F8 /* SubtractionsHelp+extensions.swift */; };
 		893607CA23315DB8003CA353 /* SubtractByBorrowingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607C923315DB8003CA353 /* SubtractByBorrowingView.swift */; };
 		893607CC23315DD0003CA353 /* SubtractByBorrowingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607CB23315DD0003CA353 /* SubtractByBorrowingViewModel.swift */; };
 		893607CE23315EB0003CA353 /* SubtractByBorrowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607CD23315EB0003CA353 /* SubtractByBorrowingViewController.swift */; };
@@ -121,6 +122,7 @@
 		89123E0A232A7D3E003E3ED0 /* RoundNumbersFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundNumbersFactory.swift; sourceTree = "<group>"; };
 		89123E0C232A8240003E3ED0 /* RoundingNumbersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundingNumbersModel.swift; sourceTree = "<group>"; };
 		89123E0E232A8661003E3ED0 /* AdditionsHelpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionsHelpViewModel.swift; sourceTree = "<group>"; };
+		892E7C6E233A2967005321F8 /* SubtractionsHelp+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SubtractionsHelp+extensions.swift"; sourceTree = "<group>"; };
 		893607C923315DB8003CA353 /* SubtractByBorrowingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractByBorrowingView.swift; sourceTree = "<group>"; };
 		893607CB23315DD0003CA353 /* SubtractByBorrowingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractByBorrowingViewModel.swift; sourceTree = "<group>"; };
 		893607CD23315EB0003CA353 /* SubtractByBorrowingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractByBorrowingViewController.swift; sourceTree = "<group>"; };
@@ -399,11 +401,19 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		892E7C6B2338F02E005321F8 /* CustomCell */ = {
+		892E7C6C233A292F005321F8 /* Additions Help */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = CustomCell;
+			path = "Additions Help";
+			sourceTree = "<group>";
+		};
+		892E7C6D233A293B005321F8 /* Subtractions Help */ = {
+			isa = PBXGroup;
+			children = (
+				892E7C6E233A2967005321F8 /* SubtractionsHelp+extensions.swift */,
+			);
+			path = "Subtractions Help";
 			sourceTree = "<group>";
 		};
 		893607C023315C0A003CA353 /* Subtractions Help */ = {
@@ -480,7 +490,6 @@
 				893607D72331628A003CA353 /* CustomCollectionView.swift */,
 				893607DB233229D4003CA353 /* CustomCollectionViewCell.xib */,
 				893607DA233229D4003CA353 /* CustomCollectionViewCell.swift */,
-				892E7C6B2338F02E005321F8 /* CustomCell */,
 			);
 			path = "Custom CollectionView";
 			sourceTree = "<group>";
@@ -560,6 +569,8 @@
 		895B544422FDF9B700CFF65E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				892E7C6D233A293B005321F8 /* Subtractions Help */,
+				892E7C6C233A292F005321F8 /* Additions Help */,
 				895B548922FE191800CFF65E /* UIButton+extensions.swift */,
 				895B546822FDFC1400CFF65E /* UIColor+extensions.swift */,
 				895B548B22FE198200CFF65E /* UIView+extensions.swift */,
@@ -916,6 +927,7 @@
 				896B167523350B39002DF739 /* SubtractByBorrowingFlowController.swift in Sources */,
 				890DAA8023193CFF005737A5 /* CascadingTable.swift in Sources */,
 				890EC50D230759B60069C215 /* NumberButton.swift in Sources */,
+				892E7C6F233A2967005321F8 /* SubtractionsHelp+extensions.swift in Sources */,
 				893607CC23315DD0003CA353 /* SubtractByBorrowingViewModel.swift in Sources */,
 				895B546B22FDFE5300CFF65E /* MainFlowController.swift in Sources */,
 				89058255232149B3004E26BA /* UsingPlaceValuesViewModel.swift in Sources */,

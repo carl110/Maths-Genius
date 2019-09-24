@@ -19,7 +19,7 @@ class CustomCollectionView: UICollectionView, UICollectionViewDelegate, UICollec
     
     var layout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
-        let width = UIScreen.main.bounds.size.width
+        let width = UIScreen.main.bounds.size.width - 10
         layout.estimatedItemSize = CGSize(width: width, height: 900)
         return layout
     }()
@@ -44,19 +44,6 @@ class CustomCollectionView: UICollectionView, UICollectionViewDelegate, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-//        if indexPath.item < cellData.count {
-//                    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCollectionViewCell", for: indexPath) as! CustomCollectionViewCell
-//            //        cell.cellLabel.textColor = UIColor.Blues.standardBlue
-//                    cell.cellLabel.text = cellData[indexPath.row]
-//                    cell.cellImage.image = cellImage[indexPath.row]
-//                    return cell
-//        } else {
-//            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ExampleCell", for: indexPath) as! ExampleCell
-//
-//            cell.cellLabel.text = cellData[indexPath.row]
-//        return cell
-//        }
 
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCollectionViewCell", for: indexPath) as! CustomCollectionViewCell
