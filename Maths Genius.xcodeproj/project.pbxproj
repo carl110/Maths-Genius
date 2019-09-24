@@ -78,6 +78,12 @@
 		896B168023350F6D002DF739 /* EquationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B167F23350F6D002DF739 /* EquationViewController.swift */; };
 		896B168223350F7D002DF739 /* EquationFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B168123350F7D002DF739 /* EquationFlowController.swift */; };
 		896B168423350F89002DF739 /* EquationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B168323350F89002DF739 /* EquationFactory.swift */; };
+		896B168C233516CD002DF739 /* EquationHelpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B168B233516CD002DF739 /* EquationHelpModel.swift */; };
+		896B168E233516E5002DF739 /* EquationHelpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B168D233516E5002DF739 /* EquationHelpViewModel.swift */; };
+		896B169023351707002DF739 /* EquationHelp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896B168F23351707002DF739 /* EquationHelp.storyboard */; };
+		896B169223351728002DF739 /* EquationHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B169123351728002DF739 /* EquationHelpViewController.swift */; };
+		896B169423351743002DF739 /* EquationHelpFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B169323351743002DF739 /* EquationHelpFlowController.swift */; };
+		896B16962335175F002DF739 /* EquationHelpFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B16952335175F002DF739 /* EquationHelpFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -154,6 +160,12 @@
 		896B167F23350F6D002DF739 /* EquationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationViewController.swift; sourceTree = "<group>"; };
 		896B168123350F7D002DF739 /* EquationFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationFlowController.swift; sourceTree = "<group>"; };
 		896B168323350F89002DF739 /* EquationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationFactory.swift; sourceTree = "<group>"; };
+		896B168B233516CD002DF739 /* EquationHelpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationHelpModel.swift; sourceTree = "<group>"; };
+		896B168D233516E5002DF739 /* EquationHelpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationHelpViewModel.swift; sourceTree = "<group>"; };
+		896B168F23351707002DF739 /* EquationHelp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EquationHelp.storyboard; sourceTree = "<group>"; };
+		896B169123351728002DF739 /* EquationHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationHelpViewController.swift; sourceTree = "<group>"; };
+		896B169323351743002DF739 /* EquationHelpFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationHelpFlowController.swift; sourceTree = "<group>"; };
+		896B16952335175F002DF739 /* EquationHelpFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationHelpFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -387,6 +399,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		892E7C6B2338F02E005321F8 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
 		893607C023315C0A003CA353 /* Subtractions Help */ = {
 			isa = PBXGroup;
 			children = (
@@ -459,8 +478,9 @@
 			isa = PBXGroup;
 			children = (
 				893607D72331628A003CA353 /* CustomCollectionView.swift */,
-				893607DA233229D4003CA353 /* CustomCollectionViewCell.swift */,
 				893607DB233229D4003CA353 /* CustomCollectionViewCell.xib */,
+				893607DA233229D4003CA353 /* CustomCollectionViewCell.swift */,
+				892E7C6B2338F02E005321F8 /* CustomCell */,
 			);
 			path = "Custom CollectionView";
 			sourceTree = "<group>";
@@ -488,6 +508,7 @@
 				895B544522FDF9C300CFF65E /* Number Selection */,
 				896B167623350EDD002DF739 /* Equation Screen */,
 				890DAA72231939D5005737A5 /* Help Screen */,
+				896B168523351663002DF739 /* Equation Help */,
 				8905824323214707004E26BA /* Additions Help */,
 				893607C023315C0A003CA353 /* Subtractions Help */,
 				893607C123315C39003CA353 /* Multiplications Help */,
@@ -707,6 +728,59 @@
 			path = "View Controller";
 			sourceTree = "<group>";
 		};
+		896B168523351663002DF739 /* Equation Help */ = {
+			isa = PBXGroup;
+			children = (
+				896B168A233516B9002DF739 /* View */,
+				896B1689233516B2002DF739 /* View Model */,
+				896B1688233516A9002DF739 /* View Controller */,
+				896B1687233516A0002DF739 /* Flow Controller */,
+				896B168623351697002DF739 /* Factory */,
+			);
+			path = "Equation Help";
+			sourceTree = "<group>";
+		};
+		896B168623351697002DF739 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				896B16952335175F002DF739 /* EquationHelpFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		896B1687233516A0002DF739 /* Flow Controller */ = {
+			isa = PBXGroup;
+			children = (
+				896B169323351743002DF739 /* EquationHelpFlowController.swift */,
+			);
+			path = "Flow Controller";
+			sourceTree = "<group>";
+		};
+		896B1688233516A9002DF739 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				896B168F23351707002DF739 /* EquationHelp.storyboard */,
+				896B169123351728002DF739 /* EquationHelpViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		896B1689233516B2002DF739 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				896B168D233516E5002DF739 /* EquationHelpViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		896B168A233516B9002DF739 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				896B168B233516CD002DF739 /* EquationHelpModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -778,6 +852,7 @@
 				895B548622FE07DB00CFF65E /* IntroductionCell.xib in Resources */,
 				890EC509230759470069C215 /* NumberButton.xib in Resources */,
 				895B543222FDF8E700CFF65E /* Main.storyboard in Resources */,
+				896B169023351707002DF739 /* EquationHelp.storyboard in Resources */,
 				890DAA8523193DF2005737A5 /* CascadingTableHeader.xib in Resources */,
 				893607DD233229D4003CA353 /* CustomCollectionViewCell.xib in Resources */,
 			);
@@ -795,9 +870,11 @@
 				890582532321493C004E26BA /* UsingPlaceValuesFlowController.swift in Sources */,
 				893607CA23315DB8003CA353 /* SubtractByBorrowingView.swift in Sources */,
 				895B548822FE0A0400CFF65E /* MainModel.swift in Sources */,
+				896B168C233516CD002DF739 /* EquationHelpModel.swift in Sources */,
 				893607D82331628A003CA353 /* CustomCollectionView.swift in Sources */,
 				8904087623291C880030FDC6 /* Array+extensions.swift in Sources */,
 				8905825923225A3B004E26BA /* CustomTable.swift in Sources */,
+				896B169223351728002DF739 /* EquationHelpViewController.swift in Sources */,
 				895B546D22FDFE6A00CFF65E /* MainFactory.swift in Sources */,
 				890DAA712319364F005737A5 /* UIViewController+extensions.swift in Sources */,
 				8905824B232147FE004E26BA /* UsingPlaceValuesFactory.swift in Sources */,
@@ -812,18 +889,21 @@
 				89040874232692D20030FDC6 /* String+extensions.swift in Sources */,
 				89123E07232A7C73003E3ED0 /* RoundNumbersViewController.swift in Sources */,
 				895B547922FE022500CFF65E /* IntroductionTable.swift in Sources */,
+				896B169423351743002DF739 /* EquationHelpFlowController.swift in Sources */,
 				890DAA8B231942D3005737A5 /* HelpScreenViewModel.swift in Sources */,
 				895B549222FE223600CFF65E /* NumberSelectionViewController.swift in Sources */,
 				895B548C22FE198200CFF65E /* UIView+extensions.swift in Sources */,
 				890DAA8D2319439B005737A5 /* HelpScreenFactory.swift in Sources */,
 				890DAA8323193DE7005737A5 /* CascadingTableHeader.swift in Sources */,
 				895B549C2300B21400CFF65E /* NumberSelectionModel.swift in Sources */,
+				896B168E233516E5002DF739 /* EquationHelpViewModel.swift in Sources */,
 				893607DC233229D4003CA353 /* CustomCollectionViewCell.swift in Sources */,
 				8904087223268EA50030FDC6 /* BianaryInteger+extensions.swift in Sources */,
 				89123E0D232A8240003E3ED0 /* RoundingNumbersModel.swift in Sources */,
 				896B168023350F6D002DF739 /* EquationViewController.swift in Sources */,
 				896B167C23350F38002DF739 /* EquationViewModel.swift in Sources */,
 				893607CE23315EB0003CA353 /* SubtractByBorrowingViewController.swift in Sources */,
+				896B16962335175F002DF739 /* EquationHelpFactory.swift in Sources */,
 				89123E0F232A8661003E3ED0 /* AdditionsHelpViewModel.swift in Sources */,
 				8905824223213ECC004E26BA /* HelpScreenModel.swift in Sources */,
 				895B549E2300B22600CFF65E /* NumberSelectionViewModel.swift in Sources */,

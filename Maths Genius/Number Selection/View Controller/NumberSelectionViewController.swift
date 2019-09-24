@@ -60,6 +60,9 @@ class NumberSelectionViewController: UIViewController {
         //disable selector and button to force pick order
         secondNumberSelector.isEnabled = false
         
+        firstNumberSelector.backgroundColor = UIColor.Yellows.gryffindorYellow
+        secondNumberSelector.backgroundColor = UIColor.Yellows.gryffindorYellow
+        
         continueButton.disableButton()
     }
     

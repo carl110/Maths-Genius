@@ -141,10 +141,84 @@ class EquationViewController: UIViewController {
     }
     
     func subtractionSubmitButton() {
+        
+        var secondNumberUperLimit4Digit = 9999
+        var secondNumberUpperLimit3Digit = 999
+        var secondNumberUpperLimit2Digit = 99
+        var secondNumberUpperLimit1Digit = 9
+        
+
+        
         if integer(from: answerInput) == firstNumber - secondNumber {
             alertBoxWithAction(title: "WELL DONE",
                                message: "You gave the correct andswer",
-                               options: "Let me try another addition", "Let me try a different type of equation") { (option) in
+                               options: "Let me try another subtraction", "Let me try a different type of equation") { (option) in
+                                switch(option) {
+                                case 0:
+                                    
+                                    //Update numbers with new random numbers set to the same digit counts
+                                    if self.firstNumber.digits.count == 4 {
+                                        self.firstNumber = Int.random(in: 1000...9999)
+                                    } else if self.firstNumber.digits.count == 3 {
+                                        self.firstNumber = Int.random(in: 100...999)
+                                    } else if self.firstNumber.digits.count == 2 {
+                                        self.firstNumber = Int.random(in: 10...99)
+                                    } else {
+                                        self.firstNumber = Int.random(in: 0...9)
+                                    }
+                                    
+                                    if self.subject == Subject.Subtractions.name() && self.firstNumber.digits.count == self.secondNumber.digits.count {
+                                        secondNumberUperLimit4Digit = self.firstNumber
+                                        secondNumberUpperLimit3Digit = self.firstNumber
+                                        secondNumberUpperLimit2Digit = self.firstNumber
+                                        secondNumberUpperLimit1Digit = self.firstNumber
+                                    }
+                                    
+                                    if self.secondNumber.digits.count == 4 {
+                                        self.secondNumber = Int.random(in: 1000...secondNumberUperLimit4Digit)
+                                    } else if self.secondNumber.digits.count == 3 {
+                                        self.secondNumber = Int.random(in: 100...secondNumberUpperLimit3Digit)
+                                    } else if self.secondNumber.digits.count == 2 {
+                                        self.secondNumber = Int.random(in: 10...secondNumberUpperLimit2Digit)
+                                    } else {
+                                        self.secondNumber = Int.random(in: 0...secondNumberUpperLimit1Digit)
+                                    }
+                                    
+                                    //reset text field to empty and update numbers on screen
+                                    self.answerInput.text = ""
+                                    self.updateNumbers()
+                                case 1:
+                                    
+                                    //Remove all viewcontrollers from the navigation stack
+                                    self.navigationController!.viewControllers.removeAll()
+                                    
+                                    self.equationFlowController.showMain()
+                                default:
+                                    break
+                                }
+            }
+        } else {
+            alertBoxWithAction(title: "Incorrect Answer",
+                               message: "Unfortunatly the answer is incorrect",
+                               options: "Let me try the answer again", "Help me, with an example", "Show me how with this equation") { (option) in
+                                switch(option) {
+                                case 1:
+                                    self.equationFlowController.showHelpScreen(firstNumber: 1234, secondNumber: 567, subject: self.subject)
+                                case 2:
+                                    self.equationFlowController.showHelpScreen(firstNumber: self.firstNumber, secondNumber: self.secondNumber, subject: self.subject)
+                                default:
+                                    break
+                                }
+            }
+        }
+    }
+    
+    
+    func multiplyButton() {
+        if integer(from: answerInput) == firstNumber * secondNumber {
+            alertBoxWithAction(title: "WELL DONE",
+                               message: "You gave the correct andswer",
+                               options: "Let me try another multiplication", "Let me try a different type of equation") { (option) in
                                 switch(option) {
                                 case 0:
                                     
@@ -198,6 +272,66 @@ class EquationViewController: UIViewController {
         }
     }
     
+    func divideButton() {
+        
+        print ("The sum is \(firstNumber) divided by \(secondNumber) equals \(firstNumber / secondNumber)")
+         if integer(from: answerInput) == firstNumber / secondNumber {
+             alertBoxWithAction(title: "WELL DONE",
+                                message: "You gave the correct andswer",
+                                options: "Let me try another division", "Let me try a different type of equation") { (option) in
+                                 switch(option) {
+                                 case 0:
+                                     
+                                     //Update numbers with new random numbers set to the same digit counts
+                                     if self.firstNumber.digits.count == 4 {
+                                         self.firstNumber = Int.random(in: 1000...9999)
+                                     } else if self.firstNumber.digits.count == 3 {
+                                         self.firstNumber = Int.random(in: 100...999)
+                                     } else if self.firstNumber.digits.count == 2 {
+                                         self.firstNumber = Int.random(in: 10...99)
+                                     } else {
+                                         self.firstNumber = Int.random(in: 0...9)
+                                     }
+                                     
+                                     if self.secondNumber.digits.count == 4 {
+                                         self.secondNumber = Int.random(in: 1000...9999)
+                                     } else if self.secondNumber.digits.count == 3 {
+                                         self.secondNumber = Int.random(in: 100...999)
+                                     } else if self.secondNumber.digits.count == 2 {
+                                         self.secondNumber = Int.random(in: 10...99)
+                                     } else {
+                                         self.secondNumber = Int.random(in: 0...9)
+                                     }
+                                     
+                                     //reset text field to empty and update numbers on screen
+                                     self.answerInput.text = ""
+                                     self.updateNumbers()
+                                 case 1:
+                                     
+                                     //Remove all viewcontrollers from the navigation stack
+                                     self.navigationController!.viewControllers.removeAll()
+                                     
+                                     self.equationFlowController.showMain()
+                                 default:
+                                     break
+                                 }
+             }
+         } else {
+             alertBoxWithAction(title: "Incorrect Answer",
+                                message: "Unfortunatly the answer is incorrect",
+                                options: "Let me try the answer again", "Help me, with an example", "Show me how with this equation") { (option) in
+                                 switch(option) {
+                                 case 1:
+                                     self.equationFlowController.showHelpScreen(firstNumber: 1234, secondNumber: 567, subject: self.subject)
+                                 case 2:
+                                     self.equationFlowController.showHelpScreen(firstNumber: self.firstNumber, secondNumber: self.secondNumber, subject: self.subject)
+                                 default:
+                                     break
+                                 }
+             }
+         }
+     }
+    
     @IBAction func answerInput(_ sender: Any) {
     }
     @IBAction func submitButton(_ sender: Any) {
@@ -207,9 +341,9 @@ class EquationViewController: UIViewController {
         } else if subject == Subject.Subtractions.name() {
             subtractionSubmitButton()
         } else if subject == Subject.Multiplications.name() {
-            print ("multiply")
+            multiplyButton()
         } else if subject == Subject.Divisions.name() {
-            print ("Divide")
+            divideButton()
         }
         
         

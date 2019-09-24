@@ -21,10 +21,6 @@ class NumberSelectionFlowController {
         MainFactory.PushIn(navigationController: navigationController)
     }
     
-    func showAdditions(firstNumber: Int, secondNumber: Int, subject: String) {
-        AdditionsFactory.PushIn(navigationController: navigationController, firstNumber: firstNumber, secondNumber: secondNumber, subject: subject)
-    }
-    
     func showEquation(firstNumber: Int, secondNumber: Int, subject: String) {
         EquationFactory.PushIn(navigationController: navigationController, firstNumber: firstNumber, secondNumber: secondNumber, subject: subject)
     }

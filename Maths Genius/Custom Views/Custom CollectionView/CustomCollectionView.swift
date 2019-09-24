@@ -15,6 +15,7 @@ class CustomCollectionView: UICollectionView, UICollectionViewDelegate, UICollec
     
     var cellData: [String] = ["cell1", "cell2"]
     var cellImage: [UIImage] = []
+
     
     var layout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
@@ -27,8 +28,11 @@ class CustomCollectionView: UICollectionView, UICollectionViewDelegate, UICollec
         delegate = self
         dataSource = self
         self.register(UINib(nibName: "CustomCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CustomCollectionViewCell")
+
         
         self.collectionViewLayout = layout
+        
+        print ("celldata count = \(cellData.count)")
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -40,99 +44,47 @@ class CustomCollectionView: UICollectionView, UICollectionViewDelegate, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCollectionViewCell", for: indexPath) as! CustomCollectionViewCell
-//        cell.cellLabel.textColor = UIColor.Blues.standardBlue
-        cell.cellLabel.text = cellData[indexPath.row]
-        cell.cellImage.image = cellImage[indexPath.row]
-    
         
-        return cell
-    }
-    
-        //set layout for cell
-   
-
-
-    
-//    func collectionView(_ collectionView: UICollectionView,
-//                        layout collectionViewLayout: UICollectionViewLayout,
-//                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        if indexPath.item < cellData.count {
+//                    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCollectionViewCell", for: indexPath) as! CustomCollectionViewCell
+//            //        cell.cellLabel.textColor = UIColor.Blues.standardBlue
+//                    cell.cellLabel.text = cellData[indexPath.row]
+//                    cell.cellImage.image = cellImage[indexPath.row]
+//                    return cell
+//        } else {
+//            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ExampleCell", for: indexPath) as! ExampleCell
 //
-//        return CGSize(width: collectionView.bounds.size.width - 16, height: 120)
-//    }
-//    func collectionView(_ collectionView: UICollectionView,
-//                        layout collectionViewLayout: UICollectionViewLayout,
-//                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-//        return 8
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView,
-//                        layout collectionViewLayout: UICollectionViewLayout,
-//                        minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-//        return 0
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView,
-//                        layout collectionViewLayout: UICollectionViewLayout,
-//                        insetForSectionAt section: Int) -> UIEdgeInsets {
-//        return UIEdgeInsets.init(top: 8, left: 8, bottom: 8, right: 8)
-//    }
-}
-
-//class FilmCollectionView: UICollectionView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-//
-//    //placeholder for number to remove from year for pagenation
-//    private var yearCount = 1
-//    var cellDelegate: FilmCellSelectedDelegate?
-//
-//    func registerCell() {
-//        self.register(UINib(nibName: "MyCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "MyCollectionViewCell")
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return DataManager.shared.filmList.count
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCollectionViewCell", for: indexPath) as! MyCollectionViewCell
-//        let filmModel = DataManager.shared.filmList[indexPath.item]
-//        cell.populate(filmModel: filmModel)
-//
-//
-//
-//
+//            cell.cellLabel.text = cellData[indexPath.row]
 //        return cell
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let filmModel = DataManager.shared.filmList[indexPath.item]
-//        let id = filmModel.id
-//        //send id to delegate for ViewController
-//        cellDelegate?.cellWasSelected(id: id)
-//    }
-//
-//    override func awakeFromNib() {
-//        delegate = self
-//        dataSource = self
-//        registerCell()
-//    }
-//
-
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-//        return 5
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-//        return 5
-//    }
-//
-//    //When scroll gets to 10 before the end
-//    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-//        if indexPath.row == DataManager.shared.filmList.count - 25 {
-//            //pass number of years to remove to view controller
-//            cellDelegate?.nearingScrollEnd(year: yearCount)
-//            yearCount += 1
 //        }
-//    }
-//}
+
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCollectionViewCell", for: indexPath) as! CustomCollectionViewCell
+        
+
+        
+        if indexPath.item > cellImage.count - 1 {
+            cell.backgroundView?.backgroundColor = UIColor.Greens.seaGreen
+            cell.cellLabel.text = cellData[indexPath.row]
+            cell.cellImage.image = nil
+            
+            cell.cellBackground.backgroundColor = UIColor.Yellows.gryffindorYellow
+            cell.cellLabel.textColor = UIColor.Reds.gryffindorRed
+            cell.cellLabel.textAlignment = .center
+        
+            return cell
+        } else {
+            
+            cell.cellLabel.text = cellData[indexPath.row]
+            cell.cellImage.image = cellImage[indexPath.row]
+        
+            cell.cellBackground.backgroundColor = UIColor.Shades.standardBlack
+            cell.cellLabel.textColor = UIColor.Shades.standardWhite
+            cell.cellLabel.textAlignment = .left
+
+        return cell
+        }
+        
+        
+    }
+}

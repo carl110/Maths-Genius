@@ -31,4 +31,8 @@ class HelpScreenFlowController {
     func showSubtractByBorrowing(firstNumber: Int, secondNumber: Int) {
         SubtractByBorrowingFactory.PushIn(navigationController: navigationController, firstNumber: firstNumber, secondNumber: secondNumber)
     }
+    
+    func equationHelp(firstNumber: Int, secondNumber: Int) {
+        EquationHelpFactory.PushIn(navigationController: navigationController, firstNumber: firstNumber, secondNumber: secondNumber)
+    }
 }

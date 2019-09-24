@@ -78,7 +78,8 @@ class HelpScreenViewController: UIViewController, HelpSectionSelectedDelegate {
         } else if subject == Subject.Subtractions.name() {
             switch id {
             case 0:
-                helpScreenFlowController.showSubtractByBorrowing(firstNumber: firstNumber, secondNumber: secondNumber)
+                helpScreenFlowController.equationHelp(firstNumber: firstNumber, secondNumber: secondNumber)
+            
             default:
                 break
             }
