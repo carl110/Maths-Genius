@@ -17,6 +17,7 @@ class HelpScreenViewController: UIViewController, HelpSectionSelectedDelegate {
     var firstNumber = Int()
     var secondNumber = Int ()
     var subject = String()
+    var helpTitle = String()
 
     
     @IBOutlet weak var titleLabel: UILabel!
@@ -53,37 +54,44 @@ class HelpScreenViewController: UIViewController, HelpSectionSelectedDelegate {
     func tableSetUp() {
         customTable.backgroundColor = UIColor.Shades.standardBlack
         
-        if subject == Subject.Additions.name() {
+        if subject == SubjectType.Additions.name() {
             print ("Additions chosen")
             customTable.customCellsData = ["Using Place Values", "Rounding Numbers"]
-        } else if subject == Subject.Subtractions.name() {
+        } else if subject == SubjectType.Subtractions.name() {
             print ("Subtractions chosen")
             customTable.customCellsData = ["Subtract By Borrowing"]
         }
         
     }
 
-    func cellWasSelected(id: Int) {
+
+    func cellWasSelected(id: Int, title: String) {
         
-        //switch using cell idex to goto next screen
-        if subject == Subject.Additions.name() {
-            switch id {
-            case 0:
-                helpScreenFlowController.showUsingPlaceValues(firstNumber: firstNumber, secondNumber: secondNumber)
-            case 1:
-                helpScreenFlowController.showRoundingNumbers(firsyNumber: firstNumber, secondNumber: secondNumber)
-            default:
-                break
-            }
-        } else if subject == Subject.Subtractions.name() {
-            switch id {
-            case 0:
-                helpScreenFlowController.equationHelp(firstNumber: firstNumber, secondNumber: secondNumber)
-            
-            default:
-                break
-            }
-        }
+        helpTitle = title
+        
+                        helpScreenFlowController.equationHelp(firstNumber: firstNumber, secondNumber: secondNumber, helpTitle: helpTitle)
+        
+        
+        
+//        //switch using cell idex to goto next screen
+//        if subject == SubjectType.Additions.name() {
+//            switch id {
+//            case 0:
+//                helpScreenFlowController.showUsingPlaceValues(firstNumber: firstNumber, secondNumber: secondNumber)
+//            case 1:
+//                helpScreenFlowController.showRoundingNumbers(firsyNumber: firstNumber, secondNumber: secondNumber)
+//            default:
+//                break
+//            }
+//        } else if subject == SubjectType.Subtractions.name() {
+//            switch id {
+//            case 0:
+//                helpScreenFlowController.equationHelp(firstNumber: firstNumber, secondNumber: secondNumber, helpTitle: helpTitle)
+//
+//            default:
+//                break
+//            }
+//        }
 
     }
 }

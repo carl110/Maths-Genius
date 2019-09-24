@@ -30,7 +30,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         setUp()
     }
     
@@ -59,20 +58,20 @@ class ViewController: UIViewController {
     }
     
     @IBAction func additionButton(_ sender: Any) {
-        subjectSelected = Subject.Additions.name()
+        subjectSelected = SubjectType.Additions.name()
         mainFlowController.showNumberSelection(with: subjectSelected)
     }
     
     @IBAction func subtractionButton(_ sender: Any) {
-        subjectSelected = Subject.Subtractions.name()
+        subjectSelected = SubjectType.Subtractions.name()
         mainFlowController.showNumberSelection(with: subjectSelected)
     }
     @IBAction func multiplicationButton(_ sender: Any) {
-        subjectSelected = Subject.Multiplications.name()
+        subjectSelected = SubjectType.Multiplications.name()
         mainFlowController.showNumberSelection(with: subjectSelected)
     }
     @IBAction func divisionButton(_ sender: Any) {
-        subjectSelected = Subject.Divisions.name()
+        subjectSelected = SubjectType.Divisions.name()
         mainFlowController.showNumberSelection(with: subjectSelected)
     }
 }

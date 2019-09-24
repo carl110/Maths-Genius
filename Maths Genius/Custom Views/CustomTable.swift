@@ -9,7 +9,8 @@
 import UIKit
 
 protocol HelpSectionSelectedDelegate {
-    func cellWasSelected(id: Int)
+    func cellWasSelected(id: Int, title: String)
+
 }
 
 class CustomTable: UITableView, UITableViewDelegate, UITableViewDataSource {
@@ -45,9 +46,9 @@ class CustomTable: UITableView, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        
         //when cell selected send inder row to view controller
-        cellDelegate?.cellWasSelected(id: indexPath.row)
+        cellDelegate?.cellWasSelected(id: indexPath.row, title: customCellsData[indexPath.row])
     }
 
 }

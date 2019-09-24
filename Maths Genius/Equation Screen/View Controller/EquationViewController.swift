@@ -51,13 +51,13 @@ class EquationViewController: UIViewController {
     func labelSetup() {
         
         //set up numbers and operation labels
-        if subject == Subject.Additions.name() {
+        if subject == SubjectType.Additions.name() {
             operation.text = "+"
-        } else if subject == Subject.Subtractions.name() {
+        } else if subject == SubjectType.Subtractions.name() {
             operation.text = "-"
-        } else if subject == Subject.Multiplications.name() {
+        } else if subject == SubjectType.Multiplications.name() {
             operation.text = "×"
-        } else if subject == Subject.Divisions.name() {
+        } else if subject == SubjectType.Divisions.name() {
             operation.text = "÷"
         }
         
@@ -167,7 +167,7 @@ class EquationViewController: UIViewController {
                                         self.firstNumber = Int.random(in: 0...9)
                                     }
                                     
-                                    if self.subject == Subject.Subtractions.name() && self.firstNumber.digits.count == self.secondNumber.digits.count {
+                                    if self.subject == SubjectType.Subtractions.name() && self.firstNumber.digits.count == self.secondNumber.digits.count {
                                         secondNumberUperLimit4Digit = self.firstNumber
                                         secondNumberUpperLimit3Digit = self.firstNumber
                                         secondNumberUpperLimit2Digit = self.firstNumber
@@ -336,13 +336,13 @@ class EquationViewController: UIViewController {
     }
     @IBAction func submitButton(_ sender: Any) {
         
-        if subject == Subject.Additions.name() {
+        if subject == SubjectType.Additions.name() {
             additionSubmitButton()
-        } else if subject == Subject.Subtractions.name() {
+        } else if subject == SubjectType.Subtractions.name() {
             subtractionSubmitButton()
-        } else if subject == Subject.Multiplications.name() {
+        } else if subject == SubjectType.Multiplications.name() {
             multiplyButton()
-        } else if subject == Subject.Divisions.name() {
+        } else if subject == SubjectType.Divisions.name() {
             divideButton()
         }
         

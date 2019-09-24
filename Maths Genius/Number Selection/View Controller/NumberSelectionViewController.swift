@@ -95,7 +95,7 @@ class NumberSelectionViewController: UIViewController {
             break
         }
         
-        if subject == Subject.Subtractions.name() && firstNumberSelector.selectedSegmentIndex > 0 {
+        if subject == SubjectType.Subtractions.name() && firstNumberSelector.selectedSegmentIndex > 0 {
             for i in 1...self.firstNumberSelector.selectedSegmentIndex {
                 //unselect segments in seconNumberSelector
                 secondNumberSelector.selectedSegmentIndex = UISegmentedControl.noSegment
@@ -114,7 +114,7 @@ class NumberSelectionViewController: UIViewController {
         case 0:
             secondNumberOutcome.text = "You have selected Thousands for your second number. \n This means your second number will be between 1000 and 9999"
             
-            if subject == Subject.Subtractions.name() && firstNumberSelector.selectedSegmentIndex == secondNumberSelector.selectedSegmentIndex {
+            if subject == SubjectType.Subtractions.name() && firstNumberSelector.selectedSegmentIndex == secondNumberSelector.selectedSegmentIndex {
                 secondNumber = Int.random(in: 1000...firstNumber)
             } else {
                 secondNumber = Int.random(in: 1000...9999)
@@ -123,7 +123,7 @@ class NumberSelectionViewController: UIViewController {
         case 1:
             secondNumberOutcome.text = "You have selected Hundreds for your second number. \n This means your second number will be between 100 and 999"
             
-            if subject == Subject.Subtractions.name() && firstNumberSelector.selectedSegmentIndex == secondNumberSelector.selectedSegmentIndex {
+            if subject == SubjectType.Subtractions.name() && firstNumberSelector.selectedSegmentIndex == secondNumberSelector.selectedSegmentIndex {
                 secondNumber = Int.random(in: 100...firstNumber)
             } else {
                 secondNumber = Int.random(in: 100...999)
@@ -132,7 +132,7 @@ class NumberSelectionViewController: UIViewController {
         case 2:
             secondNumberOutcome.text = "You have selected Tens for your second number. \n This means your second number will be between 10 and 99"
             
-            if subject == Subject.Subtractions.name() && firstNumberSelector.selectedSegmentIndex == secondNumberSelector.selectedSegmentIndex {
+            if subject == SubjectType.Subtractions.name() && firstNumberSelector.selectedSegmentIndex == secondNumberSelector.selectedSegmentIndex {
                 secondNumber = Int.random(in: 10...firstNumber)
             } else {
                 secondNumber = Int.random(in: 10...99)
@@ -141,7 +141,7 @@ class NumberSelectionViewController: UIViewController {
         case 3:
             secondNumberOutcome.text = "You have selected Units for your second number. \n This means your second number will be between 1 and 9"
             
-            if subject == Subject.Subtractions.name() && firstNumberSelector.selectedSegmentIndex == secondNumberSelector.selectedSegmentIndex {
+            if subject == SubjectType.Subtractions.name() && firstNumberSelector.selectedSegmentIndex == secondNumberSelector.selectedSegmentIndex {
                 secondNumber = Int.random(in: 1...firstNumber)
             } else {
                 secondNumber = Int.random(in: 1...9)

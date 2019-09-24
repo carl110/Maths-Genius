@@ -15,7 +15,7 @@ class MainModel {
     
 }
 
-public enum Subject: String {
+public enum SubjectType: String {
     
     case Additions
     case Subtractions
@@ -27,3 +27,41 @@ public enum Subject: String {
     }
     
 }
+
+public enum HelpSubject {
+
+    enum Additions: String {
+        case RoundingNumbers
+        case UsingPlaceValues
+        
+        func name() -> String {
+            return self.rawValue.titlecased()
+        }
+    }
+    enum Subtractions: String {
+        case SubtractByBorrowing
+    
+        func name() -> String {
+            return self.rawValue.titlecased()
+        }
+    }
+    enum Multiplication: String {
+        case PlaceHolder
+    
+        func name() -> String {
+            return self.rawValue.titlecased()
+        }
+    }
+    enum Division: String {
+        case PlaceHolder
+    
+        func name() -> String {
+            return self.rawValue.titlecased()
+        }
+    }
+
+
+
+}
+
+

@@ -22,7 +22,7 @@
 		89058261232285EF004E26BA /* UsingPlaceValuesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89058260232285EF004E26BA /* UsingPlaceValuesModel.swift */; };
 		890DAA712319364F005737A5 /* UIViewController+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DAA702319364F005737A5 /* UIViewController+extensions.swift */; };
 		890DAA7A23193A58005737A5 /* HelpScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890DAA7923193A58005737A5 /* HelpScreen.storyboard */; };
-		890DAA7D23193A84005737A5 /* HelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DAA7B23193A84005737A5 /* HelpScreen.swift */; };
+		890DAA7D23193A84005737A5 /* HelpScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DAA7B23193A84005737A5 /* HelpScreenViewController.swift */; };
 		890DAA8023193CFF005737A5 /* CascadingTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DAA7F23193CFF005737A5 /* CascadingTable.swift */; };
 		890DAA8323193DE7005737A5 /* CascadingTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DAA8223193DE7005737A5 /* CascadingTableHeader.swift */; };
 		890DAA8523193DF2005737A5 /* CascadingTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890DAA8423193DF2005737A5 /* CascadingTableHeader.xib */; };
@@ -42,6 +42,8 @@
 		89123E0D232A8240003E3ED0 /* RoundingNumbersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89123E0C232A8240003E3ED0 /* RoundingNumbersModel.swift */; };
 		89123E0F232A8661003E3ED0 /* AdditionsHelpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89123E0E232A8661003E3ED0 /* AdditionsHelpViewModel.swift */; };
 		892E7C6F233A2967005321F8 /* SubtractionsHelp+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C6E233A2967005321F8 /* SubtractionsHelp+extensions.swift */; };
+		892E7C71233A455D005321F8 /* AdditionsHelpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C70233A455D005321F8 /* AdditionsHelpModel.swift */; };
+		892E7C73233A466B005321F8 /* AdditionsHelp+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C72233A466B005321F8 /* AdditionsHelp+extensions.swift */; };
 		893607CA23315DB8003CA353 /* SubtractByBorrowingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607C923315DB8003CA353 /* SubtractByBorrowingView.swift */; };
 		893607CC23315DD0003CA353 /* SubtractByBorrowingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607CB23315DD0003CA353 /* SubtractByBorrowingViewModel.swift */; };
 		893607CE23315EB0003CA353 /* SubtractByBorrowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607CD23315EB0003CA353 /* SubtractByBorrowingViewController.swift */; };
@@ -103,7 +105,7 @@
 		89058260232285EF004E26BA /* UsingPlaceValuesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingPlaceValuesModel.swift; sourceTree = "<group>"; };
 		890DAA702319364F005737A5 /* UIViewController+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extensions.swift"; sourceTree = "<group>"; };
 		890DAA7923193A58005737A5 /* HelpScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HelpScreen.storyboard; sourceTree = "<group>"; };
-		890DAA7B23193A84005737A5 /* HelpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpScreen.swift; sourceTree = "<group>"; };
+		890DAA7B23193A84005737A5 /* HelpScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpScreenViewController.swift; sourceTree = "<group>"; };
 		890DAA7F23193CFF005737A5 /* CascadingTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CascadingTable.swift; sourceTree = "<group>"; };
 		890DAA8223193DE7005737A5 /* CascadingTableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CascadingTableHeader.swift; sourceTree = "<group>"; };
 		890DAA8423193DF2005737A5 /* CascadingTableHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CascadingTableHeader.xib; sourceTree = "<group>"; };
@@ -123,6 +125,8 @@
 		89123E0C232A8240003E3ED0 /* RoundingNumbersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundingNumbersModel.swift; sourceTree = "<group>"; };
 		89123E0E232A8661003E3ED0 /* AdditionsHelpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionsHelpViewModel.swift; sourceTree = "<group>"; };
 		892E7C6E233A2967005321F8 /* SubtractionsHelp+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SubtractionsHelp+extensions.swift"; sourceTree = "<group>"; };
+		892E7C70233A455D005321F8 /* AdditionsHelpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionsHelpModel.swift; sourceTree = "<group>"; };
+		892E7C72233A466B005321F8 /* AdditionsHelp+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AdditionsHelp+extensions.swift"; sourceTree = "<group>"; };
 		893607C923315DB8003CA353 /* SubtractByBorrowingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractByBorrowingView.swift; sourceTree = "<group>"; };
 		893607CB23315DD0003CA353 /* SubtractByBorrowingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractByBorrowingViewModel.swift; sourceTree = "<group>"; };
 		893607CD23315EB0003CA353 /* SubtractByBorrowingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractByBorrowingViewController.swift; sourceTree = "<group>"; };
@@ -308,7 +312,7 @@
 		890DAA7623193A23005737A5 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				890DAA7B23193A84005737A5 /* HelpScreen.swift */,
+				890DAA7B23193A84005737A5 /* HelpScreenViewController.swift */,
 				890DAA7923193A58005737A5 /* HelpScreen.storyboard */,
 			);
 			path = "View Controller";
@@ -404,6 +408,7 @@
 		892E7C6C233A292F005321F8 /* Additions Help */ = {
 			isa = PBXGroup;
 			children = (
+				892E7C72233A466B005321F8 /* AdditionsHelp+extensions.swift */,
 			);
 			path = "Additions Help";
 			sourceTree = "<group>";
@@ -788,6 +793,7 @@
 			isa = PBXGroup;
 			children = (
 				896B168B233516CD002DF739 /* EquationHelpModel.swift */,
+				892E7C70233A455D005321F8 /* AdditionsHelpModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -892,6 +898,7 @@
 				896B168423350F89002DF739 /* EquationFactory.swift in Sources */,
 				89058261232285EF004E26BA /* UsingPlaceValuesModel.swift in Sources */,
 				893607D423315FC0003CA353 /* SubtractByBorrowingFactory.swift in Sources */,
+				892E7C71233A455D005321F8 /* AdditionsHelpModel.swift in Sources */,
 				89123E03232A7C11003E3ED0 /* RoundingNumbersViewModel.swift in Sources */,
 				89123E09232A7D10003E3ED0 /* RoundNumbersFlowController.swift in Sources */,
 				895B543522FDF8E700CFF65E /* Maths_Genius.xcdatamodeld in Sources */,
@@ -903,6 +910,7 @@
 				896B169423351743002DF739 /* EquationHelpFlowController.swift in Sources */,
 				890DAA8B231942D3005737A5 /* HelpScreenViewModel.swift in Sources */,
 				895B549222FE223600CFF65E /* NumberSelectionViewController.swift in Sources */,
+				892E7C73233A466B005321F8 /* AdditionsHelp+extensions.swift in Sources */,
 				895B548C22FE198200CFF65E /* UIView+extensions.swift in Sources */,
 				890DAA8D2319439B005737A5 /* HelpScreenFactory.swift in Sources */,
 				890DAA8323193DE7005737A5 /* CascadingTableHeader.swift in Sources */,
@@ -937,7 +945,7 @@
 				890DAA8923194238005737A5 /* HelpScreenFlowController.swift in Sources */,
 				895B54A42300BCB100CFF65E /* UILabels+extensions.swift in Sources */,
 				895B547322FDFF9200CFF65E /* NumberSelectionFlowController.swift in Sources */,
-				890DAA7D23193A84005737A5 /* HelpScreen.swift in Sources */,
+				890DAA7D23193A84005737A5 /* HelpScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
