@@ -31,6 +31,7 @@
 		892E7C6F233A2967005321F8 /* SubtractionsHelp+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C6E233A2967005321F8 /* SubtractionsHelp+extensions.swift */; };
 		892E7C71233A455D005321F8 /* AdditionsHelpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C70233A455D005321F8 /* AdditionsHelpModel.swift */; };
 		892E7C73233A466B005321F8 /* AdditionsHelp+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C72233A466B005321F8 /* AdditionsHelp+extensions.swift */; };
+		892E7C75233A92EE005321F8 /* Int+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C74233A92ED005321F8 /* Int+extensions.swift */; };
 		893607D82331628A003CA353 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607D72331628A003CA353 /* CustomCollectionView.swift */; };
 		893607DC233229D4003CA353 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607DA233229D4003CA353 /* CustomCollectionViewCell.swift */; };
 		893607DD233229D4003CA353 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 893607DB233229D4003CA353 /* CustomCollectionViewCell.xib */; };
@@ -94,6 +95,7 @@
 		892E7C6E233A2967005321F8 /* SubtractionsHelp+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SubtractionsHelp+extensions.swift"; sourceTree = "<group>"; };
 		892E7C70233A455D005321F8 /* AdditionsHelpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionsHelpModel.swift; sourceTree = "<group>"; };
 		892E7C72233A466B005321F8 /* AdditionsHelp+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AdditionsHelp+extensions.swift"; sourceTree = "<group>"; };
+		892E7C74233A92ED005321F8 /* Int+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+extensions.swift"; sourceTree = "<group>"; };
 		893607D72331628A003CA353 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
 		893607DA233229D4003CA353 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		893607DB233229D4003CA353 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -353,6 +355,7 @@
 				8904087123268EA50030FDC6 /* BianaryInteger+extensions.swift */,
 				89040873232692D20030FDC6 /* String+extensions.swift */,
 				8904087523291C880030FDC6 /* Array+extensions.swift */,
+				892E7C74233A92ED005321F8 /* Int+extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -659,6 +662,7 @@
 				892E7C73233A466B005321F8 /* AdditionsHelp+extensions.swift in Sources */,
 				895B548C22FE198200CFF65E /* UIView+extensions.swift in Sources */,
 				890DAA8D2319439B005737A5 /* HelpScreenFactory.swift in Sources */,
+				892E7C75233A92EE005321F8 /* Int+extensions.swift in Sources */,
 				890DAA8323193DE7005737A5 /* CascadingTableHeader.swift in Sources */,
 				895B549C2300B21400CFF65E /* NumberSelectionModel.swift in Sources */,
 				896B168E233516E5002DF739 /* EquationHelpViewModel.swift in Sources */,

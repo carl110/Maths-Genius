@@ -124,7 +124,7 @@ class EquationViewController: UIViewController {
                                         self.firstNumber = Int.random(in: 0...9)
                                     }
                                     
-                                    if self.subject == SubjectType.Subtractions.name() && self.firstNumber.digits.count == self.secondNumber.digits.count {
+                                    if (self.subject == SubjectType.Subtractions.name() || self.subject == SubjectType.Divisions.name()) && self.firstNumber.digits.count == self.secondNumber.digits.count {
                                         secondNumberUperLimit4Digit = self.firstNumber
                                         secondNumberUpperLimit3Digit = self.firstNumber
                                         secondNumberUpperLimit2Digit = self.firstNumber

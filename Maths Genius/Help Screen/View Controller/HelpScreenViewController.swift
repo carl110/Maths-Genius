@@ -70,28 +70,6 @@ class HelpScreenViewController: UIViewController, HelpSectionSelectedDelegate {
         helpTitle = title
         
                         helpScreenFlowController.equationHelp(firstNumber: firstNumber, secondNumber: secondNumber, helpTitle: helpTitle)
-        
-        
-        
-//        //switch using cell idex to goto next screen
-//        if subject == SubjectType.Additions.name() {
-//            switch id {
-//            case 0:
-//                helpScreenFlowController.showUsingPlaceValues(firstNumber: firstNumber, secondNumber: secondNumber)
-//            case 1:
-//                helpScreenFlowController.showRoundingNumbers(firsyNumber: firstNumber, secondNumber: secondNumber)
-//            default:
-//                break
-//            }
-//        } else if subject == SubjectType.Subtractions.name() {
-//            switch id {
-//            case 0:
-//                helpScreenFlowController.equationHelp(firstNumber: firstNumber, secondNumber: secondNumber, helpTitle: helpTitle)
-//
-//            default:
-//                break
-//            }
-//        }
 
     }
 }
