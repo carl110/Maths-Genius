@@ -30,34 +30,26 @@ public enum SubjectType: String {
 
 public enum HelpSubject {
 
-    enum Additions: String {
-        case RoundingNumbers
-        case UsingPlaceValues
+    enum Additions: String, CaseIterable {
+        case RoundingNumbers = "Rounding Numbers"
+        case UsingPlaceValues = "Using Place Values"
         
-        func name() -> String {
-            return self.rawValue.titlecased()
-        }
+
     }
-    enum Subtractions: String {
-        case SubtractByBorrowing
+    enum Subtractions: String, CaseIterable {
+        case SubtractByBorrowing = "Subtract by Borrowing"
     
-        func name() -> String {
-            return self.rawValue.titlecased()
-        }
+ 
     }
-    enum Multiplication: String {
+    enum Multiplications: String, CaseIterable {
+        case PeopleAndSweets = "People and Sweets"
+    
+
+    }
+    enum Divisions: String,CaseIterable {
         case PlaceHolder
     
-        func name() -> String {
-            return self.rawValue.titlecased()
-        }
-    }
-    enum Division: String {
-        case PlaceHolder
-    
-        func name() -> String {
-            return self.rawValue.titlecased()
-        }
+
     }
 
 

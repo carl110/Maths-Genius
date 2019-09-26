@@ -14,6 +14,7 @@ class EquationHelpViewController: UIViewController {
     fileprivate var equationHelpViewModel: EquationHelpViewModel!
     fileprivate var equationHelpModel = EquationHelpModel()
     fileprivate var additionsHelpModel = AdditionsHelpModel()
+    fileprivate var multiplicationHelpModel = MultiplicationHelpModel()
     
     var firstNumber = Int()
     var secondNumber = Int()
@@ -70,22 +71,28 @@ class EquationHelpViewController: UIViewController {
     }
     
     func helpSubjectSetup() {
-        if helpTitle == HelpSubject.Additions.RoundingNumbers.name() {
+        if helpTitle == HelpSubject.Additions.RoundingNumbers.rawValue.self {
             stepText = additionsHelpModel.roundingNumberStepText
             stepImage = additionsHelpModel.roundingNumberStepImage
             exampleText = roundNumber(firstNumber: firstNumber, secondNumber: secondNumber)
         }
         
-        if helpTitle == HelpSubject.Additions.UsingPlaceValues.name() {
+        if helpTitle == HelpSubject.Additions.UsingPlaceValues.rawValue.self {
             stepText = additionsHelpModel.usingPlaceValuesStepText
             stepImage = additionsHelpModel.usingPlaceValuesStepImage
             exampleText = usingPlaceValues(firstNumber: firstNumber, secondNumber: secondNumber)
         }
         
-        if helpTitle == HelpSubject.Subtractions.SubtractByBorrowing.name() {
+        if helpTitle == HelpSubject.Subtractions.SubtractByBorrowing.rawValue.self {
             stepText = equationHelpModel.subtractByBorrowingStepText
             stepImage = equationHelpModel.subtractByBorrowingStepImage
             exampleText = subtractByBorrowing(firstNumber: firstNumber, secondNumber: secondNumber)
+        }
+        
+        if helpTitle == HelpSubject.Multiplications.PeopleAndSweets.rawValue.self {
+            stepText = multiplicationHelpModel.peopleAndSweetsStepText
+            stepImage = multiplicationHelpModel.peopleAndSweetsStepImage
+            exampleText = peopleAndSweets(firstNumber: firstNumber, secondNumber: secondNumber)
         }
     }
     

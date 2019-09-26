@@ -41,6 +41,8 @@
 		892E7C95233B9354005321F8 /* CascadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C93233B9354005321F8 /* CascadingTableViewCell.swift */; };
 		892E7C96233B9354005321F8 /* CascadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 892E7C94233B9354005321F8 /* CascadingTableViewCell.xib */; };
 		892E7C98233BA8E6005321F8 /* ExpandableNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C97233BA8E6005321F8 /* ExpandableNames.swift */; };
+		892E7C9A233CBA04005321F8 /* MultiplicationHelpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C99233CBA04005321F8 /* MultiplicationHelpModel.swift */; };
+		892E7C9D233CE7B1005321F8 /* PeopleAndSweets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C9C233CE7B1005321F8 /* PeopleAndSweets.swift */; };
 		893607D82331628A003CA353 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607D72331628A003CA353 /* CustomCollectionView.swift */; };
 		893607DC233229D4003CA353 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607DA233229D4003CA353 /* CustomCollectionViewCell.swift */; };
 		893607DD233229D4003CA353 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 893607DB233229D4003CA353 /* CustomCollectionViewCell.xib */; };
@@ -114,6 +116,8 @@
 		892E7C93233B9354005321F8 /* CascadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CascadingTableViewCell.swift; sourceTree = "<group>"; };
 		892E7C94233B9354005321F8 /* CascadingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CascadingTableViewCell.xib; sourceTree = "<group>"; };
 		892E7C97233BA8E6005321F8 /* ExpandableNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableNames.swift; sourceTree = "<group>"; };
+		892E7C99233CBA04005321F8 /* MultiplicationHelpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationHelpModel.swift; sourceTree = "<group>"; };
+		892E7C9C233CE7B1005321F8 /* PeopleAndSweets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleAndSweets.swift; sourceTree = "<group>"; };
 		893607D72331628A003CA353 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
 		893607DA233229D4003CA353 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		893607DB233229D4003CA353 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -344,6 +348,14 @@
 			path = CascadingCell;
 			sourceTree = "<group>";
 		};
+		892E7C9B233CE79C005321F8 /* Multiplication */ = {
+			isa = PBXGroup;
+			children = (
+				892E7C9C233CE7B1005321F8 /* PeopleAndSweets.swift */,
+			);
+			path = Multiplication;
+			sourceTree = "<group>";
+		};
 		893607D9233164F5003CA353 /* Custom CollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -426,6 +438,7 @@
 		895B544422FDF9B700CFF65E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				892E7C9B233CE79C005321F8 /* Multiplication */,
 				892E7C6D233A293B005321F8 /* Subtractions Help */,
 				892E7C6C233A292F005321F8 /* Additions Help */,
 				895B548922FE191800CFF65E /* UIButton+extensions.swift */,
@@ -639,6 +652,7 @@
 			children = (
 				896B168B233516CD002DF739 /* EquationHelpModel.swift */,
 				892E7C70233A455D005321F8 /* AdditionsHelpModel.swift */,
+				892E7C99233CBA04005321F8 /* MultiplicationHelpModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -755,7 +769,9 @@
 				892E7C75233A92EE005321F8 /* Int+extensions.swift in Sources */,
 				890DAA8323193DE7005737A5 /* CascadingTableHeader.swift in Sources */,
 				895B549C2300B21400CFF65E /* NumberSelectionModel.swift in Sources */,
+				892E7C9D233CE7B1005321F8 /* PeopleAndSweets.swift in Sources */,
 				896B168E233516E5002DF739 /* EquationHelpViewModel.swift in Sources */,
+				892E7C9A233CBA04005321F8 /* MultiplicationHelpModel.swift in Sources */,
 				893607DC233229D4003CA353 /* CustomCollectionViewCell.swift in Sources */,
 				8904087223268EA50030FDC6 /* BianaryInteger+extensions.swift in Sources */,
 				896B168023350F6D002DF739 /* EquationViewController.swift in Sources */,
