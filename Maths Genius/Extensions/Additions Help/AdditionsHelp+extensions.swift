@@ -10,16 +10,29 @@ import Foundation
 import UIKit
 
 extension UIViewController {
-    
+        
     func roundNumber(firstNumber: Int, secondNumber: Int) -> [String] {
 
         
         let firstNumberRound = 10 - firstNumber.digits.last
         let secondNumberRound = 10 - secondNumber.digits.last
         
-        let exampleText = "Using the equation \(firstNumber) + \(secondNumber) we can do the following : \n\nAdd \(firstNumberRound) the \(firstNumber)\nAdd \(secondNumberRound) to \(secondNumber)\n\nYour new equation is \(firstNumberRound + firstNumber) + \(secondNumberRound + secondNumber)\n\n\(firstNumberRound + firstNumber) + \(secondNumberRound + secondNumber) = \(firstNumberRound + firstNumber + secondNumberRound + secondNumber)\nThe numbers added to make the round equation are \(firstNumberRound) + \(secondNumberRound) = \(firstNumberRound + secondNumberRound)\n\nNow take the equated round number and minus the added numbers\n\n\(firstNumberRound + firstNumber + secondNumberRound + secondNumber) - \(firstNumberRound + secondNumberRound) = \(firstNumber + secondNumber)"
+        var exampleText = ["Using the equation \(firstNumber) + \(secondNumber) we can do the following :\n"]
         
-        return [exampleText]
+        exampleText.append("Add \(firstNumberRound) to \(firstNumber)")
+        exampleText.append("Add \(secondNumberRound) to \(secondNumber)\n")
+        exampleText.append("Your new equation is \(firstNumberRound + firstNumber) + \(secondNumberRound + secondNumber)\n")
+        exampleText.append("\(firstNumberRound + firstNumber) + \(secondNumberRound + secondNumber) = \(firstNumberRound + firstNumber + secondNumberRound + secondNumber)\n")
+        exampleText.append("The numbers added to make the round equation are \(firstNumberRound) + \(secondNumberRound) = \(firstNumberRound + secondNumberRound)\n")
+        exampleText.append("\nNow take the equated round number and minus the added numbers\n")
+        
+        exampleText.append("\(firstNumberRound + firstNumber + secondNumberRound + secondNumber) - \(firstNumberRound + secondNumberRound) = \(firstNumber + secondNumber)")
+        
+
+        //join all sections of array into 1 section seperated by a line break
+        exampleText = [exampleText.joined(separator: "\n")]
+        
+        return exampleText
     }
     
     func usingPlaceValues(firstNumber: Int, secondNumber: Int) -> [String] {
@@ -81,6 +94,9 @@ extension UIViewController {
         
         //Sum of equation
         exampleText.append("\n\nNow add the numbers from the first to last row. And your answer should be : \n\n\(firstNumber + secondNumber)")
+        
+        //join all sections of array into 1 section seperated by a line break
+        exampleText = [exampleText.joined(separator: "\n")]
         
         return exampleText
     }

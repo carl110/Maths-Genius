@@ -23,8 +23,7 @@ class AdditionsHelpModel {
                                     "Write your numbers so one is on top of the other, as shown below. Ensuring the place values are lined up correctly.",
                                     "If one number contains less digits than the other number you can place a 0 where the number is missing, or leave as is.",
                                     "Start by adding up the unit numbers. Write the new number below the line.",
-                                    "Next add the tens digits together. Remembering to include any tens digits that came from the previouse sum",
-                                    "Carry on adding the next number to the left as before until you have your final answer."]
+                                    "Next add the tens digits together. Remembering to include any tens digits that came from the previouse sum\nCarry on adding the next number to the left as before until you have your final answer."]
     
     let usingPlaceValuesStepImage: [UIImage] = [UIImage(named: "usingPlaceValuesStep1")!,
                                                 UIImage(named: "usingPlaceValuesStep2")!,
