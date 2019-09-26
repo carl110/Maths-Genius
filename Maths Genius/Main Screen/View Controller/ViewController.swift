@@ -12,16 +12,12 @@ class ViewController: UIViewController {
     
     fileprivate var mainFlowController: MainFlowController!
     
-    var subjectSelected = String()
+    private var subjectSelected = String()
 
     @IBOutlet weak var viewTutorial: UIButton!
-    
     @IBOutlet weak var additionButton: UIButton!
-    
     @IBOutlet weak var subtractionButton: UIButton!
-    
     @IBOutlet weak var multiplicationButton: UIButton!
-    
     @IBOutlet weak var divisionButton: UIButton!
     
     func assignDependancies(mainFlowController: MainFlowController) {
@@ -30,31 +26,35 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUp()
+        screenSetUp()
+        buttonSetup()
     }
     
-    func setUp() {
-       
-        //Button setups
-        viewTutorial.subTitleButtonSetup()
-        viewTutorial.setTitle("View Tutorial", for: .normal)
-        additionButton.titleButtonSetup()
-        additionButton.setTitle("Add", for: .normal)
-        subtractionButton.titleButtonSetup()
-        subtractionButton.setTitle("Subtract", for: .normal)
-        multiplicationButton.titleButtonSetup()
-        multiplicationButton.setTitle("Multiply", for: .normal)
-        divisionButton.titleButtonSetup()
-        divisionButton.setTitle("Divide", for: .normal)
-        
-        //Mainpage setup
+    func screenSetUp() {
         self.title = "Select you subject"
         self.view.backgroundColor = UIColor.Shades.standardBlack
     }
     
+    func buttonSetup() {
+        viewTutorial.subTitleButtonSetup()
+        viewTutorial.setTitle("Glossary", for: .normal)
+        
+        additionButton.titleButtonSetup()
+        additionButton.setTitle("Add", for: .normal)
+        
+        subtractionButton.titleButtonSetup()
+        subtractionButton.setTitle("Subtract", for: .normal)
+        
+        multiplicationButton.titleButtonSetup()
+        multiplicationButton.setTitle("Multiply", for: .normal)
+        
+        divisionButton.titleButtonSetup()
+        divisionButton.setTitle("Divide", for: .normal)
+    }
+    
     
     @IBAction func viewTutorial(_ sender: Any) {
-        
+        mainFlowController.showGlossary()
     }
     
     @IBAction func additionButton(_ sender: Any) {

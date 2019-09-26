@@ -32,6 +32,15 @@
 		892E7C71233A455D005321F8 /* AdditionsHelpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C70233A455D005321F8 /* AdditionsHelpModel.swift */; };
 		892E7C73233A466B005321F8 /* AdditionsHelp+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C72233A466B005321F8 /* AdditionsHelp+extensions.swift */; };
 		892E7C75233A92EE005321F8 /* Int+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C74233A92ED005321F8 /* Int+extensions.swift */; };
+		892E7C7D233B7912005321F8 /* GlossaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C7C233B7912005321F8 /* GlossaryModel.swift */; };
+		892E7C7F233B792D005321F8 /* GlossaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C7E233B792D005321F8 /* GlossaryViewModel.swift */; };
+		892E7C81233B7948005321F8 /* Glossary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892E7C80233B7948005321F8 /* Glossary.storyboard */; };
+		892E7C83233B7987005321F8 /* GlossaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C82233B7987005321F8 /* GlossaryViewController.swift */; };
+		892E7C85233B79A3005321F8 /* GlossaryFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C84233B79A2005321F8 /* GlossaryFlowController.swift */; };
+		892E7C87233B79C3005321F8 /* GlossaryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C86233B79C3005321F8 /* GlossaryFactory.swift */; };
+		892E7C95233B9354005321F8 /* CascadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C93233B9354005321F8 /* CascadingTableViewCell.swift */; };
+		892E7C96233B9354005321F8 /* CascadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 892E7C94233B9354005321F8 /* CascadingTableViewCell.xib */; };
+		892E7C98233BA8E6005321F8 /* ExpandableNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C97233BA8E6005321F8 /* ExpandableNames.swift */; };
 		893607D82331628A003CA353 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607D72331628A003CA353 /* CustomCollectionView.swift */; };
 		893607DC233229D4003CA353 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607DA233229D4003CA353 /* CustomCollectionViewCell.swift */; };
 		893607DD233229D4003CA353 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 893607DB233229D4003CA353 /* CustomCollectionViewCell.xib */; };
@@ -96,6 +105,15 @@
 		892E7C70233A455D005321F8 /* AdditionsHelpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionsHelpModel.swift; sourceTree = "<group>"; };
 		892E7C72233A466B005321F8 /* AdditionsHelp+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AdditionsHelp+extensions.swift"; sourceTree = "<group>"; };
 		892E7C74233A92ED005321F8 /* Int+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+extensions.swift"; sourceTree = "<group>"; };
+		892E7C7C233B7912005321F8 /* GlossaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryModel.swift; sourceTree = "<group>"; };
+		892E7C7E233B792D005321F8 /* GlossaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryViewModel.swift; sourceTree = "<group>"; };
+		892E7C80233B7948005321F8 /* Glossary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Glossary.storyboard; sourceTree = "<group>"; };
+		892E7C82233B7987005321F8 /* GlossaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryViewController.swift; sourceTree = "<group>"; };
+		892E7C84233B79A2005321F8 /* GlossaryFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryFlowController.swift; sourceTree = "<group>"; };
+		892E7C86233B79C3005321F8 /* GlossaryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryFactory.swift; sourceTree = "<group>"; };
+		892E7C93233B9354005321F8 /* CascadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CascadingTableViewCell.swift; sourceTree = "<group>"; };
+		892E7C94233B9354005321F8 /* CascadingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CascadingTableViewCell.xib; sourceTree = "<group>"; };
+		892E7C97233BA8E6005321F8 /* ExpandableNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableNames.swift; sourceTree = "<group>"; };
 		893607D72331628A003CA353 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
 		893607DA233229D4003CA353 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		893607DB233229D4003CA353 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -159,6 +177,7 @@
 		8905825F23227C9E004E26BA /* Unused */ = {
 			isa = PBXGroup;
 			children = (
+				892E7C92233B9321005321F8 /* CascadingCell */,
 				890DAA7F23193CFF005737A5 /* CascadingTable.swift */,
 				890EC501230750C30069C215 /* NumberButton */,
 				890EC4FC230743920069C215 /* Number Pad */,
@@ -262,6 +281,69 @@
 			path = "Subtractions Help";
 			sourceTree = "<group>";
 		};
+		892E7C76233B786A005321F8 /* Glossary */ = {
+			isa = PBXGroup;
+			children = (
+				892E7C7B233B78FA005321F8 /* Model */,
+				892E7C7A233B78F1005321F8 /* View Model */,
+				892E7C79233B78E8005321F8 /* View Controller */,
+				892E7C78233B78E0005321F8 /* Flow Controller */,
+				892E7C77233B78B9005321F8 /* Factory */,
+			);
+			path = Glossary;
+			sourceTree = "<group>";
+		};
+		892E7C77233B78B9005321F8 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				892E7C86233B79C3005321F8 /* GlossaryFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		892E7C78233B78E0005321F8 /* Flow Controller */ = {
+			isa = PBXGroup;
+			children = (
+				892E7C84233B79A2005321F8 /* GlossaryFlowController.swift */,
+			);
+			path = "Flow Controller";
+			sourceTree = "<group>";
+		};
+		892E7C79233B78E8005321F8 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				892E7C80233B7948005321F8 /* Glossary.storyboard */,
+				892E7C82233B7987005321F8 /* GlossaryViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		892E7C7A233B78F1005321F8 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				892E7C7E233B792D005321F8 /* GlossaryViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		892E7C7B233B78FA005321F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				892E7C7C233B7912005321F8 /* GlossaryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		892E7C92233B9321005321F8 /* CascadingCell */ = {
+			isa = PBXGroup;
+			children = (
+				892E7C93233B9354005321F8 /* CascadingTableViewCell.swift */,
+				892E7C94233B9354005321F8 /* CascadingTableViewCell.xib */,
+				892E7C97233BA8E6005321F8 /* ExpandableNames.swift */,
+			);
+			path = CascadingCell;
+			sourceTree = "<group>";
+		};
 		893607D9233164F5003CA353 /* Custom CollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +374,7 @@
 			isa = PBXGroup;
 			children = (
 				895B544122FDF98500CFF65E /* Main Screen */,
+				892E7C76233B786A005321F8 /* Glossary */,
 				895B544522FDF9C300CFF65E /* Number Selection */,
 				896B167623350EDD002DF739 /* Equation Screen */,
 				890DAA72231939D5005737A5 /* Help Screen */,
@@ -618,10 +701,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				892E7C81233B7948005321F8 /* Glossary.storyboard in Resources */,
 				895B549022FE222800CFF65E /* NumberSelection.storyboard in Resources */,
 				896B167E23350F55002DF739 /* Equation.storyboard in Resources */,
 				895B543A22FDF8E900CFF65E /* LaunchScreen.storyboard in Resources */,
 				8905825E23225B42004E26BA /* CustomTableCell.xib in Resources */,
+				892E7C96233B9354005321F8 /* CascadingTableViewCell.xib in Resources */,
 				895B543722FDF8E900CFF65E /* Assets.xcassets in Resources */,
 				890DAA7A23193A58005737A5 /* HelpScreen.storyboard in Resources */,
 				890EC4FB230742EF0069C215 /* NumberPad.xib in Resources */,
@@ -645,8 +730,10 @@
 				895B548822FE0A0400CFF65E /* MainModel.swift in Sources */,
 				896B168C233516CD002DF739 /* EquationHelpModel.swift in Sources */,
 				893607D82331628A003CA353 /* CustomCollectionView.swift in Sources */,
+				892E7C98233BA8E6005321F8 /* ExpandableNames.swift in Sources */,
 				8904087623291C880030FDC6 /* Array+extensions.swift in Sources */,
 				8905825923225A3B004E26BA /* CustomTable.swift in Sources */,
+				892E7C87233B79C3005321F8 /* GlossaryFactory.swift in Sources */,
 				896B169223351728002DF739 /* EquationHelpViewController.swift in Sources */,
 				895B546D22FDFE6A00CFF65E /* MainFactory.swift in Sources */,
 				890DAA712319364F005737A5 /* UIViewController+extensions.swift in Sources */,
@@ -654,12 +741,15 @@
 				892E7C71233A455D005321F8 /* AdditionsHelpModel.swift in Sources */,
 				895B543522FDF8E700CFF65E /* Maths_Genius.xcdatamodeld in Sources */,
 				8905825D23225B42004E26BA /* CustomTableCell.swift in Sources */,
+				892E7C7D233B7912005321F8 /* GlossaryModel.swift in Sources */,
 				89040874232692D20030FDC6 /* String+extensions.swift in Sources */,
 				895B547922FE022500CFF65E /* IntroductionTable.swift in Sources */,
 				896B169423351743002DF739 /* EquationHelpFlowController.swift in Sources */,
 				890DAA8B231942D3005737A5 /* HelpScreenViewModel.swift in Sources */,
+				892E7C95233B9354005321F8 /* CascadingTableViewCell.swift in Sources */,
 				895B549222FE223600CFF65E /* NumberSelectionViewController.swift in Sources */,
 				892E7C73233A466B005321F8 /* AdditionsHelp+extensions.swift in Sources */,
+				892E7C7F233B792D005321F8 /* GlossaryViewModel.swift in Sources */,
 				895B548C22FE198200CFF65E /* UIView+extensions.swift in Sources */,
 				890DAA8D2319439B005737A5 /* HelpScreenFactory.swift in Sources */,
 				892E7C75233A92EE005321F8 /* Int+extensions.swift in Sources */,
@@ -687,8 +777,10 @@
 				895B546922FDFC1400CFF65E /* UIColor+extensions.swift in Sources */,
 				890DAA8923194238005737A5 /* HelpScreenFlowController.swift in Sources */,
 				895B54A42300BCB100CFF65E /* UILabels+extensions.swift in Sources */,
+				892E7C83233B7987005321F8 /* GlossaryViewController.swift in Sources */,
 				895B547322FDFF9200CFF65E /* NumberSelectionFlowController.swift in Sources */,
 				890DAA7D23193A84005737A5 /* HelpScreenViewController.swift in Sources */,
+				892E7C85233B79A3005321F8 /* GlossaryFlowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

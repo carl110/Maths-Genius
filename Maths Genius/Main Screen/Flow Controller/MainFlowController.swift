@@ -26,4 +26,8 @@ class MainFlowController {
         NumberSelectionFactory.PushIn(navigationController: navigationController, subject: subject)
     }
     
+    func showGlossary() {
+        GlossaryFactory.PushIn(navigationController: navigationController)
+    }
+    
 }
