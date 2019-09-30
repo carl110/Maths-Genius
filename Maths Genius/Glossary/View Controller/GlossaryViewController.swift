@@ -12,7 +12,8 @@ class GlossaryViewController: UIViewController {
 
         fileprivate var glossaryFlowController: GlossaryFlowController!
         fileprivate var glossaryViewModel: GlossaryViewModel!
-        
+    fileprivate var glossaryModel = GlossaryModel()
+
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var cascadingTable: CascadingTable!
     
@@ -23,14 +24,28 @@ class GlossaryViewController: UIViewController {
     
         override func viewDidLoad() {
             super.viewDidLoad()
-            
-            cascadingTable.tableCellData = ["cell1", "cellxgvn2"]
-            
-//            cascadingTable.tableCellData.append(contentsOf: ["Cell1", "cell2"])
-            
-            cascadingTable.tableSectionName = ["Section1", "section2"]
-            
-            cascadingTable.reloadData()
-            
+            screenSetUp()
+            titleLabelSetup()
+            glossaryItemsSetup()
         }
+    
+    func screenSetUp() {
+        self.title = "GLOSSARY"
+        self.view.backgroundColor = UIColor.Shades.standardBlack
+    }
+    
+    func titleLabelSetup() {
+        titleLabel.text = "Touch the name to view the description..."
+        titleLabel.titleLabelSetUp()
+    }
+    
+    func glossaryItemsSetup() {
+        
+        cascadingTable.tableSectionName.append(contentsOf: glossaryModel.glossaryItems)
+        
+        cascadingTable.tableCellData.append(contentsOf: glossaryModel.glossaryDeffinition)
+        
+
+        cascadingTable.reloadData()
+    }
 }

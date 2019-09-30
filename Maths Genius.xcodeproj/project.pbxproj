@@ -40,7 +40,6 @@
 		892E7C87233B79C3005321F8 /* GlossaryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C86233B79C3005321F8 /* GlossaryFactory.swift */; };
 		892E7C95233B9354005321F8 /* CascadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C93233B9354005321F8 /* CascadingTableViewCell.swift */; };
 		892E7C96233B9354005321F8 /* CascadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 892E7C94233B9354005321F8 /* CascadingTableViewCell.xib */; };
-		892E7C98233BA8E6005321F8 /* ExpandableNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C97233BA8E6005321F8 /* ExpandableNames.swift */; };
 		892E7C9A233CBA04005321F8 /* MultiplicationHelpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C99233CBA04005321F8 /* MultiplicationHelpModel.swift */; };
 		892E7C9D233CE7B1005321F8 /* PeopleAndSweets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C9C233CE7B1005321F8 /* PeopleAndSweets.swift */; };
 		893607D82331628A003CA353 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607D72331628A003CA353 /* CustomCollectionView.swift */; };
@@ -115,7 +114,6 @@
 		892E7C86233B79C3005321F8 /* GlossaryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryFactory.swift; sourceTree = "<group>"; };
 		892E7C93233B9354005321F8 /* CascadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CascadingTableViewCell.swift; sourceTree = "<group>"; };
 		892E7C94233B9354005321F8 /* CascadingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CascadingTableViewCell.xib; sourceTree = "<group>"; };
-		892E7C97233BA8E6005321F8 /* ExpandableNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableNames.swift; sourceTree = "<group>"; };
 		892E7C99233CBA04005321F8 /* MultiplicationHelpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationHelpModel.swift; sourceTree = "<group>"; };
 		892E7C9C233CE7B1005321F8 /* PeopleAndSweets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleAndSweets.swift; sourceTree = "<group>"; };
 		893607D72331628A003CA353 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
@@ -181,8 +179,6 @@
 		8905825F23227C9E004E26BA /* Unused */ = {
 			isa = PBXGroup;
 			children = (
-				892E7C92233B9321005321F8 /* CascadingCell */,
-				890DAA7F23193CFF005737A5 /* CascadingTable.swift */,
 				890EC501230750C30069C215 /* NumberButton */,
 				890EC4FC230743920069C215 /* Number Pad */,
 				890DAA8123193D61005737A5 /* CascadingTableHeader */,
@@ -343,7 +339,6 @@
 			children = (
 				892E7C93233B9354005321F8 /* CascadingTableViewCell.swift */,
 				892E7C94233B9354005321F8 /* CascadingTableViewCell.xib */,
-				892E7C97233BA8E6005321F8 /* ExpandableNames.swift */,
 			);
 			path = CascadingCell;
 			sourceTree = "<group>";
@@ -426,6 +421,8 @@
 		895B544322FDF9AC00CFF65E /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				892E7C92233B9321005321F8 /* CascadingCell */,
+				890DAA7F23193CFF005737A5 /* CascadingTable.swift */,
 				893607D9233164F5003CA353 /* Custom CollectionView */,
 				8905825A23225B18004E26BA /* Custom Table Cell */,
 				895B547822FE022500CFF65E /* IntroductionTable.swift */,
@@ -744,7 +741,6 @@
 				895B548822FE0A0400CFF65E /* MainModel.swift in Sources */,
 				896B168C233516CD002DF739 /* EquationHelpModel.swift in Sources */,
 				893607D82331628A003CA353 /* CustomCollectionView.swift in Sources */,
-				892E7C98233BA8E6005321F8 /* ExpandableNames.swift in Sources */,
 				8904087623291C880030FDC6 /* Array+extensions.swift in Sources */,
 				8905825923225A3B004E26BA /* CustomTable.swift in Sources */,
 				892E7C87233B79C3005321F8 /* GlossaryFactory.swift in Sources */,

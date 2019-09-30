@@ -27,6 +27,8 @@ class CascadingTable: UITableView, UITableViewDelegate, UITableViewDataSource {
         let headerNib = UINib.init(nibName: "CascadingTableHeader", bundle: Bundle.main)
         self.register(headerNib, forHeaderFooterViewReuseIdentifier: "CascadingTableHeader")
         
+        self.backgroundColor = UIColor.Reds.gryffindorRed
+        
     }
     
     var tableCellData: [Any] = []
@@ -59,6 +61,7 @@ class CascadingTable: UITableView, UITableViewDelegate, UITableViewDataSource {
         let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "CascadingTableHeader") as! CascadingTableHeader
         
         headerView.labelTitle.text = self.tableSectionName[section] as? String
+        headerView.labelTitle.font = UIFont.boldSystemFont(ofSize: 25)
         headerView.config()
         
         headerView.imageView.image = UIImage(named: "chevron")
@@ -73,17 +76,18 @@ class CascadingTable: UITableView, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HelpCell", for: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "GlossaryCell", for: indexPath) as UITableViewCell
         let section = self.tableCellData[indexPath.section] as! NSArray
         
-        
-        cell.textLabel?.textColor = UIColor.black
+        cell.textLabel?.numberOfLines = 0
+        cell.textLabel?.textColor = UIColor.Reds.gryffindorRed
+        cell.backgroundColor = UIColor.Yellows.gryffindorYellow
         cell.textLabel?.text = section[indexPath.row] as? String
-        cell.backgroundColor = UIColor.Greens.standardGreen
         
         return cell
     }
     
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print ("clicked cell \(indexPath)")
     }
