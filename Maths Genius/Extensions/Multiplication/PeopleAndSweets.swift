@@ -44,24 +44,62 @@ extension UIViewController {
             
         } else {
             
-            //Show original equation
-            exampleText.append("Using the eqaution\n\(firstNumber) - \(secondNumber)\nyou can do the following :\n")
+            var smallerNumber = 0
+            var largerNumber = 0
             
-            if firstNumber == secondNumber {
-                exampleText.append("Since both numbers are the same both people and sweets will be \(firstNumber)/n")
+            //Show original equation
+            exampleText.append("Using the eqaution\n\(firstNumber) × \(secondNumber)\nyou can do the following :\n")
+            
+           
+            if firstNumber == 1 || secondNumber == 1 {
                 
-                exampleText.append("So we have \(firstNumber) \(UIImage(named: "wand"))")
+                exampleText.append("Any number multiplied by 1 will be the same number.\nUsing the help example: 1 person has \(firstNumber * secondNumber) sweets")
                 
-            } else if firstNumber < secondNumber {
-                exampleText.append("Since the second number is larger than the first number lets make the first number the ammount of people and the socond number the sweets\n")
+            } else {
                 
-                exampleText.append("So we have \(firstNumber) \(UIImage(named: "wand"))")
-            } else if firstNumber > secondNumber {
-                exampleText.append("Since the first number is larger than the second number lets make the second number the ammount of people and the first number the number of sweets\n")
+                if firstNumber == secondNumber {
+                    
+                    largerNumber = firstNumber
+                    
+                    smallerNumber = secondNumber
+                    
+                    exampleText.append("Since both numbers are the same both people and sweets will be \(firstNumber)\n")
+                    
+                    
+                } else if firstNumber < secondNumber {
+                    
+                    largerNumber = secondNumber
+                    
+                    smallerNumber = firstNumber
+                    exampleText.append("Since the second number is larger than the first number lets make the first number the amount of people and the socond number the sweets")
+                    
+                    
+                } else if firstNumber > secondNumber {
+
+                    largerNumber = firstNumber
+                    
+                    smallerNumber = secondNumber
+
+                    exampleText.append("Since the first number is larger than the second number lets make the second number the amount of people and the first number the number of sweets\n")
+                    
+                }
+                    
+                    exampleText.append("So \(smallerNumber) people have \(largerNumber) sweets each")
+                    
+                    exampleText.append("Lets add the sweets up\n\nAdd \(largerNumber) sweets from person 1 to \(largerNumber) sweets from person 2\n\(largerNumber) + \(largerNumber) = \(largerNumber * 2)\n")
                 
-                exampleText.append("So we have \(firstNumber) \(UIImage(named: "wand"))")
+                if smallerNumber > 2 {
+                    for i in 3...smallerNumber {
+                         exampleText.append("Now add \(largerNumber) sweets form person \(i) to the previouse \(largerNumber * (i-1))\n\(largerNumber * (i-1)) + \(largerNumber) = \(largerNumber * i)")
+                         
+                     }
+
+                }
             }
             
+
+            
+            exampleText.append("\nTherefore \(firstNumber) × \(secondNumber) = \(firstNumber * secondNumber)")
         }
         
         
