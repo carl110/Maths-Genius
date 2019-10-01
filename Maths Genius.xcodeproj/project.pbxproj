@@ -181,7 +181,6 @@
 			children = (
 				890EC501230750C30069C215 /* NumberButton */,
 				890EC4FC230743920069C215 /* Number Pad */,
-				890DAA8123193D61005737A5 /* CascadingTableHeader */,
 			);
 			path = Unused;
 			sourceTree = "<group>";
@@ -421,6 +420,7 @@
 		895B544322FDF9AC00CFF65E /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				890DAA8123193D61005737A5 /* CascadingTableHeader */,
 				892E7C92233B9321005321F8 /* CascadingCell */,
 				890DAA7F23193CFF005737A5 /* CascadingTable.swift */,
 				893607D9233164F5003CA353 /* Custom CollectionView */,

@@ -9,25 +9,24 @@
 import UIKit
 
 class GlossaryViewController: UIViewController {
-
-        fileprivate var glossaryFlowController: GlossaryFlowController!
-        fileprivate var glossaryViewModel: GlossaryViewModel!
-    fileprivate var glossaryModel = GlossaryModel()
-
+    
+    fileprivate var glossaryFlowController: GlossaryFlowController!
+    fileprivate var glossaryViewModel: GlossaryViewModel!
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var cascadingTable: CascadingTable!
     
     func assignDependancies(glossaryFlowController: GlossaryFlowController, glossaryViewModel: GlossaryViewModel) {
-            self.glossaryViewModel = glossaryViewModel
-            self.glossaryFlowController = glossaryFlowController
-        }
+        self.glossaryViewModel = glossaryViewModel
+        self.glossaryFlowController = glossaryFlowController
+    }
     
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            screenSetUp()
-            titleLabelSetup()
-            glossaryItemsSetup()
-        }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        screenSetUp()
+        titleLabelSetup()
+        glossaryItemsSetup()
+    }
     
     func screenSetUp() {
         self.title = "GLOSSARY"
@@ -41,11 +40,14 @@ class GlossaryViewController: UIViewController {
     
     func glossaryItemsSetup() {
         
-        cascadingTable.tableSectionName.append(contentsOf: glossaryModel.glossaryItems)
+        //Run func to add glossary items to array
+        glossaryViewModel.arrayOfGlossary()
         
-        cascadingTable.tableCellData.append(contentsOf: glossaryModel.glossaryDeffinition)
+        //sort array alphabeticaly and then add to table sections and cells
+        for i in glossaryViewModel.glossaryArray.sorted(by: { $0.item < $1.item}) {
+            cascadingTable.tableSectionName.append(i.item)
+            cascadingTable.tableCellData.append([i.alsoKnownAs, i.deffinition])
+        }
         
-
-        cascadingTable.reloadData()
     }
 }
