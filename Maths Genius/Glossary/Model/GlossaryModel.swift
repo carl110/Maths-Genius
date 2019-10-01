@@ -13,11 +13,13 @@ class GlossaryModel {
     var item: String
     var alsoKnownAs: String?
     var deffinition: String
+    var definition2: String?
     
-    init (item: String, alsoKnownAs: String?, deffinition: String) {
+    init (item: String, alsoKnownAs: String?, deffinition: String, definition2: String?) {
         self.item = item
         self.alsoKnownAs = alsoKnownAs
         self.deffinition = deffinition
+        self.definition2 = definition2
     }
     
     var glossaryArray = [GlossaryModel]()

@@ -46,8 +46,19 @@ class GlossaryViewController: UIViewController {
         //sort array alphabeticaly and then add to table sections and cells
         for i in glossaryViewModel.glossaryArray.sorted(by: { $0.item < $1.item}) {
             cascadingTable.tableSectionName.append(i.item)
-            cascadingTable.tableCellData.append([i.alsoKnownAs, i.deffinition])
+            
+            //Only add non empty fields to cells
+            if i.alsoKnownAs != nil && i.definition2 != nil {
+                cascadingTable.tableCellData.append([i.alsoKnownAs, i.deffinition, i.definition2])
+            }
+            
+            if i.alsoKnownAs != nil && i.definition2 == nil {
+                cascadingTable.tableCellData.append([i.alsoKnownAs, i.deffinition])
+            }
+            
+            if i.alsoKnownAs == nil && i.definition2 == nil {
+                cascadingTable.tableCellData.append([i.deffinition])
+            }
         }
-        
     }
 }
