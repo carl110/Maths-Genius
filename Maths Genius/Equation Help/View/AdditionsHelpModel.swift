@@ -31,4 +31,14 @@ class AdditionsHelpModel {
                                                 UIImage(named: "usingPlaceValuesStep4")!,
                                                 UIImage(named: "usingPlaceValuesStep5")!]
     
+    let hundresSquareStepText = ["If you have a hunderds square you can add the numbers together by using the row to add the units and the columns to add the tens\n Lets start by placing the first number on the grid",
+                         "Now we know where to start we can move along the row to add the units.\nCount the number of squares to the right for the number of units",
+                         "Now we can add the tens to the column.\nCount downwards the number of squares for the number in the tens.\nThis gives you your answer",
+                         "If your number goes past the end of the row, just start on the next row"]
+    
+    let hundredsSquareStepImage: [UIImage] = [UIImage(named: "hundredsSquareStep1")!,
+                                              UIImage(named: "hundredsSquareStep2")!,
+                                              UIImage(named: "hundredsSquareStep3")!,
+                                              UIImage(named: "hundredsSquareStep4")!]
+    
 }

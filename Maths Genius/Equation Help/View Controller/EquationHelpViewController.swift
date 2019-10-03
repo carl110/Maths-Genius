@@ -12,7 +12,7 @@ class EquationHelpViewController: UIViewController {
     
     fileprivate var equationHelpFlowController: EquationHelpFlowController!
     fileprivate var equationHelpViewModel: EquationHelpViewModel!
-    fileprivate var equationHelpModel = EquationHelpModel()
+    fileprivate var subtractionHelpModel = SubtractionHelpModel()
     fileprivate var additionsHelpModel = AdditionsHelpModel()
     fileprivate var multiplicationHelpModel = MultiplicationHelpModel()
     
@@ -83,9 +83,15 @@ class EquationHelpViewController: UIViewController {
             exampleText = usingPlaceValues(firstNumber: firstNumber, secondNumber: secondNumber)
         }
         
+        if helpTitle == HelpSubject.Additions.HundredsSquare.rawValue.self {
+            stepText = additionsHelpModel.hundresSquareStepText
+            stepImage = additionsHelpModel.hundredsSquareStepImage
+            exampleText = hundredsSquare(firstNumber: firstNumber, secondNumber: secondNumber)
+        }
+        
         if helpTitle == HelpSubject.Subtractions.SubtractByBorrowing.rawValue.self {
-            stepText = equationHelpModel.subtractByBorrowingStepText
-            stepImage = equationHelpModel.subtractByBorrowingStepImage
+            stepText = subtractionHelpModel.subtractByBorrowingStepText
+            stepImage = subtractionHelpModel.subtractByBorrowingStepImage
             exampleText = subtractByBorrowing(firstNumber: firstNumber, secondNumber: secondNumber)
         }
         

@@ -72,7 +72,7 @@
 		896B168023350F6D002DF739 /* EquationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B167F23350F6D002DF739 /* EquationViewController.swift */; };
 		896B168223350F7D002DF739 /* EquationFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B168123350F7D002DF739 /* EquationFlowController.swift */; };
 		896B168423350F89002DF739 /* EquationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B168323350F89002DF739 /* EquationFactory.swift */; };
-		896B168C233516CD002DF739 /* EquationHelpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B168B233516CD002DF739 /* EquationHelpModel.swift */; };
+		896B168C233516CD002DF739 /* SubtractionHelpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B168B233516CD002DF739 /* SubtractionHelpModel.swift */; };
 		896B168E233516E5002DF739 /* EquationHelpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B168D233516E5002DF739 /* EquationHelpViewModel.swift */; };
 		896B169023351707002DF739 /* EquationHelp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896B168F23351707002DF739 /* EquationHelp.storyboard */; };
 		896B169223351728002DF739 /* EquationHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B169123351728002DF739 /* EquationHelpViewController.swift */; };
@@ -148,7 +148,7 @@
 		896B167F23350F6D002DF739 /* EquationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationViewController.swift; sourceTree = "<group>"; };
 		896B168123350F7D002DF739 /* EquationFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationFlowController.swift; sourceTree = "<group>"; };
 		896B168323350F89002DF739 /* EquationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationFactory.swift; sourceTree = "<group>"; };
-		896B168B233516CD002DF739 /* EquationHelpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationHelpModel.swift; sourceTree = "<group>"; };
+		896B168B233516CD002DF739 /* SubtractionHelpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionHelpModel.swift; sourceTree = "<group>"; };
 		896B168D233516E5002DF739 /* EquationHelpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationHelpViewModel.swift; sourceTree = "<group>"; };
 		896B168F23351707002DF739 /* EquationHelp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EquationHelp.storyboard; sourceTree = "<group>"; };
 		896B169123351728002DF739 /* EquationHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationHelpViewController.swift; sourceTree = "<group>"; };
@@ -647,7 +647,7 @@
 		896B168A233516B9002DF739 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				896B168B233516CD002DF739 /* EquationHelpModel.swift */,
+				896B168B233516CD002DF739 /* SubtractionHelpModel.swift */,
 				892E7C70233A455D005321F8 /* AdditionsHelpModel.swift */,
 				892E7C99233CBA04005321F8 /* MultiplicationHelpModel.swift */,
 			);
@@ -739,7 +739,7 @@
 			files = (
 				895B542F22FDF8E700CFF65E /* ViewController.swift in Sources */,
 				895B548822FE0A0400CFF65E /* MainModel.swift in Sources */,
-				896B168C233516CD002DF739 /* EquationHelpModel.swift in Sources */,
+				896B168C233516CD002DF739 /* SubtractionHelpModel.swift in Sources */,
 				893607D82331628A003CA353 /* CustomCollectionView.swift in Sources */,
 				8904087623291C880030FDC6 /* Array+extensions.swift in Sources */,
 				8905825923225A3B004E26BA /* CustomTable.swift in Sources */,

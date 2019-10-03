@@ -33,7 +33,7 @@ public enum HelpSubject {
     enum Additions: String, CaseIterable {
         case RoundingNumbers = "Rounding Numbers"
         case UsingPlaceValues = "Using Place Values"
-        
+        case HundredsSquare = "Hundreds Square"
 
     }
     enum Subtractions: String, CaseIterable {
