@@ -105,7 +105,7 @@ extension UIViewController {
         
         //create an array of the numbers
         var secondNumberArray = secondNumber.digits
-
+        
         while 4 - secondNumberArray.count > 0 {
             secondNumberArray.insert(0, at: 0)
         }
@@ -113,54 +113,56 @@ extension UIViewController {
         //Split numbers into their place values
         let snUnit = secondNumberArray[3]
         let snTen = secondNumberArray[2]
-
         
+        var exampleText = [String]()
         
-        //Show original equation
-        var exampleText = ["Using the eqaution\n\(firstNumber) + \(secondNumber)\nyou can do the following :\n\n"]
-        
-        exampleText.append("On the Hundreds Square you have in front of you mark the number \(firstNumber) as your starting position\n\n")
-        
-        if snUnit == 0 {
-            
-            exampleText.append("Since the unit number is 0 lets go straight to the tens number\n\n")
+        //If number over 100 hundered then this example is not useful
+        if (firstNumber + secondNumber) > 100 {
+            exampleText.append("The sum of \(firstNumber) and \(secondNumber) is more than 100 so the hundres square will not work. Please look at another help item.")
             
         } else {
             
-            exampleText.append("Now add \(snUnit) from the second number to the \(firstNumber) on your Hundred Square\n\n")
+            //Show original equation
+            exampleText.append("Using the eqaution\n\(firstNumber) + \(secondNumber)\nyou can do the following :\n\n")
             
-            exampleText.append("You should now go \(snUnit)accross the row and cross out -\n")
+            exampleText.append("On the Hundreds Square you have in front of you mark the number \(firstNumber) as your starting position\n\n")
             
-            for i in 0...snUnit - 1 {
-                exampleText.append(" \(firstNumber + i) ")
+            //if no usits go straight to tens
+            if snUnit == 0 {
+                exampleText.append("Since the unit number is 0 lets go straight to the tens number\n\n")
+            } else {
+                exampleText.append("Now add \(snUnit) from the second number to the \(firstNumber) on your Hundred Square\n\n")
+                
+                exampleText.append("You should now count \(snUnit) to the right accross the row and, cross out -\n|")
+                
+                for i in 0...snUnit - 1 {
+                    exampleText.append(" \(firstNumber + i) |")
+                }
+                
+                exampleText.append("\n\nNow mark the \(firstNumber + snUnit) on your hundreds square\n\n")
             }
             
-            exampleText.append("\n\nNow mark the \(firstNumber + snUnit) on your hundreds square\n\n")
-        }
-        
-        if snTen == 0 {
-            
-            exampleText.append("Since there is no tens number. The number you have marked on your hundreds square is the finnal answer\n\n")
-            
-        } else {
-            
-            exampleText.append("Now add \(snTen * 10) from the \(secondNumber) to the \(firstNumber + snUnit) on your Hundred Square\n\n")
-            
-            exampleText.append("You should now go \(snTen) down on the column and cross out -\n")
-            
-            for i in 0...snTen - 1 {
-                exampleText.append(" \((firstNumber + snUnit) + i * 10) \n")
+            if snTen == 0 {
+                exampleText.append("Since there is no tens number. The number you have marked on your hundreds square is the finnal answer\n\n")
+            } else {
+                exampleText.append("Now add \(snTen * 10) from the \(secondNumber) to the \(firstNumber + snUnit) on your Hundred Square\n\n")
+                
+                exampleText.append("You should now go \(snTen) down on the column and cross out -\n")
+                
+                for i in 0...snTen - 1 {
+                    exampleText.append(" \((firstNumber + snUnit) + i * 10) \n\n")
+                }
+                exampleText.append("Now mark \(firstNumber + secondNumber) on your hundreds square\n\n")
             }
             
-            exampleText.append("Now mark \(firstNumber + secondNumber)\n\n")
+            exampleText.append("Your hundreds square should now show the correct answer for \(firstNumber) + \(secondNumber) which is-\n\n\(firstNumber) + \(secondNumber) = \(firstNumber + secondNumber)")
+            
         }
-
-        exampleText.append("Your hundreds square should now show the correct answer for \(firstNumber) + \(secondNumber) which is-\n\n\(firstNumber) + \(secondNumber) = \(firstNumber + secondNumber)")
         
         //join all sections of array into 1 section seperated by a line break
         exampleText = [exampleText.joined(separator: "")]
         
         return exampleText
-    }
-    
+}
+
 }
