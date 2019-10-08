@@ -40,10 +40,3 @@ extension Array {
         return self [self.startIndex + 1]
     }
 }
-
-
-extension Sequence where Element: AdditiveArithmetic {
-    func sum() -> Element {
-        return reduce(.zero, +)
-    }
-}

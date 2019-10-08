@@ -18,43 +18,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        //Set up factory flow with Main screen as first viewcontroller seen
         MainFactory.showIn(window: window!)
         window?.makeKeyAndVisible()
         
         let navigationBar = UINavigationBar.appearance()
-
-        
-        
-        
-        
-        
-        //set colour
+        //set background colour
         navigationBar.barTintColor = UIColor.Shades.standardBlack
-////        navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "CaviarDreams", size: 40)!]
-//
+        //set backbutton colour
+        navigationBar.tintColor = UIColor.Shades.standardWhite
         
-        
-        let attrs = [
+        //Set colour size and font of text
+        let textAttributes = [
             NSAttributedString.Key.backgroundColor: UIColor.Shades.standardBlack,
             NSAttributedString.Key.foregroundColor: UIColor.Shades.standardWhite,
             NSAttributedString.Key.font: UIFont(name: "Chalkduster", size: 28)!
-//            NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .largeTitle)
     
         ]
-        
-//        self.font = UIFont.preferredFont(forTextStyle: .body)
 
-        UINavigationBar.appearance().titleTextAttributes = attrs
+        navigationBar.titleTextAttributes = textAttributes
 
-        
-        
-        //remove any shading
-        navigationBar.isTranslucent = false
-//        //set text colour
-//        navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.Shades.standardWhite]
-//        //set backbutton colour
-        navigationBar.tintColor = UIColor.Shades.standardWhite
-//
         return true
     }
 

@@ -25,8 +25,7 @@ extension UITableView {
             var row = max((self?.numberOfRows(inSection: section))! - 1, 0)
             var indexPath = IndexPath(row: row, section: section)
             
-            // Ensure the index path is valid, otherwise use the section above (sections can
-            // contain 0 rows which leads to an invalid index path)
+            // Ensure the index path is valid, otherwise use the section above (sections can contain 0 rows which leads to an invalid index path)
             while !(self?.indexPathIsValid(indexPath))! {
                 section = max(section - 1, 0)
                 row = max((self?.numberOfRows(inSection: section))! - 1, 0)
@@ -39,8 +38,7 @@ extension UITableView {
                 }
             }
             
-            // In the case that [0, 0] is valid (perhaps no data source?), ensure we don't encounter an
-            // exception here
+            // In the case that [0, 0] is valid (perhaps no data source?), ensure we don't encounter an exception here
             guard (self?.indexPathIsValid(indexPath))! else { return }
             
             self?.scrollToRow(at: indexPath, at: .bottom, animated: true)

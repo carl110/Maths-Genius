@@ -37,7 +37,7 @@ extension String {
         return String(self[start ..< end])
     }
     
-    // Changes tect to title case
+    // Changes text to title case
     func titlecased() -> String {
         return self.replacingOccurrences(of: "([A-Z])", with: " $1", options: .regularExpression, range: self.range(of: self))
             .trimmingCharacters(in: .whitespacesAndNewlines)
