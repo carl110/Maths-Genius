@@ -20,7 +20,7 @@ class HelpScreenFlowController {
         MainFactory.PushIn(navigationController: navigationController)
     }
 
-    func equationHelp(firstNumber: Int, secondNumber: Int, helpTitle: String) {
-        EquationHelpFactory.PushIn(navigationController: navigationController, firstNumber: firstNumber, secondNumber: secondNumber, helpTitle: helpTitle)
+    func equationHelp(firstNumber: Int, secondNumber: Int, subject: String, helpTitle: String) {
+        EquationHelpFactory.PushIn(navigationController: navigationController, firstNumber: firstNumber, secondNumber: secondNumber, subject: subject, helpTitle: helpTitle)
     }
 }

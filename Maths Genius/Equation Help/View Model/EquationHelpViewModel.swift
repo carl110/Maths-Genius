@@ -7,17 +7,19 @@
 //
 
 import Foundation
-import UIKit
+
 
 class EquationHelpViewModel {
     
     let firstNumber: Int
     let secondNumber: Int
+    let subject: String
     let helpTitle: String
     
-    init (firstNumber: Int, secondNumber: Int, helpTitle: String) {
+    init (firstNumber: Int, secondNumber: Int, subject: String, helpTitle: String) {
         self.firstNumber = firstNumber
         self.secondNumber = secondNumber
+        self.subject = subject
         self.helpTitle = helpTitle
     }
     

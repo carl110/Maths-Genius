@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iIh-rD-PNh">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iIh-rD-PNh">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,11 +13,11 @@
             <objects>
                 <viewController id="iIh-rD-PNh" customClass="NumberSelectionViewController" customModule="Maths_Genius" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xao-Ys-NsO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="0yp-zC-HlQ">
-                                <rect key="frame" x="10" y="90" width="355" height="29"/>
+                                <rect key="frame" x="10" y="114" width="394" height="32"/>
                                 <segments>
                                     <segment title="Thousands"/>
                                     <segment title="Hundreds"/>
@@ -31,19 +29,19 @@
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKx-B3-4jm">
-                                <rect key="frame" x="10" y="70" width="355" height="0.0"/>
+                                <rect key="frame" x="10" y="94" width="394" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pc-QU-Kqz">
-                                <rect key="frame" x="10" y="258" width="355" height="0.0"/>
+                                <rect key="frame" x="10" y="285" width="394" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Euk-SJ-9ci">
-                                <rect key="frame" x="10" y="138" width="355" height="100"/>
+                                <rect key="frame" x="10" y="165" width="394" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="SYy-Ik-Hus"/>
                                 </constraints>
@@ -52,7 +50,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2o-dH-Kbq">
-                                <rect key="frame" x="10" y="326" width="355" height="100"/>
+                                <rect key="frame" x="10" y="356" width="394" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="tCn-Nc-Vif"/>
                                 </constraints>
@@ -61,7 +59,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v93-nb-ySX">
-                                <rect key="frame" x="40" y="559.5" width="295" height="77.5"/>
+                                <rect key="frame" x="40" y="744.5" width="334" height="87.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="v93-nb-ySX" secondAttribute="height" multiplier="301:79" id="IPi-OK-rwb"/>
                                 </constraints>
@@ -71,7 +69,7 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="3Aq-E1-zFI">
-                                <rect key="frame" x="10" y="278" width="355" height="29"/>
+                                <rect key="frame" x="10" y="305" width="394" height="32"/>
                                 <segments>
                                     <segment title="Thousands"/>
                                     <segment title="Hundreds"/>
@@ -95,6 +93,7 @@
                             <constraint firstItem="dOF-kC-LNv" firstAttribute="trailing" secondItem="Euk-SJ-9ci" secondAttribute="trailing" constant="10" id="FYg-KF-39O"/>
                             <constraint firstItem="OKx-B3-4jm" firstAttribute="leading" secondItem="dOF-kC-LNv" secondAttribute="leading" constant="10" id="OhQ-8L-WDE"/>
                             <constraint firstItem="dOF-kC-LNv" firstAttribute="trailing" secondItem="OKx-B3-4jm" secondAttribute="trailing" constant="10" id="QAc-Ti-epZ"/>
+                            <constraint firstItem="v93-nb-ySX" firstAttribute="centerX" secondItem="Xao-Ys-NsO" secondAttribute="centerX" id="QVL-yk-A5q"/>
                             <constraint firstItem="OKx-B3-4jm" firstAttribute="top" secondItem="dOF-kC-LNv" secondAttribute="top" constant="50" id="RzO-7O-49a"/>
                             <constraint firstItem="3Aq-E1-zFI" firstAttribute="top" secondItem="0pc-QU-Kqz" secondAttribute="bottom" constant="20" id="VMo-oq-o5L"/>
                             <constraint firstItem="0yp-zC-HlQ" firstAttribute="leading" secondItem="dOF-kC-LNv" secondAttribute="leading" constant="10" id="WyH-7c-iU9"/>

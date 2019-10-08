@@ -21,6 +21,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         MainFactory.showIn(window: window!)
         window?.makeKeyAndVisible()
         
+        let navigationBar = UINavigationBar.appearance()
+
+        
+        
+        
+        
+        
+        //set colour
+        navigationBar.barTintColor = UIColor.Shades.standardBlack
+////        navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "CaviarDreams", size: 40)!]
+//
+        
+        
+        let attrs = [
+            NSAttributedString.Key.backgroundColor: UIColor.Shades.standardBlack,
+            NSAttributedString.Key.foregroundColor: UIColor.Shades.standardWhite,
+            NSAttributedString.Key.font: UIFont(name: "Chalkduster", size: 30)!
+    
+        ]
+
+        UINavigationBar.appearance().titleTextAttributes = attrs
+
+        
+        
+        //remove any shading
+        navigationBar.isTranslucent = false
+//        //set text colour
+//        navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.Shades.standardWhite]
+//        //set backbutton colour
+        navigationBar.tintColor = UIColor.Shades.standardWhite
+//
         return true
     }
 

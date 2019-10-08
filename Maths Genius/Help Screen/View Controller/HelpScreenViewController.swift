@@ -46,7 +46,7 @@ class HelpScreenViewController: UIViewController, HelpSectionSelectedDelegate {
         self.view.backgroundColor = UIColor.Shades.standardBlack
         
         titleLabel.text = "Select the help item below..."
-        titleLabel.titleLabelSetUp()
+        titleLabel.subTitleLabelSetUp()
         
         tableSetUp()
     }
@@ -71,7 +71,7 @@ class HelpScreenViewController: UIViewController, HelpSectionSelectedDelegate {
         
         helpTitle = title
         
-                        helpScreenFlowController.equationHelp(firstNumber: firstNumber, secondNumber: secondNumber, helpTitle: helpTitle)
+        helpScreenFlowController.equationHelp(firstNumber: firstNumber, secondNumber: secondNumber, subject: subject, helpTitle: helpTitle)
 
     }
 }

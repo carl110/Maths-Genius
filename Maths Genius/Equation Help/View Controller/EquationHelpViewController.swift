@@ -39,9 +39,7 @@ class EquationHelpViewController: UIViewController {
         objectSetUp()
         pageSetup()
         buttonSetup()
-        print ("Help Title \(helpTitle)")
         helpSubjectSetup()
-        print ("Step text = \(stepText)")
         cellDataSetUp()
     }
     
@@ -50,16 +48,17 @@ class EquationHelpViewController: UIViewController {
         secondNumber = equationHelpViewModel.secondNumber
         helpTitle = equationHelpViewModel.helpTitle
         pageTitle.text = equationHelpViewModel.helpTitle
+        pageTitle.titleLabelSetUp()
         
     }
     
     func pageSetup() {
         self.view.backgroundColor = UIColor.Shades.standardBlack
-        self.title = equationHelpViewModel.helpTitle
+        self.title = equationHelpViewModel.subject
     }
     
     func buttonSetup() {
-        returnToEquation.setTitle("Return to the equation", for: .normal)
+        returnToEquation.setTitle("Return to the \(equationHelpViewModel.subject)", for: .normal)
         returnToEquation.subTitleButtonSetup()
         newEquation.setTitle("Let me try a new equation", for: .normal)
         newEquation.subTitleButtonSetup()

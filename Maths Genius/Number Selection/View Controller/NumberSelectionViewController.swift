@@ -43,19 +43,19 @@ class NumberSelectionViewController: UIViewController {
     }
     
     func setUp() {
-        firstNumberLabel.titleLabelSetUp()
-        secondNumberLabel.titleLabelSetUp()
+        firstNumberLabel.bodyLabelSetUp()
+        secondNumberLabel.bodyLabelSetUp()
         firstNumberLabel.text = "Select how large you would like the first number in the equasion"
         secondNumberLabel.text = "Select how large you would like the first number in the equasion"
         
-        firstNumberOutcome.subTitleLabelSetUp()
-        secondNumberOutcome.subTitleLabelSetUp()
+        firstNumberOutcome.bodyLabelSetUp()
+        secondNumberOutcome.bodyLabelSetUp()
         
         continueButton.subTitleButtonSetup()
         continueButton.setTitle("Continue to \(subject)", for: .normal)
         
         self.view.backgroundColor = UIColor.Shades.standardBlack
-        self.title = "Select your Numbers for \(subject)"
+        self.title = "Number selection"
         
         //disable selector and button to force pick order
         secondNumberSelector.isEnabled = false
