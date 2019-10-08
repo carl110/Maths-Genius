@@ -29,23 +29,29 @@ extension UIButton {
     }
     
     func titleButtonSetup() {
-        self.backgroundColor = UIColor.Reds.gryffindorRed
-        self.setTitleColor(UIColor.Yellows.gryffindorYellow, for: .normal)
-        self.titleLabel?.font = UIFont.boldSystemFont(ofSize: self.frame.height)
-        self.titleLabel?.adjustsFontSizeToFitWidth = true
-        self.centerTextHorizontally(spacing: 8)
-        self.contentVerticalAlignment = .center
-        self.roundCorners(for: .allCorners, cornerRadius: 8)
+        DispatchQueue.main.async { [weak self] in
+            self?.backgroundColor = UIColor.Reds.gryffindorRed
+            self?.setTitleColor(UIColor.Yellows.gryffindorYellow, for: .normal)
+            self?.titleLabel?.font = UIFont.boldSystemFont(ofSize: (self?.frame.height)! / 1.2)
+            self?.titleLabel?.adjustsFontSizeToFitWidth = true
+            self?.centerTextHorizontally(spacing: 8)
+            self?.contentVerticalAlignment = .center
+            self?.roundCorners(for: .allCorners, cornerRadius: 8)
+        }
+        
     }
     
     func subTitleButtonSetup() {
-        self.backgroundColor = UIColor.Yellows.gryffindorYellow
-        self.setTitleColor(UIColor.Reds.gryffindorRed, for: .normal)
-        self.titleLabel?.font = UIFont.boldSystemFont(ofSize: self.frame.height / 2.5)
-        self.centerTextHorizontally(spacing: 8)
-        self.roundCorners(for: .allCorners, cornerRadius: 8)
-        self.titleLabel?.numberOfLines = 0
-        self.contentVerticalAlignment = .center
+        DispatchQueue.main.async { [weak self] in
+            self?.backgroundColor = UIColor.Yellows.gryffindorYellow
+            self?.setTitleColor(UIColor.Reds.gryffindorRed, for: .normal)
+            self?.titleLabel?.font = UIFont.boldSystemFont(ofSize: (self?.frame.height)! / 2.5)
+            self?.centerTextHorizontally(spacing: 8)
+            self?.roundCorners(for: .allCorners, cornerRadius: 8)
+            self?.titleLabel?.numberOfLines = 0
+            self?.contentVerticalAlignment = .center
+        }
+        
         
     }
 }

@@ -37,9 +37,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let attrs = [
             NSAttributedString.Key.backgroundColor: UIColor.Shades.standardBlack,
             NSAttributedString.Key.foregroundColor: UIColor.Shades.standardWhite,
-            NSAttributedString.Key.font: UIFont(name: "Chalkduster", size: 30)!
+            NSAttributedString.Key.font: UIFont(name: "Chalkduster", size: 28)!
+//            NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .largeTitle)
     
         ]
+        
+//        self.font = UIFont.preferredFont(forTextStyle: .body)
 
         UINavigationBar.appearance().titleTextAttributes = attrs
 

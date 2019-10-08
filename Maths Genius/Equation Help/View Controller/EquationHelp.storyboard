@@ -17,30 +17,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16r-bY-0G4">
-                                <rect key="frame" x="5" y="5" width="365" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="16r-bY-0G4" secondAttribute="height" multiplier="73:10" id="fNv-9M-sgd"/>
-                                </constraints>
+                                <rect key="frame" x="5" y="5" width="365" height="20.5"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egi-iD-jAZ">
-                                <rect key="frame" x="5" y="60" width="180" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Egi-iD-jAZ">
+                                <rect key="frame" x="5" y="30.5" width="180" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="04c-Vj-Aph"/>
+                                    <constraint firstAttribute="width" secondItem="Egi-iD-jAZ" secondAttribute="height" multiplier="18:5" id="y70-XG-6eM"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="returnToEquation:" destination="Fke-4D-P9E" eventType="touchUpInside" id="O4O-Bq-yPV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6u-1Z-fFr">
-                                <rect key="frame" x="190" y="60" width="180" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="r6u-1Z-fFr">
+                                <rect key="frame" x="190" y="30.5" width="180" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="Pli-hV-GlZ"/>
+                                    <constraint firstAttribute="width" secondItem="r6u-1Z-fFr" secondAttribute="height" multiplier="18:5" id="zW2-tE-k4J"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="newEquation:" destination="Fke-4D-P9E" eventType="touchUpInside" id="Ark-4Y-wZa"/>
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="U5w-si-1zq" customClass="CustomCollectionView" customModule="Maths_Genius" customModuleProvider="target">
-                                <rect key="frame" x="5" y="115" width="365" height="547"/>
+                                <rect key="frame" x="5" y="85.5" width="365" height="576.5"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qF7-67-oKP">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -52,21 +57,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="1wI-gP-Q5T" firstAttribute="trailing" secondItem="U5w-si-1zq" secondAttribute="trailing" constant="5" id="32r-4x-AhE"/>
-                            <constraint firstItem="16r-bY-0G4" firstAttribute="top" secondItem="1wI-gP-Q5T" secondAttribute="top" constant="5" id="6gf-jn-PCF"/>
-                            <constraint firstItem="16r-bY-0G4" firstAttribute="leading" secondItem="1wI-gP-Q5T" secondAttribute="leading" constant="5" id="9GI-61-izj"/>
-                            <constraint firstItem="r6u-1Z-fFr" firstAttribute="width" secondItem="Egi-iD-jAZ" secondAttribute="width" id="9YK-PS-sQ7"/>
-                            <constraint firstItem="r6u-1Z-fFr" firstAttribute="height" secondItem="16r-bY-0G4" secondAttribute="height" id="EMY-6R-hBv"/>
-                            <constraint firstItem="r6u-1Z-fFr" firstAttribute="leading" secondItem="Egi-iD-jAZ" secondAttribute="trailing" constant="5" id="NLK-M8-gcd"/>
-                            <constraint firstItem="Egi-iD-jAZ" firstAttribute="top" secondItem="16r-bY-0G4" secondAttribute="bottom" constant="5" id="Rbi-4e-tKD"/>
-                            <constraint firstItem="U5w-si-1zq" firstAttribute="top" secondItem="Egi-iD-jAZ" secondAttribute="bottom" constant="5" id="g0H-gE-6WA"/>
-                            <constraint firstItem="1wI-gP-Q5T" firstAttribute="bottom" secondItem="U5w-si-1zq" secondAttribute="bottom" constant="5" id="jUc-SI-lhf"/>
-                            <constraint firstItem="1wI-gP-Q5T" firstAttribute="trailing" secondItem="r6u-1Z-fFr" secondAttribute="trailing" constant="5" id="lqr-Hr-DSG"/>
-                            <constraint firstItem="Egi-iD-jAZ" firstAttribute="height" secondItem="16r-bY-0G4" secondAttribute="height" id="lzQ-S0-Sqz"/>
-                            <constraint firstItem="U5w-si-1zq" firstAttribute="leading" secondItem="1wI-gP-Q5T" secondAttribute="leading" constant="5" id="mak-lF-Vef"/>
-                            <constraint firstItem="1wI-gP-Q5T" firstAttribute="trailing" secondItem="16r-bY-0G4" secondAttribute="trailing" constant="5" id="nKn-VU-WbG"/>
-                            <constraint firstItem="r6u-1Z-fFr" firstAttribute="top" secondItem="16r-bY-0G4" secondAttribute="bottom" constant="5" id="ohq-mh-OBa"/>
-                            <constraint firstItem="Egi-iD-jAZ" firstAttribute="leading" secondItem="1wI-gP-Q5T" secondAttribute="leading" constant="5" id="tPk-OH-BUs"/>
+                            <constraint firstItem="16r-bY-0G4" firstAttribute="top" secondItem="1wI-gP-Q5T" secondAttribute="top" constant="5" id="Fvj-8f-6Hm"/>
+                            <constraint firstItem="1wI-gP-Q5T" firstAttribute="trailing" secondItem="16r-bY-0G4" secondAttribute="trailing" constant="5" id="JwD-ze-KH5"/>
+                            <constraint firstItem="Egi-iD-jAZ" firstAttribute="top" secondItem="16r-bY-0G4" secondAttribute="bottom" constant="5" id="LBk-n1-Oxu"/>
+                            <constraint firstItem="U5w-si-1zq" firstAttribute="leading" secondItem="1wI-gP-Q5T" secondAttribute="leading" constant="5" id="PPv-lt-7YU"/>
+                            <constraint firstItem="1wI-gP-Q5T" firstAttribute="trailing" secondItem="r6u-1Z-fFr" secondAttribute="trailing" constant="5" id="TZO-6z-DXt"/>
+                            <constraint firstItem="16r-bY-0G4" firstAttribute="leading" secondItem="1wI-gP-Q5T" secondAttribute="leading" constant="5" id="WnQ-eB-nfV"/>
+                            <constraint firstItem="1wI-gP-Q5T" firstAttribute="bottom" secondItem="U5w-si-1zq" secondAttribute="bottom" constant="5" id="kXd-b0-xLI"/>
+                            <constraint firstItem="Egi-iD-jAZ" firstAttribute="leading" secondItem="1wI-gP-Q5T" secondAttribute="leading" constant="5" id="lNI-1s-eXH"/>
+                            <constraint firstItem="1wI-gP-Q5T" firstAttribute="trailing" secondItem="U5w-si-1zq" secondAttribute="trailing" constant="5" id="lPG-fT-1iQ"/>
+                            <constraint firstItem="U5w-si-1zq" firstAttribute="top" secondItem="Egi-iD-jAZ" secondAttribute="bottom" constant="5" id="pNP-9H-ckY"/>
+                            <constraint firstItem="r6u-1Z-fFr" firstAttribute="top" secondItem="16r-bY-0G4" secondAttribute="bottom" constant="5" id="xzz-cv-R6h"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1wI-gP-Q5T"/>
                     </view>

@@ -28,6 +28,7 @@
 		890EC509230759470069C215 /* NumberButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890EC508230759470069C215 /* NumberButton.xib */; };
 		890EC50D230759B60069C215 /* NumberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890EC50C230759B60069C215 /* NumberButton.swift */; };
 		890EC50F231816EE0069C215 /* UITextFields+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890EC50E231816EE0069C215 /* UITextFields+extensions.swift */; };
+		891B93ED234C9FAC004A7D05 /* UIFont+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891B93EC234C9FAC004A7D05 /* UIFont+extensions.swift */; };
 		892E7C6F233A2967005321F8 /* SubtractionsHelp+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C6E233A2967005321F8 /* SubtractionsHelp+extensions.swift */; };
 		892E7C71233A455D005321F8 /* AdditionsHelpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C70233A455D005321F8 /* AdditionsHelpModel.swift */; };
 		892E7C73233A466B005321F8 /* AdditionsHelp+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C72233A466B005321F8 /* AdditionsHelp+extensions.swift */; };
@@ -102,6 +103,7 @@
 		890EC508230759470069C215 /* NumberButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberButton.xib; sourceTree = "<group>"; };
 		890EC50C230759B60069C215 /* NumberButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberButton.swift; sourceTree = "<group>"; };
 		890EC50E231816EE0069C215 /* UITextFields+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextFields+extensions.swift"; sourceTree = "<group>"; };
+		891B93EC234C9FAC004A7D05 /* UIFont+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+extensions.swift"; sourceTree = "<group>"; };
 		892E7C6E233A2967005321F8 /* SubtractionsHelp+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SubtractionsHelp+extensions.swift"; sourceTree = "<group>"; };
 		892E7C70233A455D005321F8 /* AdditionsHelpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionsHelpModel.swift; sourceTree = "<group>"; };
 		892E7C72233A466B005321F8 /* AdditionsHelp+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AdditionsHelp+extensions.swift"; sourceTree = "<group>"; };
@@ -449,6 +451,7 @@
 				89040873232692D20030FDC6 /* String+extensions.swift */,
 				8904087523291C880030FDC6 /* Array+extensions.swift */,
 				892E7C74233A92ED005321F8 /* Int+extensions.swift */,
+				891B93EC234C9FAC004A7D05 /* UIFont+extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -747,6 +750,7 @@
 				896B169223351728002DF739 /* EquationHelpViewController.swift in Sources */,
 				895B546D22FDFE6A00CFF65E /* MainFactory.swift in Sources */,
 				890DAA712319364F005737A5 /* UIViewController+extensions.swift in Sources */,
+				891B93ED234C9FAC004A7D05 /* UIFont+extensions.swift in Sources */,
 				896B168423350F89002DF739 /* EquationFactory.swift in Sources */,
 				892E7C71233A455D005321F8 /* AdditionsHelpModel.swift in Sources */,
 				895B543522FDF8E700CFF65E /* Maths_Genius.xcdatamodeld in Sources */,

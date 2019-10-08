@@ -58,7 +58,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v93-nb-ySX">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="v93-nb-ySX">
                                 <rect key="frame" x="40" y="744.5" width="334" height="87.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="v93-nb-ySX" secondAttribute="height" multiplier="301:79" id="IPi-OK-rwb"/>

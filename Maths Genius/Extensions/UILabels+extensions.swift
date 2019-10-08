@@ -16,7 +16,7 @@ extension UILabel {
         self.textAlignment = .center
         self.numberOfLines = 0
         self.font = UIFont.preferredFont(forTextStyle: .largeTitle)
-//        self.font.withSize(40)
+        self.font = self.font.bold()
     }
     
     func subTitleLabelSetUp() {
@@ -48,14 +48,16 @@ extension UILabel {
     
     
     func numberLabelSetup() {
-        self.backgroundColor = UIColor.Reds.gryffindorRed
-        self.textColor = UIColor.Yellows.gryffindorYellow
-        self.layer.cornerRadius = 8
-        self.layer.masksToBounds = true
-        self.setSizeFont(sizeFont: self.frame.height)
-//        self.textAlignment = .center
-//        self.roundCorners(for: .allCorners, cornerRadius: 8)
-//        self.roundCorners(for:[.topLeft, .topRight], cornerRadius: 8)
+        DispatchQueue.main.async { [weak self] in
+            self?.backgroundColor = UIColor.Reds.gryffindorRed
+            self?.textColor = UIColor.Yellows.gryffindorYellow
+            //roundedcorners
+            self?.layer.cornerRadius = 8
+            self?.layer.masksToBounds = true
+            self?.font = .boldSystemFont(ofSize: (self?.frame.height)!)
+            self?.textAlignment = .center
+        }
+
     }
     
     func setSizeFont (sizeFont: CGFloat) {

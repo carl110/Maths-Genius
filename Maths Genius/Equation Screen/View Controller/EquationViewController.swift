@@ -35,6 +35,7 @@ class EquationViewController: UIViewController {
         labelSetup()
         updateNumbers()
         
+        self.hideKeyboardWhenTappedAround()
     }
     
     func initialSetup() {
@@ -65,20 +66,12 @@ class EquationViewController: UIViewController {
         }
         
         operation.numberLabelSetup()
-        operation.textAlignment = .center
-        
         firstNumberLabel.numberLabelSetup()
-        firstNumberLabel.textAlignment = .center
-        
         secondNumberLabel.numberLabelSetup()
-        secondNumberLabel.textAlignment = .center
-        
         answerInput.numberTextSetUp()
         
         submitButton.setTitle("Submit", for: .normal)
-        DispatchQueue.main.async { [weak self] in
-            self?.submitButton.titleButtonSetup()
-        }
+        submitButton.titleButtonSetup()
     }
     
     func updateNumbers() {
@@ -173,6 +166,7 @@ class EquationViewController: UIViewController {
     }
     
     @IBAction func answerInput(_ sender: Any) {
+
     }
     @IBAction func submitButton(_ sender: Any) {
         submitAnswer()

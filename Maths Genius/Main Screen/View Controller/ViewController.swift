@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     }
     
     func screenSetUp() {
-        self.title = "Select you subject"
+        self.title = "Select your subject"
         self.view.backgroundColor = UIColor.Shades.standardBlack
     }
     

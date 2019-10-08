@@ -12,14 +12,16 @@ import UIKit
 extension UITextField {
     
     func numberTextSetUp() {
-        self.backgroundColor = UIColor.Yellows.gryffindorYellow
-        self.textColor = UIColor.Reds.gryffindorRed
-        //roundedcorners
-        self.layer.cornerRadius = 8
-        self.layer.masksToBounds = true
-        self.font = .boldSystemFont(ofSize: self.frame.height)
-        self.textAlignment = .center
+        DispatchQueue.main.async { [weak self] in
+            self?.backgroundColor = UIColor.Yellows.gryffindorYellow
+            self?.textColor = UIColor.Reds.gryffindorRed
+            //roundedcorners
+            self?.layer.cornerRadius = 8
+            self?.layer.masksToBounds = true
+            self?.font = .boldSystemFont(ofSize: (self?.frame.height)!)
+            self?.textAlignment = .center
+        }
+        
     }
     
-
 }
