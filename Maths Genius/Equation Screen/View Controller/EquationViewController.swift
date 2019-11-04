@@ -155,7 +155,7 @@ class EquationViewController: UIViewController {
                                "Show me how with this equation") { (option) in
                                 switch(option) {
                                 case 1:
-                                    self.equationFlowController.showHelpScreen(firstNumber: 96, secondNumber: 6, subject: self.subject)
+                                    self.equationFlowController.showHelpScreen(firstNumber: 138, secondNumber: 3, subject: self.subject)
                                 case 2:
                                     self.equationFlowController.showHelpScreen(firstNumber: self.firstNumber, secondNumber: self.secondNumber, subject: self.subject)
                                 default:

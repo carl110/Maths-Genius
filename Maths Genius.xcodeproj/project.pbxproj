@@ -42,7 +42,7 @@
 		892E7C95233B9354005321F8 /* CascadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C93233B9354005321F8 /* CascadingTableViewCell.swift */; };
 		892E7C96233B9354005321F8 /* CascadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 892E7C94233B9354005321F8 /* CascadingTableViewCell.xib */; };
 		892E7C9A233CBA04005321F8 /* MultiplicationHelpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C99233CBA04005321F8 /* MultiplicationHelpModel.swift */; };
-		892E7C9D233CE7B1005321F8 /* PeopleAndSweets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C9C233CE7B1005321F8 /* PeopleAndSweets.swift */; };
+		892E7C9D233CE7B1005321F8 /* MultiplicationHelp+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E7C9C233CE7B1005321F8 /* MultiplicationHelp+extensions.swift */; };
 		893607D82331628A003CA353 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607D72331628A003CA353 /* CustomCollectionView.swift */; };
 		893607DC233229D4003CA353 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893607DA233229D4003CA353 /* CustomCollectionViewCell.swift */; };
 		893607DD233229D4003CA353 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 893607DB233229D4003CA353 /* CustomCollectionViewCell.xib */; };
@@ -79,6 +79,8 @@
 		896B169223351728002DF739 /* EquationHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B169123351728002DF739 /* EquationHelpViewController.swift */; };
 		896B169423351743002DF739 /* EquationHelpFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B169323351743002DF739 /* EquationHelpFlowController.swift */; };
 		896B16962335175F002DF739 /* EquationHelpFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B16952335175F002DF739 /* EquationHelpFactory.swift */; };
+		89E1632B2360472700BB23DE /* DivisionHelpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E1632A2360472700BB23DE /* DivisionHelpModel.swift */; };
+		89E1632D2360543C00BB23DE /* DivisionHelp+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E1632C2360543C00BB23DE /* DivisionHelp+extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,7 +119,7 @@
 		892E7C93233B9354005321F8 /* CascadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CascadingTableViewCell.swift; sourceTree = "<group>"; };
 		892E7C94233B9354005321F8 /* CascadingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CascadingTableViewCell.xib; sourceTree = "<group>"; };
 		892E7C99233CBA04005321F8 /* MultiplicationHelpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationHelpModel.swift; sourceTree = "<group>"; };
-		892E7C9C233CE7B1005321F8 /* PeopleAndSweets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleAndSweets.swift; sourceTree = "<group>"; };
+		892E7C9C233CE7B1005321F8 /* MultiplicationHelp+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MultiplicationHelp+extensions.swift"; sourceTree = "<group>"; };
 		893607D72331628A003CA353 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
 		893607DA233229D4003CA353 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		893607DB233229D4003CA353 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -156,6 +158,8 @@
 		896B169123351728002DF739 /* EquationHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationHelpViewController.swift; sourceTree = "<group>"; };
 		896B169323351743002DF739 /* EquationHelpFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationHelpFlowController.swift; sourceTree = "<group>"; };
 		896B16952335175F002DF739 /* EquationHelpFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationHelpFactory.swift; sourceTree = "<group>"; };
+		89E1632A2360472700BB23DE /* DivisionHelpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionHelpModel.swift; sourceTree = "<group>"; };
+		89E1632C2360543C00BB23DE /* DivisionHelp+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DivisionHelp+extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -347,7 +351,7 @@
 		892E7C9B233CE79C005321F8 /* Multiplication */ = {
 			isa = PBXGroup;
 			children = (
-				892E7C9C233CE7B1005321F8 /* PeopleAndSweets.swift */,
+				892E7C9C233CE7B1005321F8 /* MultiplicationHelp+extensions.swift */,
 			);
 			path = Multiplication;
 			sourceTree = "<group>";
@@ -437,6 +441,7 @@
 		895B544422FDF9B700CFF65E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				89E16329236046F900BB23DE /* Division Help */,
 				892E7C9B233CE79C005321F8 /* Multiplication */,
 				892E7C6D233A293B005321F8 /* Subtractions Help */,
 				892E7C6C233A292F005321F8 /* Additions Help */,
@@ -653,8 +658,17 @@
 				896B168B233516CD002DF739 /* SubtractionHelpModel.swift */,
 				892E7C70233A455D005321F8 /* AdditionsHelpModel.swift */,
 				892E7C99233CBA04005321F8 /* MultiplicationHelpModel.swift */,
+				89E1632A2360472700BB23DE /* DivisionHelpModel.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		89E16329236046F900BB23DE /* Division Help */ = {
+			isa = PBXGroup;
+			children = (
+				89E1632C2360543C00BB23DE /* DivisionHelp+extensions.swift */,
+			);
+			path = "Division Help";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -759,6 +773,7 @@
 				89040874232692D20030FDC6 /* String+extensions.swift in Sources */,
 				895B547922FE022500CFF65E /* IntroductionTable.swift in Sources */,
 				896B169423351743002DF739 /* EquationHelpFlowController.swift in Sources */,
+				89E1632B2360472700BB23DE /* DivisionHelpModel.swift in Sources */,
 				890DAA8B231942D3005737A5 /* HelpScreenViewModel.swift in Sources */,
 				892E7C95233B9354005321F8 /* CascadingTableViewCell.swift in Sources */,
 				895B549222FE223600CFF65E /* NumberSelectionViewController.swift in Sources */,
@@ -769,7 +784,7 @@
 				892E7C75233A92EE005321F8 /* Int+extensions.swift in Sources */,
 				890DAA8323193DE7005737A5 /* CascadingTableHeader.swift in Sources */,
 				895B549C2300B21400CFF65E /* NumberSelectionModel.swift in Sources */,
-				892E7C9D233CE7B1005321F8 /* PeopleAndSweets.swift in Sources */,
+				892E7C9D233CE7B1005321F8 /* MultiplicationHelp+extensions.swift in Sources */,
 				896B168E233516E5002DF739 /* EquationHelpViewModel.swift in Sources */,
 				892E7C9A233CBA04005321F8 /* MultiplicationHelpModel.swift in Sources */,
 				893607DC233229D4003CA353 /* CustomCollectionViewCell.swift in Sources */,
@@ -785,6 +800,7 @@
 				895B547522FDFFBA00CFF65E /* NumberSelectionFactory.swift in Sources */,
 				895B548522FE07DB00CFF65E /* IntroductionCell.swift in Sources */,
 				890DAA8023193CFF005737A5 /* CascadingTable.swift in Sources */,
+				89E1632D2360543C00BB23DE /* DivisionHelp+extensions.swift in Sources */,
 				890EC50D230759B60069C215 /* NumberButton.swift in Sources */,
 				892E7C6F233A2967005321F8 /* SubtractionsHelp+extensions.swift in Sources */,
 				895B546B22FDFE5300CFF65E /* MainFlowController.swift in Sources */,

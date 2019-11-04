@@ -47,7 +47,7 @@ public enum HelpSubject {
 
     }
     enum Divisions: String,CaseIterable {
-        case PlaceHolder
+        case LongDivision = "Long Division"
     
 
     }

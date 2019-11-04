@@ -15,6 +15,7 @@ class EquationHelpViewController: UIViewController {
     fileprivate var subtractionHelpModel = SubtractionHelpModel()
     fileprivate var additionsHelpModel = AdditionsHelpModel()
     fileprivate var multiplicationHelpModel = MultiplicationHelpModel()
+    fileprivate var divisionHelpModel = DivisionHelpModel()
     
     var firstNumber = Int()
     var secondNumber = Int()
@@ -98,6 +99,12 @@ class EquationHelpViewController: UIViewController {
             stepText = multiplicationHelpModel.peopleAndSweetsStepText
             stepImage = multiplicationHelpModel.peopleAndSweetsStepImage
             exampleText = peopleAndSweets(firstNumber: firstNumber, secondNumber: secondNumber)
+        }
+        
+        if helpTitle == HelpSubject.Divisions.LongDivision.rawValue.self {
+            stepText = divisionHelpModel.longDivisionStepText
+            stepImage = divisionHelpModel.longDivisionStepImage
+            exampleText = longDivision(firstNumber: firstNumber, secondNumber: secondNumber)
         }
     }
     

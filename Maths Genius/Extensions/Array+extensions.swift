@@ -39,4 +39,13 @@ extension Array {
     var secondToStart: Element {
         return self [self.startIndex + 1]
     }
+    
+    //print array as string
+    var toPrint: String  {
+        var str = ""
+        for element in self {
+            str += "\(element) "
+        }
+        return str
+    }
 }
