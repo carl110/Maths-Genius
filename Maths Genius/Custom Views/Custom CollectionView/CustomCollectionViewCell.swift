@@ -15,9 +15,10 @@ class CustomCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var cellLabel: UILabel!
     
     @IBOutlet weak var cellImage: UIImageView!
-
+    
+    //auto adjust to fit width and adjust height accordingly
     lazy var width: NSLayoutConstraint = {
-        let width = contentView.widthAnchor.constraint(equalToConstant: bounds.size.width)
+        let width = contentView.widthAnchor.constraint(equalToConstant: frame.size.width)
         width.isActive = true
         return width
     }()
@@ -26,10 +27,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        backgroundView?.translatesAutoresizingMaskIntoConstraints = false
         cellLabel.numberOfLines = 0
-        
-
 
     }
     
