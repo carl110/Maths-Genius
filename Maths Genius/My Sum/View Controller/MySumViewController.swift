@@ -40,6 +40,8 @@ class MySumViewController: UIViewController {
         
         initialSetup()
         labelSetup()
+        
+        self.hideKeyboardWhenTappedAround()
     }
     
     func initialSetup() {
@@ -58,6 +60,11 @@ class MySumViewController: UIViewController {
         secondNumberInput.mySumNumberTextSetUp()
         answerInput.mySumNumberTextSetUp()
         operationSelection.backgroundColor = UIColor.Yellows.gryffindorYellow
+        
+        //Dispatch used to get wounding to work on both sides together
+        DispatchQueue.main.async { [weak self] in
+            self?.operationSelection.roundCorners(for: [.bottomRight, .bottomLeft], cornerRadius: SingletonClass.sharedInstance.cornerRoundingNumber)
+        }
         
         
         firstNumberLabel.mySumLabelSetup()

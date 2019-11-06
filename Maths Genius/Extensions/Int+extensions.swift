@@ -24,6 +24,13 @@ extension Int {
                     }
                 }
         
+        if sumArray.contains(1) {
+            print ("sumarray before \(sumArray)")
+            sumArray.remove(at: 0)
+         print ("sumarray after \(sumArray)")
+            
+        }
+        
         //incase the number is prime 1 is added so it doesnt fail
         if sumArray.isEmpty {
             sumArray = [1]

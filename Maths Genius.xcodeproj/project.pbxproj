@@ -401,6 +401,7 @@
 		895B542B22FDF8E700CFF65E /* Maths Genius */ = {
 			isa = PBXGroup;
 			children = (
+				89E68B8E2372E17E006DDE4E /* SingletonClass.swift */,
 				895B544122FDF98500CFF65E /* Main Screen */,
 				892E7C76233B786A005321F8 /* Glossary */,
 				895B544522FDF9C300CFF65E /* Number Selection */,
@@ -416,7 +417,6 @@
 				895B543622FDF8E900CFF65E /* Assets.xcassets */,
 				895B543822FDF8E900CFF65E /* LaunchScreen.storyboard */,
 				895B543B22FDF8E900CFF65E /* Info.plist */,
-				89E68B8E2372E17E006DDE4E /* SingletonClass.swift */,
 			);
 			path = "Maths Genius";
 			sourceTree = "<group>";

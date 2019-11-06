@@ -153,7 +153,6 @@ class NumberSelectionViewController: UIViewController {
             } else {
                 self.secondNumber = Int.random(in: 1...9)
             }
-            
 
         default:
             break
@@ -166,28 +165,5 @@ class NumberSelectionViewController: UIViewController {
     @IBAction func continueButton(_ sender: Any) {
         
         numberSelectionFlowController.showEquation(firstNumber: firstNumber, secondNumber: secondNumber, subject: subject)
-        
-
-        
     }
-    
 }
-//
-//if firstNumber.digits.sum() == 1 {
-//     secondNumber = 1
-// } else if firstNumber.digits.sum() == 2 {
-//     secondNumber = [1, 2].randomElement()!
-// } else if firstNumber.digits.sum() == 3 {
-//     secondNumber = [1, 3].randomElement()!
-// } else if firstNumber == 4 {
-//     secondNumber = [1, 2, 4].randomElement()!
-// } else if firstNumber.digits.sum() == 5 {
-//     secondNumber = [1, 5].randomElement()!
-// } else if firstNumber.digits.sum() == 6 {
-//     secondNumber = [1, 2, 3, 6].randomElement()!
-// } else if firstNumber.digits.sum() == 7 {
-//     secondNumber = [1, 7].randomElement()!
-// } else if firstNumber.digits.sum() == 8 {
-//     secondNumber = [1, 2, 4, 8].randomElement()!
-// } else if firstNumber.digits.sum() == 9 {
-//

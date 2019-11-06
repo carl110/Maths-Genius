@@ -16,6 +16,10 @@ class EquationViewController: UIViewController {
     private var firstNumber = Int()
     private var secondNumber = Int ()
     private var subject = String()
+    private var secondNumberUperLimit4Digit = 9999
+    private var secondNumberUpperLimit3Digit = 999
+    private var secondNumberUpperLimit2Digit = 99
+    private var secondNumberUpperLimit1Digit = 9
     
     @IBOutlet weak var firstNumberLabel: UILabel!
     @IBOutlet weak var secondNumberLabel: UILabel!
@@ -82,11 +86,7 @@ class EquationViewController: UIViewController {
     }
     
     func submitAnswer() {
-        
-        var secondNumberUperLimit4Digit = 9999
-        var secondNumberUpperLimit3Digit = 999
-        var secondNumberUpperLimit2Digit = 99
-        var secondNumberUpperLimit1Digit = 9
+  
         var sum = Int()
         
         if subject == SubjectType.Additions.name() {
@@ -117,22 +117,24 @@ class EquationViewController: UIViewController {
                                         self.firstNumber = Int.random(in: 0...9)
                                     }
                                     
-                                    if (self.subject == SubjectType.Subtractions.name() || self.subject == SubjectType.Divisions.name()) && self.firstNumber.digits.count == self.secondNumber.digits.count {
-                                        secondNumberUperLimit4Digit = self.firstNumber
-                                        secondNumberUpperLimit3Digit = self.firstNumber
-                                        secondNumberUpperLimit2Digit = self.firstNumber
-                                        secondNumberUpperLimit1Digit = self.firstNumber
+                                    if self.subject == SubjectType.Subtractions.name() {
+                                        self.subtracttionSecondNumber()
+                                    }
+ 
+                                    if self.subject == SubjectType.Divisions.name() {
+                                        self.divisionSecondNumber()
+                                    } else {
+                                        if self.secondNumber.digits.count == 4 {
+                                            self.secondNumber = Int.random(in: 1000...self.secondNumberUperLimit4Digit)
+                                        } else if self.secondNumber.digits.count == 3 {
+                                            self.secondNumber = Int.random(in: 100...self.secondNumberUpperLimit3Digit)
+                                        } else if self.secondNumber.digits.count == 2 {
+                                            self.secondNumber = Int.random(in: 10...self.secondNumberUpperLimit2Digit)
+                                        } else {
+                                            self.secondNumber = Int.random(in: 0...self.secondNumberUpperLimit1Digit)
+                                        }
                                     }
                                     
-                                    if self.secondNumber.digits.count == 4 {
-                                        self.secondNumber = Int.random(in: 1000...secondNumberUperLimit4Digit)
-                                    } else if self.secondNumber.digits.count == 3 {
-                                        self.secondNumber = Int.random(in: 100...secondNumberUpperLimit3Digit)
-                                    } else if self.secondNumber.digits.count == 2 {
-                                        self.secondNumber = Int.random(in: 10...secondNumberUpperLimit2Digit)
-                                    } else {
-                                        self.secondNumber = Int.random(in: 0...secondNumberUpperLimit1Digit)
-                                    }
                                     
                                     //reset text field to empty and update numbers on screen
                                     self.answerInput.text = ""
@@ -165,9 +167,50 @@ class EquationViewController: UIViewController {
         }
     }
     
-    @IBAction func answerInput(_ sender: Any) {
+    
+     func subtracttionSecondNumber() {
+        
+
+
+        //if first number and second number have same number of digits limit second number upper limit to first number
+        if self.firstNumber.digits.count == self.secondNumber.digits.count {
+            secondNumberUperLimit4Digit = self.firstNumber
+            secondNumberUpperLimit3Digit = self.firstNumber
+            secondNumberUpperLimit2Digit = self.firstNumber
+            secondNumberUpperLimit1Digit = self.firstNumber
+        }
+        
+
+        
+     }
+    
+    func divisionSecondNumber() {
+
+        //Dont allow second number to be 0
+        if firstNumber == 0 {
+            firstNumber += 1
+        }
+
+        //if first number and second number have same number of digits limit second number upper limit to first number
+        if self.firstNumber.digits.count == self.secondNumber.digits.count {
+            secondNumberUperLimit4Digit = self.firstNumber
+            secondNumberUpperLimit3Digit = self.firstNumber
+            secondNumberUpperLimit2Digit = self.firstNumber
+            secondNumberUpperLimit1Digit = self.firstNumber
+        }
+        
+            if self.secondNumber.digits.count == 4 {
+                self.secondNumber = firstNumber.randomDivisable(lowerLimit: 1000, upperLimit: secondNumberUperLimit4Digit)
+            } else if self.secondNumber.digits.count == 3 {
+                self.secondNumber = firstNumber.randomDivisable(lowerLimit: 100, upperLimit: secondNumberUpperLimit3Digit)
+            } else if self.secondNumber.digits.count == 2 {
+                self.secondNumber = firstNumber.randomDivisable(lowerLimit: 10, upperLimit: secondNumberUpperLimit2Digit)
+            } else {
+                self.secondNumber = firstNumber.randomDivisable(lowerLimit: 1, upperLimit: secondNumberUpperLimit1Digit)
+            }
 
     }
+
     @IBAction func submitButton(_ sender: Any) {
         submitAnswer()
     }
