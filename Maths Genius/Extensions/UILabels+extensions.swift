@@ -38,7 +38,7 @@ extension UILabel {
     func exampleLabelSetUp() {
             self.backgroundColor = UIColor.Yellows.gryffindorYellow
             self.textColor = UIColor.Reds.gryffindorRed
-            self.layer.cornerRadius = 8
+            self.layer.cornerRadius = SingletonClass.sharedInstance.cornerRoundingNumber
         self.textAlignment = .left
         self.numberOfLines = 0
         self.lineBreakMode = .byWordWrapping
@@ -52,12 +52,28 @@ extension UILabel {
             self?.backgroundColor = UIColor.Reds.gryffindorRed
             self?.textColor = UIColor.Yellows.gryffindorYellow
             //roundedcorners
-            self?.layer.cornerRadius = 8
+            self?.layer.cornerRadius = SingletonClass.sharedInstance.cornerRoundingNumber
             self?.layer.masksToBounds = true
             self?.font = .boldSystemFont(ofSize: (self?.frame.height)!)
             self?.textAlignment = .center
+            self?.numberOfLines = 0
         }
 
+    }
+    
+    func mySumLabelSetup() {
+            DispatchQueue.main.async { [weak self] in
+                self?.backgroundColor = UIColor.Reds.gryffindorRed
+                self?.textColor = UIColor.Yellows.gryffindorYellow
+                //roundedcorners
+                self?.roundCorners(for: [.topLeft, .topRight], cornerRadius: SingletonClass.sharedInstance.cornerRoundingNumber)
+                self?.layer.masksToBounds = true
+                self?.font =  .systemFont(ofSize: (self?.frame.height)!)
+                self?.textAlignment = .center
+                self?.numberOfLines = 0
+                self?.adjustsFontSizeToFitWidth = true
+                self?.minimumScaleFactor = 0.5
+            }
     }
     
     func setSizeFont (sizeFont: CGFloat) {

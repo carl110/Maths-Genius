@@ -16,8 +16,23 @@ extension UITextField {
             self?.backgroundColor = UIColor.Yellows.gryffindorYellow
             self?.textColor = UIColor.Reds.gryffindorRed
             //roundedcorners
-            self?.layer.cornerRadius = 8
+            self?.layer.cornerRadius = SingletonClass.sharedInstance.cornerRoundingNumber
             self?.layer.masksToBounds = true
+            //Auto adjust size of text as you type
+            self?.font = .boldSystemFont(ofSize: (self?.frame.height)!)
+            self?.textAlignment = .center
+        }
+        
+    }
+    
+    func mySumNumberTextSetUp() {
+        DispatchQueue.main.async { [weak self] in
+            self?.backgroundColor = UIColor.Yellows.gryffindorYellow
+            self?.textColor = UIColor.Reds.gryffindorRed
+            //roundedcorners
+            self?.roundCorners(for: [.bottomLeft, .bottomRight], cornerRadius: SingletonClass.sharedInstance.cornerRoundingNumber)
+ 
+            //Auto adjust size of text as you type
             self?.font = .boldSystemFont(ofSize: (self?.frame.height)!)
             self?.textAlignment = .center
         }

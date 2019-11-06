@@ -31,7 +31,7 @@ class IntroductionCell: UITableViewCell {
         courseTitle.backgroundColor = UIColor.Reds.gryffindorRed
         courseTitle.setTitleColor(UIColor.Yellows.gryffindorYellow, for: .normal)
         DispatchQueue.main.async { [weak self] in
-            self?.courseTitle.roundCorners(for: .allCorners, cornerRadius: 8)
+            self?.courseTitle.roundCorners(for: .allCorners, cornerRadius: 25)
         }
         
     }

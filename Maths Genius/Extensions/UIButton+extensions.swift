@@ -36,7 +36,7 @@ extension UIButton {
             self?.titleLabel?.adjustsFontSizeToFitWidth = true
             self?.centerTextHorizontally(spacing: 8)
             self?.contentVerticalAlignment = .center
-            self?.roundCorners(for: .allCorners, cornerRadius: 8)
+            self?.roundCorners(for: .allCorners, cornerRadius: SingletonClass.sharedInstance.cornerRoundingNumber)
         }
         
     }
@@ -47,7 +47,7 @@ extension UIButton {
             self?.setTitleColor(UIColor.Reds.gryffindorRed, for: .normal)
             self?.titleLabel?.font = UIFont.boldSystemFont(ofSize: (self?.frame.height)! / 2.5)
             self?.centerTextHorizontally(spacing: 8)
-            self?.roundCorners(for: .allCorners, cornerRadius: 8)
+            self?.roundCorners(for: .allCorners, cornerRadius: SingletonClass.sharedInstance.cornerRoundingNumber)
             self?.titleLabel?.numberOfLines = 0
             self?.contentVerticalAlignment = .center
         }

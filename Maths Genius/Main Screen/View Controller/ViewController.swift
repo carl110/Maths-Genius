@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var subtractionButton: UIButton!
     @IBOutlet weak var multiplicationButton: UIButton!
     @IBOutlet weak var divisionButton: UIButton!
+    @IBOutlet weak var mySum: UIButton!
     
     func assignDependancies(mainFlowController: MainFlowController) {
         self.mainFlowController = mainFlowController
@@ -50,6 +51,9 @@ class ViewController: UIViewController {
         
         divisionButton.titleButtonSetup()
         divisionButton.setTitle("Divide", for: .normal)
+        
+        mySum.subTitleButtonSetup()
+        mySum.setTitle("Enter my own Sum", for: .normal)
     }
     
     
@@ -74,5 +78,10 @@ class ViewController: UIViewController {
         subjectSelected = SubjectType.Divisions.name()
         mainFlowController.showNumberSelection(with: subjectSelected)
     }
+    
+    @IBAction func mySum(_ sender: Any) {
+        mainFlowController.showMySum()
+    }
+    
 }
 

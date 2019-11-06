@@ -23,11 +23,11 @@ class NumberButton: UIButton {
     }
     
     private func numberButtonInit() {
-        self.layer.cornerRadius = 8
+        self.layer.cornerRadius = SingletonClass.sharedInstance.cornerRoundingNumber
         Bundle.main.loadNibNamed("NumberButton", owner: self, options: nil)
         addSubview(contentView)
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        contentView.layer.cornerRadius = 8
+        contentView.layer.cornerRadius = 25
         contentView.layer.masksToBounds = true
         contentView.isUserInteractionEnabled = false
         

@@ -30,4 +30,8 @@ class MainFlowController {
         GlossaryFactory.PushIn(navigationController: navigationController)
     }
     
+    func showMySum() {
+        MySumFactory.PushIn(navigationController: navigationController)
+    }
+    
 }

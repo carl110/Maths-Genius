@@ -81,6 +81,14 @@
 		896B16962335175F002DF739 /* EquationHelpFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B16952335175F002DF739 /* EquationHelpFactory.swift */; };
 		89E1632B2360472700BB23DE /* DivisionHelpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E1632A2360472700BB23DE /* DivisionHelpModel.swift */; };
 		89E1632D2360543C00BB23DE /* DivisionHelp+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E1632C2360543C00BB23DE /* DivisionHelp+extensions.swift */; };
+		89E68B812371C5A3006DDE4E /* MySum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E68B802371C5A3006DDE4E /* MySum.storyboard */; };
+		89E68B832371C5B6006DDE4E /* MySumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E68B822371C5B6006DDE4E /* MySumViewController.swift */; };
+		89E68B852371C61F006DDE4E /* MySumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E68B842371C61F006DDE4E /* MySumViewModel.swift */; };
+		89E68B872371C66E006DDE4E /* MySumFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E68B862371C66E006DDE4E /* MySumFactory.swift */; };
+		89E68B892371C67D006DDE4E /* MySumFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E68B882371C67D006DDE4E /* MySumFlowController.swift */; };
+		89E68B8B2372C9FC006DDE4E /* UIPickerView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E68B8A2372C9FC006DDE4E /* UIPickerView+extensions.swift */; };
+		89E68B8D2372CCF6006DDE4E /* OperationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E68B8C2372CCF6006DDE4E /* OperationPickerView.swift */; };
+		89E68B8F2372E17E006DDE4E /* SingletonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E68B8E2372E17E006DDE4E /* SingletonClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -160,6 +168,14 @@
 		896B16952335175F002DF739 /* EquationHelpFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationHelpFactory.swift; sourceTree = "<group>"; };
 		89E1632A2360472700BB23DE /* DivisionHelpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionHelpModel.swift; sourceTree = "<group>"; };
 		89E1632C2360543C00BB23DE /* DivisionHelp+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DivisionHelp+extensions.swift"; sourceTree = "<group>"; };
+		89E68B802371C5A3006DDE4E /* MySum.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MySum.storyboard; sourceTree = "<group>"; };
+		89E68B822371C5B6006DDE4E /* MySumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySumViewController.swift; sourceTree = "<group>"; };
+		89E68B842371C61F006DDE4E /* MySumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySumViewModel.swift; sourceTree = "<group>"; };
+		89E68B862371C66E006DDE4E /* MySumFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySumFactory.swift; sourceTree = "<group>"; };
+		89E68B882371C67D006DDE4E /* MySumFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySumFlowController.swift; sourceTree = "<group>"; };
+		89E68B8A2372C9FC006DDE4E /* UIPickerView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPickerView+extensions.swift"; sourceTree = "<group>"; };
+		89E68B8C2372CCF6006DDE4E /* OperationPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationPickerView.swift; sourceTree = "<group>"; };
+		89E68B8E2372E17E006DDE4E /* SingletonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -389,6 +405,7 @@
 				892E7C76233B786A005321F8 /* Glossary */,
 				895B544522FDF9C300CFF65E /* Number Selection */,
 				896B167623350EDD002DF739 /* Equation Screen */,
+				89E68B7B2371C532006DDE4E /* My Sum */,
 				890DAA72231939D5005737A5 /* Help Screen */,
 				896B168523351663002DF739 /* Equation Help */,
 				895B544422FDF9B700CFF65E /* Extensions */,
@@ -399,6 +416,7 @@
 				895B543622FDF8E900CFF65E /* Assets.xcassets */,
 				895B543822FDF8E900CFF65E /* LaunchScreen.storyboard */,
 				895B543B22FDF8E900CFF65E /* Info.plist */,
+				89E68B8E2372E17E006DDE4E /* SingletonClass.swift */,
 			);
 			path = "Maths Genius";
 			sourceTree = "<group>";
@@ -434,6 +452,7 @@
 				895B547822FE022500CFF65E /* IntroductionTable.swift */,
 				895B547A22FE02BB00CFF65E /* Table View Cell */,
 				8905825823225A3B004E26BA /* CustomTable.swift */,
+				89E68B8C2372CCF6006DDE4E /* OperationPickerView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -457,6 +476,7 @@
 				8904087523291C880030FDC6 /* Array+extensions.swift */,
 				892E7C74233A92ED005321F8 /* Int+extensions.swift */,
 				891B93EC234C9FAC004A7D05 /* UIFont+extensions.swift */,
+				89E68B8A2372C9FC006DDE4E /* UIPickerView+extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -671,6 +691,50 @@
 			path = "Division Help";
 			sourceTree = "<group>";
 		};
+		89E68B7B2371C532006DDE4E /* My Sum */ = {
+			isa = PBXGroup;
+			children = (
+				89E68B7C2371C558006DDE4E /* View Model */,
+				89E68B7F2371C571006DDE4E /* View Controller */,
+				89E68B7E2371C569006DDE4E /* Flow Controller */,
+				89E68B7D2371C562006DDE4E /* Factory */,
+			);
+			path = "My Sum";
+			sourceTree = "<group>";
+		};
+		89E68B7C2371C558006DDE4E /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				89E68B842371C61F006DDE4E /* MySumViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		89E68B7D2371C562006DDE4E /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				89E68B862371C66E006DDE4E /* MySumFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		89E68B7E2371C569006DDE4E /* Flow Controller */ = {
+			isa = PBXGroup;
+			children = (
+				89E68B882371C67D006DDE4E /* MySumFlowController.swift */,
+			);
+			path = "Flow Controller";
+			sourceTree = "<group>";
+		};
+		89E68B7F2371C571006DDE4E /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				89E68B802371C5A3006DDE4E /* MySum.storyboard */,
+				89E68B822371C5B6006DDE4E /* MySumViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -731,6 +795,7 @@
 			files = (
 				892E7C81233B7948005321F8 /* Glossary.storyboard in Resources */,
 				895B549022FE222800CFF65E /* NumberSelection.storyboard in Resources */,
+				89E68B812371C5A3006DDE4E /* MySum.storyboard in Resources */,
 				896B167E23350F55002DF739 /* Equation.storyboard in Resources */,
 				895B543A22FDF8E900CFF65E /* LaunchScreen.storyboard in Resources */,
 				8905825E23225B42004E26BA /* CustomTableCell.xib in Resources */,
@@ -755,13 +820,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				895B542F22FDF8E700CFF65E /* ViewController.swift in Sources */,
+				89E68B832371C5B6006DDE4E /* MySumViewController.swift in Sources */,
 				895B548822FE0A0400CFF65E /* MainModel.swift in Sources */,
 				896B168C233516CD002DF739 /* SubtractionHelpModel.swift in Sources */,
+				89E68B872371C66E006DDE4E /* MySumFactory.swift in Sources */,
 				893607D82331628A003CA353 /* CustomCollectionView.swift in Sources */,
 				8904087623291C880030FDC6 /* Array+extensions.swift in Sources */,
 				8905825923225A3B004E26BA /* CustomTable.swift in Sources */,
 				892E7C87233B79C3005321F8 /* GlossaryFactory.swift in Sources */,
 				896B169223351728002DF739 /* EquationHelpViewController.swift in Sources */,
+				89E68B8B2372C9FC006DDE4E /* UIPickerView+extensions.swift in Sources */,
 				895B546D22FDFE6A00CFF65E /* MainFactory.swift in Sources */,
 				890DAA712319364F005737A5 /* UIViewController+extensions.swift in Sources */,
 				891B93ED234C9FAC004A7D05 /* UIFont+extensions.swift in Sources */,
@@ -769,6 +837,7 @@
 				892E7C71233A455D005321F8 /* AdditionsHelpModel.swift in Sources */,
 				895B543522FDF8E700CFF65E /* Maths_Genius.xcdatamodeld in Sources */,
 				8905825D23225B42004E26BA /* CustomTableCell.swift in Sources */,
+				89E68B8F2372E17E006DDE4E /* SingletonClass.swift in Sources */,
 				892E7C7D233B7912005321F8 /* GlossaryModel.swift in Sources */,
 				89040874232692D20030FDC6 /* String+extensions.swift in Sources */,
 				895B547922FE022500CFF65E /* IntroductionTable.swift in Sources */,
@@ -787,6 +856,7 @@
 				892E7C9D233CE7B1005321F8 /* MultiplicationHelp+extensions.swift in Sources */,
 				896B168E233516E5002DF739 /* EquationHelpViewModel.swift in Sources */,
 				892E7C9A233CBA04005321F8 /* MultiplicationHelpModel.swift in Sources */,
+				89E68B852371C61F006DDE4E /* MySumViewModel.swift in Sources */,
 				893607DC233229D4003CA353 /* CustomCollectionViewCell.swift in Sources */,
 				8904087223268EA50030FDC6 /* BianaryInteger+extensions.swift in Sources */,
 				896B168023350F6D002DF739 /* EquationViewController.swift in Sources */,
@@ -795,9 +865,11 @@
 				8905824223213ECC004E26BA /* HelpScreenModel.swift in Sources */,
 				895B549E2300B22600CFF65E /* NumberSelectionViewModel.swift in Sources */,
 				890EC50F231816EE0069C215 /* UITextFields+extensions.swift in Sources */,
+				89E68B892371C67D006DDE4E /* MySumFlowController.swift in Sources */,
 				895B542D22FDF8E700CFF65E /* AppDelegate.swift in Sources */,
 				895B548A22FE191800CFF65E /* UIButton+extensions.swift in Sources */,
 				895B547522FDFFBA00CFF65E /* NumberSelectionFactory.swift in Sources */,
+				89E68B8D2372CCF6006DDE4E /* OperationPickerView.swift in Sources */,
 				895B548522FE07DB00CFF65E /* IntroductionCell.swift in Sources */,
 				890DAA8023193CFF005737A5 /* CascadingTable.swift in Sources */,
 				89E1632D2360543C00BB23DE /* DivisionHelp+extensions.swift in Sources */,

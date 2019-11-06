@@ -66,12 +66,24 @@
                                     <action selector="multiplicationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="atk-b8-OrK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZO-mh-raZ">
+                                <rect key="frame" x="50" y="424" width="314" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DrP-ID-QcC"/>
+                                </constraints>
+                                <state key="normal" title="My Sum"/>
+                                <connections>
+                                    <action selector="mySum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dEe-dI-pmz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="7ZO-mh-raZ" firstAttribute="top" secondItem="Dcl-ZS-5ya" secondAttribute="bottom" constant="20" id="6Nq-cV-58N"/>
                             <constraint firstItem="Dcl-ZS-5ya" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="74D-Yj-Fti"/>
                             <constraint firstItem="B6b-GE-hjb" firstAttribute="top" secondItem="puf-nv-9p9" secondAttribute="bottom" constant="20" id="94V-wL-nQ5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uh6-M0-rsy" secondAttribute="trailing" constant="100" id="CX0-x5-Cgx"/>
+                            <constraint firstItem="7ZO-mh-raZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="F5S-JV-fIi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CIb-Zx-Y1x" secondAttribute="trailing" constant="50" id="FHJ-vR-uI1"/>
                             <constraint firstItem="Dcl-ZS-5ya" firstAttribute="top" secondItem="B6b-GE-hjb" secondAttribute="bottom" constant="20" id="FPJ-x6-8Vi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uh6-M0-rsy" secondAttribute="bottom" constant="50" id="G4p-YI-j2v"/>
@@ -83,6 +95,7 @@
                             <constraint firstItem="CIb-Zx-Y1x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="eiY-wA-Trx"/>
                             <constraint firstItem="CIb-Zx-Y1x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="lwP-YU-O6o"/>
                             <constraint firstItem="B6b-GE-hjb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="vc2-y7-EOu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7ZO-mh-raZ" secondAttribute="trailing" constant="50" id="wOu-pI-WVq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B6b-GE-hjb" secondAttribute="trailing" constant="50" id="z1z-hP-bu1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -91,6 +104,7 @@
                         <outlet property="additionButton" destination="CIb-Zx-Y1x" id="IqI-SY-b64"/>
                         <outlet property="divisionButton" destination="Dcl-ZS-5ya" id="TY2-QR-dAG"/>
                         <outlet property="multiplicationButton" destination="B6b-GE-hjb" id="cLu-bM-Ffs"/>
+                        <outlet property="mySum" destination="7ZO-mh-raZ" id="410-wi-oy5"/>
                         <outlet property="subtractionButton" destination="puf-nv-9p9" id="ctj-QC-l3o"/>
                         <outlet property="viewTutorial" destination="uh6-M0-rsy" id="6Nv-vV-4d0"/>
                     </connections>

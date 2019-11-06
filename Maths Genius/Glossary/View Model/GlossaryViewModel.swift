@@ -36,15 +36,34 @@ class GlossaryViewModel {
         
         glossaryArray.append(GlossaryModel(item: "Equals =", alsoKnownAs: "Also known as The Sum", deffinition: "This symbol is used used to ask what the sum of two numbers are. For example 2 + 2 =", definition2: "This symbol is also used to show one number is equal to another. For example 2 = 2 or 1 + 1 = 2"))
         
-//        glossaryArray.append(GlossaryModel(item: <#String#>, alsoKnownAs: <#String?#>, deffinition: <#String#>, definition2: <#String?#>))
-//        
-//        glossaryArray.append(GlossaryModel(item: <#String#>, alsoKnownAs: <#String?#>, deffinition: <#String#>, definition2: <#String?#>))
-//        
-//        glossaryArray.append(GlossaryModel(item: <#String#>, alsoKnownAs: <#String?#>, deffinition: <#String#>, definition2: <#String?#>))
-//        
-//        glossaryArray.append(GlossaryModel(item: <#String#>, alsoKnownAs: <#String?#>, deffinition: <#String#>, definition2: <#String?#>))
-//        
-//        glossaryArray.append(GlossaryModel(item: <#String#>, alsoKnownAs: <#String?#>, deffinition: <#String#>, definition2: <#String?#>))
+        glossaryArray.append(GlossaryModel(item: "Divisor", alsoKnownAs: nil, deffinition: "The number used to divide another number by", definition2: nil))
+        
+        glossaryArray.append(GlossaryModel(item: "Dividend", alsoKnownAs: nil, deffinition: "The number which is to be divided by another number", definition2: nil))
+        
+        glossaryArray.append(GlossaryModel(item: "Cardinal Number", alsoKnownAs: nil, deffinition: "This is how many, such as five, 7 and twenty", definition2: nil))
+        
+        glossaryArray.append(GlossaryModel(item: "Ordinal Number", alsoKnownAs: nil, deffinition: "This is the position of something such as first, ninth and 25th", definition2: nil))
+        
+        glossaryArray.append(GlossaryModel(item: "Nominal Number", alsoKnownAs: nil, deffinition: "This is a number used to NAME or identify something, such as the number of a football players shirt or a model number", definition2: nil))
+        
+        glossaryArray.append(GlossaryModel(item: "Quotient", alsoKnownAs: nil, deffinition: "The resulting answer of one number being divided by another.\nIn the sum 12 ÷ 3 = 4\nThe 4 is the Quotient", definition2: nil))
+        //
+        //        glossaryArray.append(GlossaryModel(item: <#String#>, alsoKnownAs: <#String?#>, deffinition: <#String#>, definition2: <#String?#>))
+        //
+        //        glossaryArray.append(GlossaryModel(item: <#String#>, alsoKnownAs: <#String?#>, deffinition: <#String#>, definition2: <#String?#>))
+        //
+        //        glossaryArray.append(GlossaryModel(item: <#String#>, alsoKnownAs: <#String?#>, deffinition: <#String#>, definition2: <#String?#>))
+        //
+        //        glossaryArray.append(GlossaryModel(item: <#String#>, alsoKnownAs: <#String?#>, deffinition: <#String#>, definition2: <#String?#>))
+        //
+        //        glossaryArray.append(GlossaryModel(item: <#String#>, alsoKnownAs: <#String?#>, deffinition: <#String#>, definition2: <#String?#>))
+        //
+        //        glossaryArray.append(GlossaryModel(item: <#String#>, alsoKnownAs: <#String?#>, deffinition: <#String#>, definition2: <#String?#>))
+        
+        
+        
+        
+        
     }
     
 }
