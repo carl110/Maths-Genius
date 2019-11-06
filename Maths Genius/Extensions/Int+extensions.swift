@@ -24,11 +24,9 @@ extension Int {
                     }
                 }
         
+        //removes 1 if contained to provide better divisions
         if sumArray.contains(1) {
-            print ("sumarray before \(sumArray)")
-            sumArray.remove(at: 0)
-         print ("sumarray after \(sumArray)")
-            
+            sumArray.removeAll{ $0 == 1 }
         }
         
         //incase the number is prime 1 is added so it doesnt fail

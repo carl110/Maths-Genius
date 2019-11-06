@@ -117,6 +117,7 @@ class NumberSelectionViewController: UIViewController {
                 secondNumber = Int.random(in: 1000...firstNumber)
             } else if subject == SubjectType.Divisions.name() {
                 secondNumber = firstNumber.randomDivisable(lowerLimit: 1000, upperLimit: 9999)
+                print ("subject is division \(secondNumber) fn = \(firstNumber)")
             }else {
                 secondNumber = Int.random(in: 1000...9999)
             }
@@ -124,10 +125,11 @@ class NumberSelectionViewController: UIViewController {
         case 1:
             secondNumberOutcome.text = "You have selected Hundreds for your second number. \n This means your second number will be between 100 and 999"
             
-            if (subject == SubjectType.Subtractions.name() || subject == SubjectType.Divisions.name()) && firstNumberSelector.selectedSegmentIndex == secondNumberSelector.selectedSegmentIndex {
+            if subject == SubjectType.Subtractions.name() && firstNumberSelector.selectedSegmentIndex == secondNumberSelector.selectedSegmentIndex {
                 secondNumber = Int.random(in: 100...firstNumber)
             } else if subject == SubjectType.Divisions.name() {
                 secondNumber = firstNumber.randomDivisable(lowerLimit: 100, upperLimit: 999)
+                print ("subject is division \(secondNumber) fn = \(firstNumber)")
             }else {
                 secondNumber = Int.random(in: 100...999)
             }
@@ -135,10 +137,11 @@ class NumberSelectionViewController: UIViewController {
         case 2:
             secondNumberOutcome.text = "You have selected Tens for your second number. \n This means your second number will be between 10 and 99"
             
-            if (subject == SubjectType.Subtractions.name() || subject == SubjectType.Divisions.name()) && firstNumberSelector.selectedSegmentIndex == secondNumberSelector.selectedSegmentIndex {
+            if subject == SubjectType.Subtractions.name() && firstNumberSelector.selectedSegmentIndex == secondNumberSelector.selectedSegmentIndex {
                 secondNumber = Int.random(in: 10...firstNumber)
             } else if subject == SubjectType.Divisions.name() {
                 secondNumber = firstNumber.randomDivisable(lowerLimit: 10, upperLimit: 99)
+                print ("subject is division \(secondNumber) fn = \(firstNumber)")
             }else {
                 secondNumber = Int.random(in: 10...99)
             }
@@ -150,6 +153,7 @@ class NumberSelectionViewController: UIViewController {
                 secondNumber = Int.random(in: 1...firstNumber)
             } else if subject == SubjectType.Divisions.name() {
                 secondNumber = firstNumber.randomDivisable(lowerLimit: 1, upperLimit: 9)
+                print ("subject is division \(secondNumber) fn = \(firstNumber)")
             } else {
                 self.secondNumber = Int.random(in: 1...9)
             }
