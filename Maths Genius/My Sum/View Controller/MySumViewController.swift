@@ -101,11 +101,14 @@ class MySumViewController: UIViewController, PickerViewDelegate {
             subject = SubjectType.Multiplications.name()
         }
         
-        //If the number contains decimals then stop and show alert
-        guard firstNumber! % secondNumber! == 0 else {
-            alert(message: "This Division contains remainder, the help secotion can only help with whole numbers. Please try a different equation.")
-            return
+        if subject == SubjectType.Divisions.name() {
+            //If the number contains decimals then stop and show alert
+            guard firstNumber! % secondNumber! == 0 else {
+                alert(message: "This Division contains remainder, the help secotion can only help with whole numbers. Please try a different equation.")
+                return
+            }
         }
+
         
         //Sum is correct
         if integer(from: answerInput) == sum {
