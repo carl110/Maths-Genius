@@ -10,13 +10,13 @@ import Foundation
 import UIKit
 
 class MySumViewController: UIViewController, PickerViewDelegate {
-    
-    
-    
+
     fileprivate var mySumFlowController: MySumFlowController!
     fileprivate var mySumViewModel: MySumViewModel!
     
     private var operationSelected = "+"
+    private var alertTitle = String()
+    private var alertMessage = String()
 
     @IBOutlet weak var firstNumberLabel: UILabel!
     @IBOutlet weak var secondNumberLabel: UILabel!
@@ -109,7 +109,6 @@ class MySumViewController: UIViewController, PickerViewDelegate {
             }
         }
 
-        
         //Sum is correct
         if integer(from: answerInput) == sum {
             alertBoxWithAction(title: "WELL DONE",
@@ -131,9 +130,17 @@ class MySumViewController: UIViewController, PickerViewDelegate {
                                     break
                                 }
             }
-        } else { //Answer incorrect
-            alertBoxWithAction(title: "Incorrect Answer",
-                               message: "Unfortunatly the answer you gave is wrong",
+        } else {// sum incorrect or not completed
+            if submitButton.currentTitle! == "Help" {
+                alertTitle = "Do you need Help"
+                alertMessage = "What do you want to do"
+            } else {
+                alertTitle = "Incorrect Answer"
+                alertMessage = "Unfortunatly the answer you gave is wrong"
+            }
+            //Answer incorrect
+            alertBoxWithAction(title: alertTitle,
+                               message: alertMessage,
                                options: "Let me try the answer again",
                                "Help me, with an example",
                                "Show me how with this equation") { (option) in
@@ -148,19 +155,19 @@ class MySumViewController: UIViewController, PickerViewDelegate {
             }
         }
     }
+    
 
     @IBAction func answerInput(_ sender: Any) {
-        
+
         guard let answer = answerInput, !answer.isEmpty else {
             submitButton.setTitle("Help", for: .normal)
             return
         }
-        
         submitButton.setTitle("Submit", for: .normal)
     }
 
     @IBAction func submitButton(_ sender: Any) {
-        
+
         //If either fn or sn are empty the show alert
         guard let fnText = firstNumberInput, let snText = secondNumberInput, !fnText.isEmpty, !snText.isEmpty else {
             

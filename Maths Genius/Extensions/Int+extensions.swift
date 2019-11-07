@@ -15,14 +15,14 @@ extension Int {
     func randomDivisable(lowerLimit: Int, upperLimit: Int) -> Int {
         
         var sumArray = [Int]()
-
+        
         //for range see what the number is divisable by and add to array
-                for divisable in lowerLimit...upperLimit {
-                    if self % divisable == 0 {
-                        sumArray.append(divisable)
-                        print ("\(self) is divisable by \(divisable)")
-                    }
-                }
+        for divisable in lowerLimit...upperLimit {
+            if self % divisable == 0 {
+                sumArray.append(divisable)
+                print ("\(self) is divisable by \(divisable)")
+            }
+        }
         
         //removes 1 if contained to provide better divisions
         if sumArray.contains(1) {
@@ -35,6 +35,13 @@ extension Int {
         }
         
         return sumArray.randomElement()!
+    }
+    
+    //convert Int to String
+    func toString() -> String
+    {
+        let myString = String(self)
+        return myString
     }
 }
 

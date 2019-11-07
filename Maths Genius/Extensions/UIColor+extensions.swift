@@ -61,4 +61,10 @@ extension UIColor {
         static let standardBlack = UIColor.colourWithHexString(hexStr: "#000000")
         static let standardWhite = UIColor.colourWithHexString(hexStr: "#FFFFFF")
     }
+    struct Transparent {
+        static let clear = UIColor.colourWithHexString(hexStr: "DCF0EF")
+        static let saturated = UIColor.colourWithHexString(hexStr: "D9F3F1")
+        static let desaturated = UIColor.colourWithHexString(hexStr: "DEEEED")
+        
+    }
 }

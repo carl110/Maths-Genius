@@ -9,16 +9,14 @@
 import Foundation
 import UIKit
 
-
-
 class NumberSelectionViewController: UIViewController {
     
     fileprivate var numberSelectionViewModel: NumberSelectionViewModel!
     fileprivate var numberSelectionFlowController: NumberSelectionFlowController!
     
-    var subject = String()
-    var firstNumber = Int()
-    var secondNumber = Int()
+    private var subject = String()
+    private var firstNumber = Int()
+    private var secondNumber = Int()
     
     @IBOutlet weak var firstNumberLabel: UILabel!
     @IBOutlet weak var secondNumberLabel: UILabel!
@@ -38,14 +36,13 @@ class NumberSelectionViewController: UIViewController {
         
         //set subject name from button push on previouse page
         subject = numberSelectionViewModel.subject
-        
         setUp()
     }
     
     func setUp() {
         firstNumberLabel.bodyLabelSetUp()
-        secondNumberLabel.bodyLabelSetUp()
         firstNumberLabel.text = "Select how large you would like the first number in the equasion"
+        secondNumberLabel.bodyLabelSetUp()
         secondNumberLabel.text = "Select how large you would like the first number in the equasion"
         
         firstNumberOutcome.bodyLabelSetUp()
@@ -70,104 +67,99 @@ class NumberSelectionViewController: UIViewController {
         
         //Disable button to force a second number selection
         continueButton.disableButton()
+        
+        //remove tint form slected second number
+        if #available(iOS 13.0, *) {
+            secondNumberSelector.selectedSegmentTintColor = UIColor.Transparent.clear
+        } else {
+            secondNumberSelector.tintColor = UIColor.Transparent.clear
+        }
+        
+        //unselect segment for second number
+        secondNumberSelector.selectedSegmentIndex = UISegmentedControl.noSegment
 
         //enable all segments in secondnumberselector
-        for i in 0...3 {
-            secondNumberSelector.setEnabled(true, forSegmentAt: i)
+        for segment in 0...3 {
+            secondNumberSelector.setEnabled(true, forSegmentAt: segment)
         }
+        
+        //set segments to selectable
         secondNumberSelector.isEnabled = true
         
         //random number for selection
         switch firstNumberSelector.selectedSegmentIndex
         {
         case 0:
-            firstNumberOutcome.text = "You have selected Thousands for your first number. \n This means your first number will be between 1000 and 9999"
+            numberSelectionText(numberOutcome: firstNumberOutcome, lowerNumber: 1000, upperNumber: 9999, numberPlace: "first")
+            //            firstNumberOutcome.text = "You have selected Thousands for your first number. \n This means your first number will be between 1000 and 9999"
             firstNumber = Int.random(in: 1000...9999)
         case 1:
-            firstNumberOutcome.text = "You have selected Hundreds for your first number. \n This means your first number will be between 100 and 999"
+            numberSelectionText(numberOutcome: firstNumberOutcome, lowerNumber: 100, upperNumber: 999, numberPlace: "first")
             firstNumber = Int.random(in: 100...999)
         case 2:
-            firstNumberOutcome.text = "You have selected Tens for your first number. \n This means your first number will be between 10 and 99"
+            numberSelectionText(numberOutcome: firstNumberOutcome, lowerNumber: 10, upperNumber: 99, numberPlace: "first")
             firstNumber = Int.random(in: 10...99)
         case 3:
-            firstNumberOutcome.text = "You have selected Units for your first number. \n This means your first number will be between 1 and 9"
+            numberSelectionText(numberOutcome: firstNumberOutcome, lowerNumber: 1, upperNumber: 9, numberPlace: "first")
             firstNumber = Int.random(in: 1...9)
         default:
             break
         }
         
         if (subject == SubjectType.Subtractions.name() || subject == SubjectType.Divisions.name()) && firstNumberSelector.selectedSegmentIndex > 0 {
-            for i in 1...self.firstNumberSelector.selectedSegmentIndex {
+            for segment in 1...self.firstNumberSelector.selectedSegmentIndex {
                 //unselect segments in seconNumberSelector
                 secondNumberSelector.selectedSegmentIndex = UISegmentedControl.noSegment
                 secondNumberOutcome.text = ""
                 
-                self.secondNumberSelector.setEnabled(false, forSegmentAt: i - 1)
+                self.secondNumberSelector.setEnabled(false, forSegmentAt: segment - 1)
             }
         }
     }
     @IBAction func secondNumberSelector(_ sender: Any) {
         
+        //Add tint to show selectiomn
+        if #available(iOS 13.0, *) {
+            secondNumberSelector.selectedSegmentTintColor = UIColor.Shades.standardWhite
+        } else {
+            secondNumberSelector.tintColor = UIColor.Shades.standardWhite
+        }
+        
         switch secondNumberSelector.selectedSegmentIndex
         {
         case 0:
-            secondNumberOutcome.text = "You have selected Thousands for your second number. \n This means your second number will be between 1000 and 9999"
-            
-            if subject == SubjectType.Subtractions.name() && firstNumberSelector.selectedSegmentIndex == secondNumberSelector.selectedSegmentIndex {
-                secondNumber = Int.random(in: 1000...firstNumber)
-            } else if subject == SubjectType.Divisions.name() {
-                secondNumber = firstNumber.randomDivisable(lowerLimit: 1000, upperLimit: 9999)
-                print ("subject is division \(secondNumber) fn = \(firstNumber)")
-            }else {
-                secondNumber = Int.random(in: 1000...9999)
-            }
-            
+            numberSelectionText(numberOutcome: secondNumberOutcome, lowerNumber: 1000, upperNumber: 9999, numberPlace: "second")
+            subtractionOrDivision(lowerNumber: 1000, upperNumber: 9999)
         case 1:
-            secondNumberOutcome.text = "You have selected Hundreds for your second number. \n This means your second number will be between 100 and 999"
-            
-            if subject == SubjectType.Subtractions.name() && firstNumberSelector.selectedSegmentIndex == secondNumberSelector.selectedSegmentIndex {
-                secondNumber = Int.random(in: 100...firstNumber)
-            } else if subject == SubjectType.Divisions.name() {
-                secondNumber = firstNumber.randomDivisable(lowerLimit: 100, upperLimit: 999)
-                print ("subject is division \(secondNumber) fn = \(firstNumber)")
-            }else {
-                secondNumber = Int.random(in: 100...999)
-            }
-            
+            numberSelectionText(numberOutcome: secondNumberOutcome, lowerNumber: 100, upperNumber: 999, numberPlace: "second")
+            subtractionOrDivision(lowerNumber: 100, upperNumber: 999)
         case 2:
-            secondNumberOutcome.text = "You have selected Tens for your second number. \n This means your second number will be between 10 and 99"
-            
-            if subject == SubjectType.Subtractions.name() && firstNumberSelector.selectedSegmentIndex == secondNumberSelector.selectedSegmentIndex {
-                secondNumber = Int.random(in: 10...firstNumber)
-            } else if subject == SubjectType.Divisions.name() {
-                secondNumber = firstNumber.randomDivisable(lowerLimit: 10, upperLimit: 99)
-                print ("subject is division \(secondNumber) fn = \(firstNumber)")
-            }else {
-                secondNumber = Int.random(in: 10...99)
-            }
-
+            numberSelectionText(numberOutcome: secondNumberOutcome, lowerNumber: 10, upperNumber: 99, numberPlace: "second")
+            subtractionOrDivision(lowerNumber: 10, upperNumber: 99)
         case 3:
-            secondNumberOutcome.text = "You have selected Units for your second number. \n This means your second number will be between 1 and 9"
-            
-            if subject == SubjectType.Subtractions.name() && firstNumberSelector.selectedSegmentIndex == secondNumberSelector.selectedSegmentIndex {
-                secondNumber = Int.random(in: 1...firstNumber)
-            } else if subject == SubjectType.Divisions.name() {
-                secondNumber = firstNumber.randomDivisable(lowerLimit: 1, upperLimit: 9)
-                print ("subject is division \(secondNumber) fn = \(firstNumber)")
-            } else {
-                self.secondNumber = Int.random(in: 1...9)
-            }
-
+            numberSelectionText(numberOutcome: secondNumberOutcome, lowerNumber: 1, upperNumber: 9, numberPlace: "second")
+            subtractionOrDivision(lowerNumber: 1, upperNumber: 9)
         default:
             break
         }
-        
         //enable button to proceed to next page
         continueButton.enableButton()
     }
     
-    @IBAction func continueButton(_ sender: Any) {
+    func subtractionOrDivision(lowerNumber: Int, upperNumber: Int) {
         
+        //If subtraction make second number smaller than or equal to first number
+        if subject == SubjectType.Subtractions.name() && firstNumberSelector.selectedSegmentIndex == secondNumberSelector.selectedSegmentIndex {
+            secondNumber = Int.random(in: lowerNumber...firstNumber)
+        } else if subject == SubjectType.Divisions.name() { //If division make sure second number is a divisor of firstnumber
+            secondNumber = firstNumber.randomDivisable(lowerLimit: lowerNumber, upperLimit: upperNumber)
+            print ("subject is division \(secondNumber) fn = \(firstNumber)")
+        }else { //Otherwise allow full random selection
+            secondNumber = Int.random(in: lowerNumber...upperNumber)
+        }
+    }
+    
+    @IBAction func continueButton(_ sender: Any) {
         numberSelectionFlowController.showEquation(firstNumber: firstNumber, secondNumber: secondNumber, subject: subject)
     }
 }

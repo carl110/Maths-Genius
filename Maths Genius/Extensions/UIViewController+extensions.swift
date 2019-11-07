@@ -59,4 +59,8 @@ extension UIViewController {
          self.present(alertController, animated: true, completion: nil)
      }
     
+    func numberSelectionText(numberOutcome: UILabel, lowerNumber: Int, upperNumber: Int, numberPlace: String) {
+        numberOutcome.text = "You have selected Units for your \(numberPlace) number. \n This means your first number will be between \(lowerNumber.toString()) and \(upperNumber.toString())"
+    }
+    
 }
