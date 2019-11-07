@@ -14,7 +14,7 @@ class MySumViewController: UIViewController, PickerViewDelegate {
     fileprivate var mySumFlowController: MySumFlowController!
     fileprivate var mySumViewModel: MySumViewModel!
     
-    private var operationSelected = "+"
+    private var operationSelected = SubjectType.Additions.rawValue
     private var alertTitle = String()
     private var alertMessage = String()
 
@@ -87,16 +87,16 @@ class MySumViewController: UIViewController, PickerViewDelegate {
         let secondNumber: Int? = Int(secondNumberInput.text!)
         var subject = "Additions"
         
-        if operationSelected == "+" {
+        if operationSelected == SubjectType.Additions.rawValue {
             sum = firstNumber! + secondNumber!
             subject = SubjectType.Additions.name()
-        } else if operationSelected == "-" {
+        } else if operationSelected == SubjectType.Subtractions.rawValue {
             sum = firstNumber! - secondNumber!
             subject = SubjectType.Subtractions.name()
-        } else if operationSelected == "÷" {
+        } else if operationSelected == SubjectType.Divisions.rawValue {
             sum = firstNumber! / secondNumber!
             subject = SubjectType.Divisions.name()
-        } else if operationSelected == "×" {
+        } else if operationSelected == SubjectType.Multiplications.rawValue {
             sum = firstNumber! * secondNumber!
             subject = SubjectType.Multiplications.name()
         }

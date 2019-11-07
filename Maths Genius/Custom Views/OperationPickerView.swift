@@ -9,22 +9,17 @@
 import Foundation
 import UIKit
 
-
 protocol PickerViewDelegate {
     func pickerViewSelectedItem(operation: String)
-
 }
 
 class OperationPickerView: UIPickerView, UIPickerViewDelegate, UIPickerViewDataSource {
-    
-    let operation = ["+", "−", "×", "÷"]
     
     var rowDelegate: PickerViewDelegate?
     
     override func awakeFromNib() {
         dataSource = self
         delegate = self
-        
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -32,21 +27,19 @@ class OperationPickerView: UIPickerView, UIPickerViewDelegate, UIPickerViewDataS
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        operation.count
+        
+        SubjectType.allCases.count
     }
 
     //Setup for row titles and attributes
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         
         let title = UILabel()
-        
         title.font = UIFont.systemFont(ofSize: self.frame.height, weight: UIFont.Weight.bold)
         title.textColor = UIColor.Reds.gryffindorRed
         title.backgroundColor = UIColor.Yellows.gryffindorYellow
-        
-        title.text =  operation[row]
+        title.text = SubjectType.allCases[row].rawValue
         title.textAlignment = .center
-
         return title
     }
     
@@ -55,8 +48,7 @@ class OperationPickerView: UIPickerView, UIPickerViewDelegate, UIPickerViewDataS
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        print ("\(operation[row]) has been selected")
-        rowDelegate?.pickerViewSelectedItem(operation: operation[row])
+        rowDelegate?.pickerViewSelectedItem(operation: SubjectType.allCases[row].rawValue)
     }
     
 }

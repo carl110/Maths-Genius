@@ -32,13 +32,11 @@ class EquationViewController: UIViewController {
         self.equationFlowController = equationFlowController
     }
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         initialSetup()
         labelSetup()
         updateNumbers()
-        
         self.hideKeyboardWhenTappedAround()
     }
     
@@ -53,20 +51,19 @@ class EquationViewController: UIViewController {
         self.view.backgroundColor = UIColor.Shades.standardBlack
         self.title = subject
         answerInput.keyboardType = .numberPad
-  
     }
     
     func labelSetup() {
         
         //set up numbers and operation labels
         if subject == SubjectType.Additions.name() {
-            operation.text = "+"
+            operation.text = SubjectType.Additions.rawValue
         } else if subject == SubjectType.Subtractions.name() {
-            operation.text = "-"
+            operation.text = SubjectType.Subtractions.rawValue
         } else if subject == SubjectType.Multiplications.name() {
-            operation.text = "×"
+            operation.text = SubjectType.Multiplications.rawValue
         } else if subject == SubjectType.Divisions.name() {
-            operation.text = "÷"
+            operation.text = SubjectType.Divisions.rawValue
         }
         
         operation.numberLabelSetup()

@@ -15,12 +15,12 @@ class MainModel {
     
 }
 
-public enum SubjectType: String {
+public enum SubjectType: String, CaseIterable {
     
-    case Additions
-    case Subtractions
-    case Multiplications
-    case Divisions
+    case Additions = "+"
+    case Subtractions = "−"
+    case Multiplications = "×"
+    case Divisions = "÷"
     
     func name() -> String {
         return self.rawValue.titlecased()
