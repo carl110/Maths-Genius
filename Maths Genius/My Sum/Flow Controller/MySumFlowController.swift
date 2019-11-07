@@ -21,4 +21,7 @@ class MySumFlowController {
             MainFactory.PushIn(navigationController: navigationController)
         }
 
+    func showHelpScreen(firstNumber: Int, secondNumber: Int, subject: String) {
+        HelpScreenFactory.PushIn(navigationController: navigationController, firstNumber: firstNumber, secondNumber: secondNumber, subject: subject)
+    }
 }

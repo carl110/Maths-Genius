@@ -9,9 +9,17 @@
 import Foundation
 import UIKit
 
+
+protocol PickerViewDelegate {
+    func pickerViewSelectedItem(operation: String)
+
+}
+
 class OperationPickerView: UIPickerView, UIPickerViewDelegate, UIPickerViewDataSource {
     
     let operation = ["+", "−", "×", "÷"]
+    
+    var rowDelegate: PickerViewDelegate?
     
     override func awakeFromNib() {
         dataSource = self
@@ -48,6 +56,7 @@ class OperationPickerView: UIPickerView, UIPickerViewDelegate, UIPickerViewDataS
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         print ("\(operation[row]) has been selected")
+        rowDelegate?.pickerViewSelectedItem(operation: operation[row])
     }
     
 }

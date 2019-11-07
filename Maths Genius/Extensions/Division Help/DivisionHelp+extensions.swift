@@ -76,7 +76,7 @@ extension UIViewController {
             carryOverNumber = ((element + carryOverNumber) % secondNumber) * 10
         }
         
-        exampleText.append("You should now have your answer as \(firstNumber / secondNumber)\n\nYou can double check your answer by multiplying your answer with the divisor.\n\(firstNumber / secondNumber) × \(secondNumber) = \(firstNumber)")
+        exampleText.append("You should now have your answer as \(firstNumber / secondNumber)\n\nYou can Int check your answer by multiplying your answer with the divisor.\n\(firstNumber / secondNumber) × \(secondNumber) = \(firstNumber)")
 
         //join all sections of array into 1 section seperated by a line break
         exampleText = [exampleText.joined(separator: "")]

@@ -39,4 +39,9 @@ extension UITextField {
         
     }
     
+    //Check if UITextField is empty
+    var isEmpty: Bool {
+        return text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""
+    }
+    
 }

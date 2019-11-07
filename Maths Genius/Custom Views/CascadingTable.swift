@@ -127,7 +127,7 @@ class CascadingTable: UITableView, UITableViewDelegate, UITableViewDataSource {
 //            guard let image = self.viewWithTag(headerSectionTag + sectionTouched!) as? UIImageView else { return print ("No image") }
 //            tableViewCollapeSection(sectionTouched!, imageView: image)
 //        }
-//        
+//
 //    }
     
     func tableViewCollapeSection(_ section: Int, imageView: UIImageView) {
