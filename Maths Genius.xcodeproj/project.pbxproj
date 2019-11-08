@@ -630,7 +630,7 @@
 		896B168523351663002DF739 /* Equation Help */ = {
 			isa = PBXGroup;
 			children = (
-				896B168A233516B9002DF739 /* View */,
+				896B168A233516B9002DF739 /* Model */,
 				896B1689233516B2002DF739 /* View Model */,
 				896B1688233516A9002DF739 /* View Controller */,
 				896B1687233516A0002DF739 /* Flow Controller */,
@@ -672,7 +672,7 @@
 			path = "View Model";
 			sourceTree = "<group>";
 		};
-		896B168A233516B9002DF739 /* View */ = {
+		896B168A233516B9002DF739 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				896B168B233516CD002DF739 /* SubtractionHelpModel.swift */,
@@ -680,7 +680,7 @@
 				892E7C99233CBA04005321F8 /* MultiplicationHelpModel.swift */,
 				89E1632A2360472700BB23DE /* DivisionHelpModel.swift */,
 			);
-			path = View;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		89E16329236046F900BB23DE /* Division Help */ = {

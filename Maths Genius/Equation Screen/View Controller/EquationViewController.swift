@@ -84,14 +84,17 @@ class EquationViewController: UIViewController {
         var sum = Int()
         
         //Set operation for sum calculation
-        if subject == String(describing: SubjectType.Additions) {
+        switch subject {
+        case String(describing: SubjectType.Additions):
             sum = (firstNumber + secondNumber)
-        } else if subject == String(describing: SubjectType.Subtractions) {
+        case String(describing: SubjectType.Subtractions):
             sum = (firstNumber - secondNumber)
-        } else if subject == String(describing: SubjectType.Multiplications) {
+        case String(describing: SubjectType.Multiplications):
             sum = firstNumber * secondNumber
-        } else if subject == String(describing: SubjectType.Divisions) {
+        case String(describing: SubjectType.Divisions):
             sum = firstNumber / secondNumber
+        default:
+            break
         }
         
         if integer(from: answerInput) == sum {

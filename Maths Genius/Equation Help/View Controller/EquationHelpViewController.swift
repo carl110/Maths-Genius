@@ -17,13 +17,13 @@ class EquationHelpViewController: UIViewController {
     fileprivate var multiplicationHelpModel = MultiplicationHelpModel()
     fileprivate var divisionHelpModel = DivisionHelpModel()
     
-    var firstNumber = Int()
-    var secondNumber = Int()
-    var helpTitle = String()
+    private var firstNumber = Int()
+    private var secondNumber = Int()
+    private var helpTitle = String()
     
-    var exampleText = [String]()
-    var stepText = [String]()
-    var stepImage = [UIImage]()
+    private var exampleText = [String]()
+    private var stepText = [String]()
+    private var stepImage = [UIImage]()
     
     @IBOutlet weak var returnToEquation: UIButton!
     @IBOutlet weak var newEquation: UIButton!
@@ -71,40 +71,42 @@ class EquationHelpViewController: UIViewController {
     }
     
     func helpSubjectSetup() {
-        if helpTitle == HelpSubject.Additions.RoundingNumbers.rawValue.self {
+        
+        switch helpTitle {
+            
+        //Additions
+        case HelpSubject.Additions.RoundingNumbers.rawValue:
             stepText = additionsHelpModel.roundingNumberStepText
             stepImage = additionsHelpModel.roundingNumberStepImage
             exampleText = roundNumber(firstNumber: firstNumber, secondNumber: secondNumber)
-        }
-        
-        if helpTitle == HelpSubject.Additions.UsingPlaceValues.rawValue.self {
+        case HelpSubject.Additions.UsingPlaceValues.rawValue:
             stepText = additionsHelpModel.usingPlaceValuesStepText
             stepImage = additionsHelpModel.usingPlaceValuesStepImage
             exampleText = usingPlaceValues(firstNumber: firstNumber, secondNumber: secondNumber)
-        }
-        
-        if helpTitle == HelpSubject.Additions.HundredsSquare.rawValue.self {
+        case HelpSubject.Additions.HundredsSquare.rawValue:
             stepText = additionsHelpModel.hundresSquareStepText
             stepImage = additionsHelpModel.hundredsSquareStepImage
             exampleText = hundredsSquare(firstNumber: firstNumber, secondNumber: secondNumber)
-        }
         
-        if helpTitle == HelpSubject.Subtractions.SubtractByBorrowing.rawValue.self {
+        //Subtractions
+        case HelpSubject.Subtractions.SubtractByBorrowing.rawValue:
             stepText = subtractionHelpModel.subtractByBorrowingStepText
             stepImage = subtractionHelpModel.subtractByBorrowingStepImage
             exampleText = subtractByBorrowing(firstNumber: firstNumber, secondNumber: secondNumber)
-        }
         
-        if helpTitle == HelpSubject.Multiplications.PeopleAndSweets.rawValue.self {
+        //Multiplication
+        case HelpSubject.Multiplications.PeopleAndSweets.rawValue:
             stepText = multiplicationHelpModel.peopleAndSweetsStepText
             stepImage = multiplicationHelpModel.peopleAndSweetsStepImage
             exampleText = peopleAndSweets(firstNumber: firstNumber, secondNumber: secondNumber)
-        }
         
-        if helpTitle == HelpSubject.Divisions.LongDivision.rawValue.self {
+        //Division
+        case HelpSubject.Divisions.LongDivision.rawValue:
             stepText = divisionHelpModel.longDivisionStepText
             stepImage = divisionHelpModel.longDivisionStepImage
             exampleText = longDivision(firstNumber: firstNumber, secondNumber: secondNumber)
+        default:
+            break
         }
     }
     

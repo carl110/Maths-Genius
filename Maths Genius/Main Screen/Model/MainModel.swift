@@ -29,31 +29,39 @@ public enum SubjectType: String, CaseIterable {
 }
 
 public enum HelpSubject {
-
+    
     enum Additions: String, CaseIterable {
         case RoundingNumbers = "Rounding Numbers"
         case UsingPlaceValues = "Using Place Values"
         case HundredsSquare = "Hundreds Square"
-
+        
     }
     enum Subtractions: String, CaseIterable {
         case SubtractByBorrowing = "Subtract by Borrowing"
-    
- 
+        
+        
     }
     enum Multiplications: String, CaseIterable {
         case PeopleAndSweets = "People and Sweets"
-    
-
+        
+        
     }
     enum Divisions: String,CaseIterable {
         case LongDivision = "Long Division"
-    
+        
 
+        
     }
-
-
-
+    
+    
+//    public enum Test {
+//        case .test1:
+//        
+//        
+//    }
+    
+    
+    
 }
 
 

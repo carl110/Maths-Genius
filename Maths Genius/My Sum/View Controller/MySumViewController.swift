@@ -15,8 +15,6 @@ class MySumViewController: UIViewController, PickerViewDelegate {
     fileprivate var mySumViewModel: MySumViewModel!
     
     private var operationSelected = SubjectType.Additions.rawValue
-    private var alertTitle = String()
-    private var alertMessage = String()
 
     @IBOutlet weak var firstNumberLabel: UILabel!
     @IBOutlet weak var secondNumberLabel: UILabel!
@@ -87,24 +85,27 @@ class MySumViewController: UIViewController, PickerViewDelegate {
         let secondNumber: Int? = Int(secondNumberInput.text!)
         var subject = "Additions"
         
-        if operationSelected == SubjectType.Additions.rawValue {
+        switch operationSelected {
+        case SubjectType.Additions.rawValue:
             sum = firstNumber! + secondNumber!
-            subject = SubjectType.Additions.name()
-        } else if operationSelected == SubjectType.Subtractions.rawValue {
+            subject = String(describing: SubjectType.Additions)
+        case SubjectType.Subtractions.rawValue:
             sum = firstNumber! - secondNumber!
-            subject = SubjectType.Subtractions.name()
-        } else if operationSelected == SubjectType.Divisions.rawValue {
-            sum = firstNumber! / secondNumber!
-            subject = SubjectType.Divisions.name()
-        } else if operationSelected == SubjectType.Multiplications.rawValue {
+            subject = String(describing: SubjectType.Subtractions)
+        case SubjectType.Multiplications.rawValue:
             sum = firstNumber! * secondNumber!
-            subject = SubjectType.Multiplications.name()
+            subject = String(describing: SubjectType.Multiplications)
+        case SubjectType.Divisions.rawValue:
+            sum = firstNumber! / secondNumber!
+            subject = String(describing: SubjectType.Divisions)
+        default:
+            break
         }
         
         if subject == SubjectType.Divisions.name() {
             //If the number contains decimals then stop and show alert
             guard firstNumber! % secondNumber! == 0 else {
-                alert(message: "This Division contains remainder, the help secotion can only help with whole numbers. Please try a different equation.")
+                alert(message: "This Division contains remainder, the help section can only help with whole numbers. Please try a different equation.")
                 return
             }
         }
@@ -116,13 +117,11 @@ class MySumViewController: UIViewController, PickerViewDelegate {
                                options: "Let me try a new sum", "Take me back to the Home screen") { (option) in
                                 switch(option) {
                                 case 0:
-                                    
                                     //clear text fields
                                     self.firstNumberInput.text = ""
                                     self.secondNumberInput.text = ""
                                     self.answerInput.text = ""
                                 case 1:
-                                    
                                     //Remove all viewcontrollers from the navigation stack
                                     self.navigationController!.viewControllers.removeAll()
                                     self.mySumFlowController.showMain()
@@ -131,6 +130,9 @@ class MySumViewController: UIViewController, PickerViewDelegate {
                                 }
             }
         } else {// sum incorrect or not completed
+            var alertMessage = ""
+            var alertTitle = ""
+            
             if submitButton.currentTitle! == "Help" {
                 alertTitle = "Do you need Help"
                 alertMessage = "What do you want to do"
@@ -156,7 +158,6 @@ class MySumViewController: UIViewController, PickerViewDelegate {
         }
     }
     
-
     @IBAction func answerInput(_ sender: Any) {
 
         guard let answer = answerInput, !answer.isEmpty else {
@@ -168,7 +169,7 @@ class MySumViewController: UIViewController, PickerViewDelegate {
 
     @IBAction func submitButton(_ sender: Any) {
 
-        //If either fn or sn are empty the show alert
+        //If either fn or sn are empty then show alert
         guard let fnText = firstNumberInput, let snText = secondNumberInput, !fnText.isEmpty, !snText.isEmpty else {
             
             alert(message: "You must enter a number into both the First Number and Second Number fields")

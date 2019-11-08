@@ -14,16 +14,13 @@ class HelpScreenViewController: UIViewController, HelpSectionSelectedDelegate {
     fileprivate var helpScreenViewModel: HelpScreenViewModel!
     fileprivate var helpScreenModel = HelpScreenModel()
     
-    var firstNumber = Int()
-    var secondNumber = Int ()
-    var subject = String()
-    var helpTitle = String()
+    private var firstNumber = Int()
+    private var secondNumber = Int ()
+    private var subject = String()
+    private var helpTitle = String()
 
-    
     @IBOutlet weak var titleLabel: UILabel!
-    
     @IBOutlet weak var customTable: CustomTable!
-    
 
     func assignDependancies(helpScreenFlowController: HelpScreenFlowController, helpScreenViewModel: HelpScreenViewModel) {
     self.helpScreenViewModel = helpScreenViewModel
@@ -38,40 +35,37 @@ class HelpScreenViewController: UIViewController, HelpSectionSelectedDelegate {
     
     func setUp() {
         
+        self.title = "How to..."
+        self.view.backgroundColor = UIColor.Shades.standardBlack
         firstNumber = helpScreenViewModel.firstNumber
         secondNumber = helpScreenViewModel.secondNumber
         subject = helpScreenViewModel.subject
-        
-        self.title = "How to..."
-        self.view.backgroundColor = UIColor.Shades.standardBlack
-        
         titleLabel.text = "Select the help item below..."
         titleLabel.subTitleLabelSetUp()
-        
         tableSetUp()
     }
     
     func tableSetUp() {
+        
         customTable.backgroundColor = UIColor.Shades.standardBlack
         
-        if subject == String(describing: SubjectType.Additions) {
+        switch subject {
+        case String(describing: SubjectType.Additions):
             customTable.customCellsData = HelpSubject.Additions.allCases.map { $0.rawValue }
-        } else if subject == String(describing: SubjectType.Subtractions) {
+        case String(describing: SubjectType.Subtractions):
             customTable.customCellsData = HelpSubject.Subtractions.allCases.map { $0.rawValue }
-        } else if subject == String(describing: SubjectType.Multiplications) {
+        case String(describing: SubjectType.Multiplications):
             customTable.customCellsData = HelpSubject.Multiplications.allCases.map { $0.rawValue }
-        } else if subject == String(describing: SubjectType.Divisions) {
+        case String(describing: SubjectType.Divisions):
             customTable.customCellsData = HelpSubject.Divisions.allCases.map { $0.rawValue }
+        default:
+            break
         }
-        
     }
-
-
+    
     func cellWasSelected(id: Int, title: String) {
         
         helpTitle = title
-        
         helpScreenFlowController.equationHelp(firstNumber: firstNumber, secondNumber: secondNumber, subject: subject, helpTitle: helpTitle)
-
     }
 }
