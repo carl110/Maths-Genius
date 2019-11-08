@@ -106,7 +106,7 @@ class NumberSelectionViewController: UIViewController {
             break
         }
         
-        if (subject == SubjectType.Subtractions.name() || subject == SubjectType.Divisions.name()) && firstNumberSelector.selectedSegmentIndex > 0 {
+        if (subject == String(describing: SubjectType.Subtractions) || subject == String(describing: SubjectType.Divisions)) && firstNumberSelector.selectedSegmentIndex > 0 {
             for segment in 1...self.firstNumberSelector.selectedSegmentIndex {
                 //unselect segments in seconNumberSelector
                 secondNumberSelector.selectedSegmentIndex = UISegmentedControl.noSegment
@@ -149,9 +149,9 @@ class NumberSelectionViewController: UIViewController {
     func subtractionOrDivision(lowerNumber: Int, upperNumber: Int) {
         
         //If subtraction make second number smaller than or equal to first number
-        if subject == SubjectType.Subtractions.name() && firstNumberSelector.selectedSegmentIndex == secondNumberSelector.selectedSegmentIndex {
+        if subject == String(describing: SubjectType.Subtractions) && firstNumberSelector.selectedSegmentIndex == secondNumberSelector.selectedSegmentIndex {
             secondNumber = Int.random(in: lowerNumber...firstNumber)
-        } else if subject == SubjectType.Divisions.name() { //If division make sure second number is a divisor of firstnumber
+        } else if subject == String(describing: SubjectType.Divisions) { //If division make sure second number is a divisor of firstnumber
             secondNumber = firstNumber.randomDivisable(lowerLimit: lowerNumber, upperLimit: upperNumber)
             print ("subject is division \(secondNumber) fn = \(firstNumber)")
         }else { //Otherwise allow full random selection

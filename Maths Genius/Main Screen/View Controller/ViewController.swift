@@ -62,20 +62,20 @@ class ViewController: UIViewController {
     }
     
     @IBAction func additionButton(_ sender: Any) {
-        subjectSelected = SubjectType.Additions.name()
+        subjectSelected = String(describing: SubjectType.Additions)
         mainFlowController.showNumberSelection(with: subjectSelected)
     }
     
     @IBAction func subtractionButton(_ sender: Any) {
-        subjectSelected = SubjectType.Subtractions.name()
+        subjectSelected = String(describing: SubjectType.Subtractions)
         mainFlowController.showNumberSelection(with: subjectSelected)
     }
     @IBAction func multiplicationButton(_ sender: Any) {
-        subjectSelected = SubjectType.Multiplications.name()
+        subjectSelected = String(describing: SubjectType.Multiplications)
         mainFlowController.showNumberSelection(with: subjectSelected)
     }
     @IBAction func divisionButton(_ sender: Any) {
-        subjectSelected = SubjectType.Divisions.name()
+        subjectSelected = String(describing: SubjectType.Divisions)
         mainFlowController.showNumberSelection(with: subjectSelected)
     }
     

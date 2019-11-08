@@ -43,6 +43,8 @@ class GlossaryViewController: UIViewController {
         //Run func to add glossary items to array
         glossaryViewModel.arrayOfGlossary()
         
+        
+        //switch
         //sort array alphabeticaly and then add to table sections and cells
         for i in glossaryViewModel.glossaryArray.sorted(by: { $0.item < $1.item}) {
             cascadingTable.tableSectionName.append(i.item)

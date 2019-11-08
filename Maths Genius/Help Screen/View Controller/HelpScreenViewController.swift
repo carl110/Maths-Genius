@@ -54,13 +54,13 @@ class HelpScreenViewController: UIViewController, HelpSectionSelectedDelegate {
     func tableSetUp() {
         customTable.backgroundColor = UIColor.Shades.standardBlack
         
-        if subject == SubjectType.Additions.name() {
+        if subject == String(describing: SubjectType.Additions) {
             customTable.customCellsData = HelpSubject.Additions.allCases.map { $0.rawValue }
-        } else if subject == SubjectType.Subtractions.name() {
+        } else if subject == String(describing: SubjectType.Subtractions) {
             customTable.customCellsData = HelpSubject.Subtractions.allCases.map { $0.rawValue }
-        } else if subject == SubjectType.Multiplications.name() {
+        } else if subject == String(describing: SubjectType.Multiplications) {
             customTable.customCellsData = HelpSubject.Multiplications.allCases.map { $0.rawValue }
-        } else if subject == SubjectType.Divisions.name() {
+        } else if subject == String(describing: SubjectType.Divisions) {
             customTable.customCellsData = HelpSubject.Divisions.allCases.map { $0.rawValue }
         }
         

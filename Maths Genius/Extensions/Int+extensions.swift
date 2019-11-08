@@ -16,6 +16,8 @@ extension Int {
         
         var sumArray = [Int]()
         
+        print ("Lower = \(lowerLimit) - uppper \(upperLimit)")
+        
         //for range see what the number is divisable by and add to array
         for divisable in lowerLimit...upperLimit {
             if self % divisable == 0 {
